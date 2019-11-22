@@ -41,9 +41,6 @@ filling_the_treasury = {
 
 imperial_academy = {
 	innovativeness_gain = 0.5
-}
-
-imperial_palace = {
 	army_tradition = 0.3
 }
 
