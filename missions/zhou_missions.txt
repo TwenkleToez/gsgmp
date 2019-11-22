@@ -249,48 +249,26 @@ zhou_missions_2 = {
 			}
 		}
 	}
-	imperial_naval_academy = {
+	zhenjiang_drydock = { 
 		icon = mission_establish_high_seas_navy
-		required_missions { protect_our_coast }
+		required_missions = { protect_our_coast }
+		position = 5
 		provinces_to_highlight = {
-			OR = {
-				province_id = 667
+			province_id = 2145
+		}
+		trigger = { 
+			2145 = {
+				development = 30
 			}
 		}
-		trigger = {
-			owns = 667
-			sailors_percentage = 0.8
-			if = {
-				limit = {
-					has_dlc = "Dharma"
-				}
-				667 = {
-					province_has_center_of_trade_of_level = 3
-					development = 35
-				}
-			}
-			else = {
-				667 = {
-					development = 35
-				}
-			}
-		}	
-		effect = { 
-			667 = {
-				if = {
-					limit = {
-						NOT = { has_building = grand_shipyard }
+			effect = {
+				2145 = {
+					add_permanent_province_modifier = {
+						name = zhenjiang_drydock
+						duration = -1
 					}
-					if = {
-						limit = {
-							has_building = shipyard
-						}
-						remove_building = shipyard
-					}
-					add_building = grand_shipyard
 				}
-			}
-		}
+			}	
 	}
 	flag_ship = {
 		icon = mission_launch_a_flagship
@@ -306,7 +284,7 @@ zhou_missions_2 = {
 		icon = mission_establish_high_seas_navy
 		required_missions { flag_ship }
 		trigger = { 
-			light_ship_fraction = 0.6
+			light_ship_fraction = 0.5
 		}
 		effect = {
 			add_mercantilism = 5
@@ -328,62 +306,71 @@ zhou_missions_3 = {
 		required_missions { }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 708
-				province_id = 2184
+				province_id = 707
+				province_id = 2191
+				province_id = 4676
+				province_id = 2182
 				province_id = 699
 				province_id = 2181
 				province_id = 2179
 				province_id = 2177
 				province_id = 697
 				province_id = 2136
-				province_id = 1816
-				province_id = 4194
-				province_id = 4194
-				province_id = 704
-				province_id = 4652
+				province_id = 703
+				province_id = 4672
 				province_id = 726
 				province_id = 2112
-				province_id = 2113
 			}
 		}
 			
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 10
+				value = 14
 				OR = {
-					province_id = 708
-					province_id = 2184
+					province_id = 707
+					province_id = 2191
+					province_id = 4676
+					province_id = 2182
 					province_id = 699
 					province_id = 2181
 					province_id = 2179
 					province_id = 2177
 					province_id = 697
 					province_id = 2136
-					province_id = 1816
-					province_id = 4194
-					province_id = 704
-					province_id = 4652
+					province_id = 703
+					province_id = 4672
 					province_id = 726
 					province_id = 2112
-					province_id = 2113
 				}
 				fort_level = 4
 			}
 		}
 		effect = {
-			708 = {
+			707 = {
 				add_province_modifier = {
 					name = strengthen_the_wall
 					duration = -1
 				}
 			}
-			2184 = {
+			2191 = {
 				add_province_modifier = {
 					name = strengthen_the_wall
 					duration = -1
 				}
 			}
-			699 = {
+			4676 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			2182 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			699  = {
 				add_province_modifier = {
 					name = strengthen_the_wall
 					duration = -1
@@ -395,7 +382,7 @@ zhou_missions_3 = {
 					duration = -1
 				}
 			}
-			2179  = {
+			2179 = {
 				add_province_modifier = {
 					name = strengthen_the_wall
 					duration = -1
@@ -419,31 +406,13 @@ zhou_missions_3 = {
 					duration = -1
 				}
 			}
-			1816 = {
+			703 = {
 				add_province_modifier = {
 					name = strengthen_the_wall
 					duration = -1
 				}
 			}
-			4194 = {
-				add_province_modifier = {
-					name = strengthen_the_wall
-					duration = -1
-				}
-			}
-			4194 = {
-				add_province_modifier = {
-					name = strengthen_the_wall
-					duration = -1
-				}
-			}
-			704 = {
-				add_province_modifier = {
-					name = strengthen_the_wall
-					duration = -1
-				}
-			}
-			4652 = {
+			4672 = {
 				add_province_modifier = {
 					name = strengthen_the_wall
 					duration = -1
@@ -456,12 +425,6 @@ zhou_missions_3 = {
 				}
 			}
 			2112 = {
-				add_province_modifier = {
-					name = strengthen_the_wall
-					duration = -1
-				}
-			}
-			2113 = {
 				add_province_modifier = {
 					name = strengthen_the_wall
 					duration = -1
@@ -546,27 +509,6 @@ zhou_missions_3 = {
 				duration = -1
 			}
 		}
-	}
-	zhenjiang_drydock = { 
-		icon = mission_unite_home_region
-		required_missions = { protect_our_coast }
-		position = 5
-		provinces_to_highlight = {
-			province_id = 2145
-		}
-		trigger = { 
-			2145 = {
-				development = 30
-			}
-		}
-			effect = {
-				2145 = {
-					add_permanent_province_modifier = {
-						name = zhenjiang_drydock
-						duration = -1
-					}
-				}
-			}	
 	}
 }
 zhou_mission_4 = {
