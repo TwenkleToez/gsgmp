@@ -3246,6 +3246,7 @@ country_event = {
 		OR = {
 			tag = QNG
 			tag = MNG
+			tag = CZH
 		}
 		is_year = 1613
 		NOT = {
@@ -3501,6 +3502,7 @@ country_event = {
 
 	trigger = {
 		tag = MNG
+		tag = CZH
 		OR = {
 			truce_with = MCH
 			war_with = MCH
@@ -3668,6 +3670,7 @@ country_event = {
 		OR = {
 			tag = QNG
 			tag = MNG
+			tag = CZH
 		}
 		is_year = 1768
 		NOT = {

@@ -43,54 +43,6 @@ country_event = {
 	}
 }
 
-# The Eastern Mongols Assimilated
-country_event = {
-	id = flavor_mch.2
-	title = "flavor_mch.EVTNAME2"
-	desc = "flavor_mch.EVTDESC2"
-	picture = HORDE_ON_HORSEBACK_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = MCH
-		exists = MNG
-		NOT = { vassal_of = MNG }
-		is_year = 1600
-		NOT = {
-			is_year = 1700
-		}
-		is_at_war = no
-		any_owned_province = {
-			any_neighbor_province = {
-				owned_by = MNG
-				NOT = {
-					is_claim = MCH
-				}
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	option = {
-		name = "flavor_mch.EVTOPTA2"
-		every_owned_province = {
-			every_neighbor_province = {
-				limit = {
-					owned_by = MNG
-					NOT = {
-						is_claim = MCH
-					}
-				}
-				add_claim = ROOT
-			}
-		}
-	}
-}
-
 # The Manchu Army Reforms
 country_event = {
 	id = flavor_mch.3
@@ -129,56 +81,6 @@ country_event = {
 	}
 }
 
-# The Manchu Advance
-country_event = {
-	id = flavor_mch.4 # id = 10035
-	title = "flavor_mch.EVTNAME4"
-	desc = "flavor_mch.EVTDESC4"
-	picture = LAND_MILITARY_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_at_war = no
-		exists = MNG
-		NOT = { vassal_of = MNG }
-		tag = MCH
-		is_year = 1600
-		NOT = { is_year = 1650 }
-		NOT = { war_with = MNG }
-		any_owned_province = { 
-			any_neighbor_province = { 
-				owned_by = MNG 
-				NOT = {
-					is_claim = ROOT
-				}
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	option = {
-		name = "flavor_mch.EVTOPTA4"
-		add_casus_belli = {
-			target = MNG
-			type = cb_border_war
-			months = 24
-		}
-	}
-	option = {
-		name = "flavor_mch.EVTOPTB4"
-		MNG = {
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_pleased
-				years = 50
-			}
-		}
-	}
-}
 
 # The Revolt of the Three Feudatories
 # Rewritten by Daniel Tolman
