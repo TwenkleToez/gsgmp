@@ -1,0 +1,17 @@
+government = tribal
+add_government_reform = steppe_horde
+technology_group = nomad_group
+religion = tengri_pagan_reformed
+secondary_religion = vajrayana
+primary_culture = mongol
+capital = 702
+
+1440.11.11 = {
+	monarch = {
+		name = "Qu"
+		dynasty = "Liao"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

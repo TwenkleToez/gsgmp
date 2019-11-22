@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = wu
+capital = 684	#Hangzhou
+add_harmonized_religion = mahayana
+
+1440.11.11 = {
+	monarch = {
+		name = "Bao"
+		dynasty = "Wu"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}

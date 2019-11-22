@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = miao
+religion = confucianism
+technology_group = chinese
+capital = 2173
+add_harmonized_religion = mahayana
+add_harmonized_religion = animism
+
+1440.11.11 = {
+	monarch = {
+		name = "Bai"
+		dynasty = "Miao"
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}

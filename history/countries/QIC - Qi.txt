@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = shandong_culture
+capital = 690	#Qingzhou
+add_harmonized_religion = mahayana
+
+1440.11.11 = {
+	monarch = {
+		name = "Zhu"
+		dynasty = "Qi"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}

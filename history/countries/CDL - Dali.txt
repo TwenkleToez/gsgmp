@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = bai
+religion = buddhism
+technology_group = chinese
+capital = 661	# Dali
+
+1440.11.11 = {
+	monarch = {
+		name = "Yin"
+		dynasty = "Dali"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+

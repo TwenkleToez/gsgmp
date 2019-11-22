@@ -1,0 +1,15 @@
+name = "Mongolian War of Independence"
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+}
+
+1443.1.1 = {
+	add_attacker = KHA
+	add_defender = OIR
+}
+
+1444.11.11 = {
+	rem_attacker = KHA
+	rem_defender = OIR
+}

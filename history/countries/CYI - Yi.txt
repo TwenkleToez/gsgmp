@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = yi
+religion = animism
+technology_group = chinese
+capital = 675	# Umung
+
+1440.11.11 = {
+	monarch = {
+		name = "Ji"
+		dynasty = "Yi"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

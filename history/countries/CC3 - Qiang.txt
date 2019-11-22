@@ -1,0 +1,16 @@
+government = tribal
+add_government_reform = tribal_kingdom
+technology_group = chinese
+religion = vajrayana
+primary_culture = tibetan
+capital = 2170
+
+1440.11.11 = {
+	monarch = {
+		name = "Pang"
+		dynasty = "Qiang"
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}

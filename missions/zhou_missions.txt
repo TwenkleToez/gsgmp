@@ -1,0 +1,820 @@
+zhou_missions = {
+	slot = 1 
+	generic = no
+	ai = yes
+	potential = {
+		tag = CZH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	unification_of_china = {
+		position = 1
+		icon = mission_unite_home_region
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				region = xinan_region
+				region = north_china_region
+				region = south_china_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			xinan_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_china_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_china_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = chinese_peoples_united
+				duration = -1
+			}
+		}
+	}
+
+	expand_the_northern_frontier = {
+		icon = mission_unite_home_region
+		required_missions = { unification_of_china }
+		provinces_to_highlight = {
+			OR = {
+				area = ordos_area
+				area = central_mongolia_area
+				area = inner_mongolia_area
+				area = chahar_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			ordos_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_mongolia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			inner_mongolia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			chahar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = expand_the_northern_frontier
+				duration = -1
+			}
+		}
+	}
+	move_toward_the_east = {
+		icon = mission_unite_home_region
+		required_missions = { expand_the_northern_frontier }
+		provinces_to_highlight = {
+			OR = {
+				area = jilin_area
+				area = ningguta_area
+				area = eastern_mongolia
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			jilin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ningguta_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			eastern_mongolia = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = move_toward_the_east 
+				duration = 36500
+			}
+		}
+	}
+	conquer_korea = {
+		icon = mission_unite_home_region
+		required_missions = { move_toward_the_east }
+		provinces_to_highlight = {
+			OR = {
+				area = pyongan_area
+				area = hamgyeong_area
+				area = western_korea_area
+				area = eastern_korea_area
+				area = south_korea_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			pyongan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hamgyeong_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_korea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_korea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			eastern_korea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			2745 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 7300
+					power = 25
+					key = conquer_korea
+				}
+			}
+		}
+	}
+}
+zhou_missions_2 = {
+	slot = 2 
+	generic = no
+	ai = yes
+	potential = {
+		tag = CZH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	imperial_palace = {
+		icon = mission_unite_home_region
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 1816
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { base_manpower = 15 }
+			}
+		}
+		trigger = {
+			owns = 1816
+			1816 = {
+				base_manpower = 15
+			}
+		}
+		effect = {
+			1816 = {
+				add_province_modifier = {
+					name = imperial_palace
+					duration = -1
+				}
+			}
+		}
+	}
+	secure_the_red_river = {
+		icon = mission_unite_home_region
+		required_missions = { unification_of_china }
+		provinces_to_highlight = {
+			OR = {
+				area = red_river_delta_area
+				area = vietnam_area
+				area = north_laos_area
+				area = south_laos_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			red_river_delta_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_laos_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vietnam_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_laos_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = secure_the_red_river
+				duration = -1
+			}
+		}
+	}
+	protect_our_coast = {
+		position = 4
+		icon = mission_establish_high_seas_navy
+		required_missions { }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 20
+				OR = {
+					has_building = shipyard
+					has_building = grand_shipyard
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = protect_our_coast
+				duration = -1
+			}
+		}
+	}
+	imperial_naval_academy = {
+		icon = mission_establish_high_seas_navy
+		required_missions { protect_our_coast }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 667
+			}
+		}
+		trigger = {
+			owns = 667
+			sailors_percentage = 0.8
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+				}
+				667 = {
+					province_has_center_of_trade_of_level = 3
+					development = 35
+				}
+			}
+			else = {
+				667 = {
+					development = 35
+				}
+			}
+		}	
+		effect = { 
+			667 = {
+				if = {
+					limit = {
+						NOT = { has_building = grand_shipyard }
+					}
+					if = {
+						limit = {
+							has_building = shipyard
+						}
+						remove_building = shipyard
+					}
+					add_building = grand_shipyard
+				}
+			}
+		}
+	}
+	flag_ship = {
+		icon = mission_launch_a_flagship
+		required_missions { imperial_naval_academy }
+		trigger = {
+			has_flagship = yes
+		}
+		effect = {
+			add_navy_tradition = 20
+		}
+	}
+	treasure_fleet = {
+		icon = mission_establish_high_seas_navy
+		required_missions { flag_ship }
+		trigger = { 
+			light_ship_fraction = 0.6
+		}
+		effect = {
+			add_mercantilism = 5
+		}
+	}
+}
+zhou_missions_3 = {
+	slot = 3 
+	generic = no
+	ai = yes
+	potential = {
+		tag = CZH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	strengthen_the_wall = {
+		icon = mission_conquer_50_development
+		required_missions { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 708
+				province_id = 2184
+				province_id = 699
+				province_id = 2181
+				province_id = 2179
+				province_id = 2177
+				province_id = 697
+				province_id = 2136
+				province_id = 1816
+				province_id = 4194
+				province_id = 4194
+				province_id = 704
+				province_id = 4652
+				province_id = 726
+				province_id = 2112
+				province_id = 2113
+			}
+		}
+			
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				OR = {
+					province_id = 708
+					province_id = 2184
+					province_id = 699
+					province_id = 2181
+					province_id = 2179
+					province_id = 2177
+					province_id = 697
+					province_id = 2136
+					province_id = 1816
+					province_id = 4194
+					province_id = 704
+					province_id = 4652
+					province_id = 726
+					province_id = 2112
+					province_id = 2113
+				}
+				fort_level = 4
+			}
+		}
+		effect = {
+			708 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			2184 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			699 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			2181 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			2179  = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			2177 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			697 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			2136 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			1816 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			4194 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			4194 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			704 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			4652 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			726 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			2112 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+			2113 = {
+				add_province_modifier = {
+					name = strengthen_the_wall
+					duration = -1
+				}
+			}
+		}
+	}
+	expand_the_west = {
+		icon = mission_unite_home_region
+		required_missions = { unification_of_china }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2135
+				province_id = 2134
+				province_id = 4204
+				province_id = 706
+				province_id = 705
+				province_id = 2133
+				province_id = 678
+				province_id = 2132
+				province_id = 2130
+				province_id = 4205
+				province_id = 4519
+				province_id = 677
+				province_id = 4517
+			}
+		}
+		trigger = {
+			owns_core_province = 2135
+			owns_core_province = 2134
+			owns_core_province = 4204
+			owns_core_province = 706
+			owns_core_province = 705
+			owns_core_province = 2133
+			owns_core_province = 678
+			owns_core_province = 2132
+			owns_core_province = 2130
+			owns_core_province = 4205
+			owns_core_province = 4519
+			owns_core_province = 677
+			owns_core_province = 4517
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = expand_the_west
+				duration = -1
+			}
+		}
+	}
+	further_into_the_west = {
+		icon = mission_unite_home_region
+		required_missions = { expand_the_west }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 711
+				province_id = 4693
+				province_id = 710
+				province_id = 2123
+				province_id = 2192
+				province_id = 2121
+				province_id = 712
+				province_id = 2122
+				province_id = 4207
+				province_id = 4206
+			}
+		}
+		trigger = {
+			owns_core_province = 711
+			owns_core_province = 4693
+			owns_core_province = 710
+			owns_core_province = 2123
+			owns_core_province = 2192
+			owns_core_province = 2121
+			owns_core_province = 712
+			owns_core_province = 2122
+			owns_core_province = 4207
+			owns_core_province = 4206
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = further_into_the_west
+				duration = -1
+			}
+		}
+	}
+	zhenjiang_drydock = { 
+		icon = mission_unite_home_region
+		required_missions = { protect_our_coast }
+		position = 5
+		provinces_to_highlight = {
+			province_id = 2145
+		}
+		trigger = { 
+			2145 = {
+				development = 30
+			}
+		}
+			effect = {
+				2145 = {
+					if = {
+						limit = {
+							NOT = { has_building = drydock }
+						}
+						if = {
+							limit = {
+								has_building = dock
+							}
+							remove_building = dock
+						}
+						add_building = drydock
+					}
+				}
+			}	
+	}
+}
+zhou_mission_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = CZH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	recover_the_temples = {
+		icon = mission_buddhist_monk_praying
+		required_missions { }
+		trigger {
+			num_of_owned_provinces_with = {
+				value = 40
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = recover_the_temples
+				duration = 36500
+			}
+		}
+	}
+
+	imperial_academy = {
+		icon = mission_early_modern_university
+		position = 2
+		required_missions = { revive_the_palace }
+		trigger = {
+			owns_core_province = 700
+			700 = {
+				development = 50
+			}
+		}
+		effect = {
+			700 = {
+				add_province_modifier = {
+					name = imperial_academy
+					duration = -1
+				}
+			}
+		}
+	}
+
+	filling_the_treasury = {
+		icon = mission_high_income
+		required_missions = { imperial_academy }
+		trigger = {
+			NOT = { num_of_loans = 1 }
+			treasury = 6000
+		}
+		effect = {
+			add_country_modifier = {
+				name = filling_the_treasury
+				duration = 7300
+			}
+		}
+	}
+}
+
+zhou_mission_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = CZH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	revive_the_palace = {
+		icon = mission_central_asian_city
+		required_missions { }
+		provinces_to_highlight = {
+			province_id = 700
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { development = 25 }
+				AND = {
+					has_dlc = "Dharma"
+					NOT = { province_has_center_of_trade_of_level = 3 }
+				}
+			}
+		}
+		trigger = {
+			owns_core_province = 700
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+				}
+				700 = {
+					province_has_center_of_trade_of_level = 3
+					development = 25
+				}
+			}
+			else = {
+				700 = {
+					development = 25
+				}
+			}
+		}
+		effect = {
+			700 = {
+				change_trade_goods = silk
+				add_province_modifier = {
+					name = revive_the_palace
+					duration = -1
+				}
+			}
+		}
+	}
+
+	lead_silk_trade = {
+		icon = mission_central_asian_city
+		required_missions { revive_the_palace }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 679
+				province_id = 1840
+				province_id = 684
+				province_id = 1822
+				province_id = 1821
+				province_id = 2143
+				province_id = 700
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				AND = {
+					ROOT = {
+						has_estate = estate_burghers
+					}
+					NOT = { has_estate = estate_burghers }
+				}
+			}
+		}
+		trigger = {
+			owns_core_province = 679
+			owns_core_province = 1840
+			owns_core_province = 684
+			owns_core_province = 1822
+			owns_core_province = 1821
+			owns_core_province = 2143
+			owns_core_province = 700
+			if = {
+				limit = {
+					has_estate = estate_burghers
+				}
+				679 = {
+					has_estate = estate_burghers
+				}
+				1840 = {
+					has_estate = estate_burghers
+				}
+				684 = {
+					has_estate = estate_burghers
+				}
+				1822 = {
+					has_estate = estate_burghers
+				}
+				1821 = {
+					has_estate = estate_burghers
+				}
+				2143 = {
+					has_estate = estate_burghers
+				}
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 80
+				}
+				estate_influence = {
+					estate = estate_burghers
+					influence = 70
+				}
+			}
+			else = {
+				mercantilism = 20
+			}
+		}
+		effect = {
+			679 = {
+				add_base_production = 3
+			}
+			1840 = {
+				add_base_production = 3
+			}
+			684 = {
+				add_base_production = 3
+			}
+			1822 = {
+				add_base_production = 3
+			}
+			1821 = {
+				add_base_production = 3
+			}
+			2143 = {
+				add_base_production = 3
+			}
+			700 = {
+				add_base_production = 3
+			}
+		}
+	}
+
+	zhou_industry = {
+		icon = mission_industria_sedera
+		required_missions = { lead_silk_trade }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 40
+				has_manufactory_trigger = yes
+			}
+			production_leader = {
+				trade_goods = silk
+				value = yes
+			}
+			production_leader = {
+				trade_goods = tea
+				value = yes
+			}
+			production_leader = {
+				trade_goods = chinaware
+				value = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = zhou_industry
+				duration = 7300
+			}
+			add_years_of_income = 2.0
+		}
+	}
+}
