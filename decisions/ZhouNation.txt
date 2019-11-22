@@ -7,6 +7,24 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_zhou_flag }
 			NOT = { exists = CZH }
+			OR = {
+				tag = CHC
+				tag = CMI
+				tag = CSH
+				tag = CXI
+				tag = FRM
+				tag = HUA
+				tag = JIN
+				tag = LNG
+				tag = MIN
+				tag = MNG
+				tag = NNG
+				tag = QIC
+				tag = SHU
+				tag = WUU
+				tag = YAN
+				tag = YUE
+			}
 			OR = {  
 				primary_culture = chihan
 				primary_culture = miao
