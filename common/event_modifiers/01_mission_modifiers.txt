@@ -22,11 +22,11 @@ conquer_korea = {
 }
 
 expand_the_west = {
-	trade_steering = 0.1
+	caravan_power = 0.1
 }
 
 further_into_the_west = {
-	caravan_power = 0.1
+	trade_steering = 0.1
 	merchants = 1
 }
 
