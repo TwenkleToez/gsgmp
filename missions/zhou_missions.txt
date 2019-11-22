@@ -106,7 +106,7 @@ zhou_missions = {
 		effect = {
 			add_country_modifier = {
 				name = move_toward_the_east 
-				duration = 36500
+				duration = 18250
 			}
 		}
 	}
@@ -168,6 +168,7 @@ zhou_missions_2 = {
 	has_country_shield = yes
 
 	secure_the_red_river = {
+		position = 2
 		icon = mission_unite_home_region
 		required_missions = { unification_of_china }
 		provinces_to_highlight = {
@@ -205,7 +206,7 @@ zhou_missions_2 = {
 		}
 	}
 	protect_our_coast = {
-		position = 4
+		position = 3
 		icon = mission_establish_high_seas_navy
 		required_missions { }
 		trigger = {
@@ -227,7 +228,7 @@ zhou_missions_2 = {
 	zhenjiang_drydock = { 
 		icon = mission_establish_high_seas_navy
 		required_missions = { protect_our_coast }
-		position = 5
+		position = 4
 		provinces_to_highlight = {
 			province_id = 2145
 		}
@@ -246,8 +247,9 @@ zhou_missions_2 = {
 			}	
 	}
 	flag_ship = {
+		position = 5
 		icon = mission_launch_a_flagship
-		required_missions { imperial_naval_academy }
+		required_missions { zhenjiang_drydock }
 		trigger = {
 			has_flagship = yes
 		}
@@ -256,6 +258,7 @@ zhou_missions_2 = {
 		}
 	}
 	treasure_fleet = {
+		position = 6
 		icon = mission_establish_high_seas_navy
 		required_missions { flag_ship }
 		trigger = { 
@@ -661,11 +664,11 @@ zhou_mission_5 = {
 				}
 				estate_loyalty = {
 					estate = estate_burghers
-					loyalty = 80
+					loyalty = 75
 				}
 				estate_influence = {
 					estate = estate_burghers
-					influence = 70
+					influence = 75
 				}
 			}
 			else = {
