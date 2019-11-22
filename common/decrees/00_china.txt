@@ -7,7 +7,6 @@ expand_bureaucracy_decree = {
 	duration = 1825
 	modifier = {
 		development_cost = -0.1
-		core_creation = -0.1
 	}
 	ai_will_do = {
 		factor = 100
@@ -18,7 +17,7 @@ conduct_census_decree = {
 	cost = 10
 	duration = 1825
 	modifier = {
-		global_tax_modifier = 0.25
+		global_tax_modifier = 0.2
 	}
 	ai_will_do = {
 		factor = 100
@@ -61,7 +60,7 @@ promote_naval_officers_decree = {
 	cost = 10
 	duration = 1825
 	modifier = {
-		ship_durability = 0.2
+		ship_durability = 0.1
 	}
 	ai_will_do = {
 		factor = 50
@@ -76,7 +75,7 @@ increase_tariff_control_decree = {
 	cost = 10
 	duration = 1825
 	modifier = {
-		global_prov_trade_power_modifier = 0.25
+		global_prov_trade_power_modifier = 0.2
 	}
 	ai_will_do = {
 		factor = 100
@@ -119,7 +118,7 @@ improve_defence_effort_decree = {
 	cost = 10
 	duration = 1825
 	modifier = {
-		defensiveness = 0.25
+		defensiveness = 0.2
 	}
 	ai_will_do = {
 		factor = 50
