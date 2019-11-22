@@ -167,31 +167,6 @@ zhou_missions_2 = {
 	}
 	has_country_shield = yes
 
-	imperial_palace = {
-		icon = mission_unite_home_region
-		required_missions = { }
-		provinces_to_highlight = {
-			province_id = 1816
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { base_manpower = 15 }
-			}
-		}
-		trigger = {
-			owns = 1816
-			1816 = {
-				base_manpower = 15
-			}
-		}
-		effect = {
-			1816 = {
-				add_province_modifier = {
-					name = imperial_palace
-					duration = -1
-				}
-			}
-		}
-	}
 	secure_the_red_river = {
 		icon = mission_unite_home_region
 		required_missions = { unification_of_china }
