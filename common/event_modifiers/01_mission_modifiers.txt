@@ -6,22 +6,28 @@ chinese_peoples_united = {
     max_states = 5
     imperial_mandate = 0.1
 }
+
 expand_the_northern_frontier = {
 	cavalry_power = 0.05
-	cavalry_cost = -0.15
+	cavalry_cost = -0.10
 }
+
 move_toward_the_east  = {
 	global_regiment_cost = -0.1
 }
+
 conquer_korea = {
 	power = 25
 	key = indian_ocean_ambition
 }
+
 expand_the_west = {
-	trade_steering = 0.2
+	trade_steering = 0.1
 }
+
 further_into_the_west = {
 	caravan_power = 0.1
+	merchants = 1
 }
 
 secure_the_red_river = {
@@ -45,7 +51,6 @@ protect_our_coast = {
 	global_sailors_modifier = 0.2
 	naval_forcelimit_modifier = 0.2
 }
-
 
 recover_the_temples = {
 	yearly_harmony = 1
