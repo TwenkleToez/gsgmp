@@ -2,7 +2,12 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
-ming_great_wall  = {
+zhenjiang_drydock = {
+	local_sailors_modifier = 2.5
+	naval_forcelimit = 10
+}
+
+ming_great_wall = {
 	local_defensiveness = 0.25
 	local_hostile_movement_speed = 0.25
 }
