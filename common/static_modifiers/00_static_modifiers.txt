@@ -593,25 +593,25 @@ positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
 }
 
 negative_mandate = { # By default, starts at 50 mandate, 100% strength at 0 mandate
-	global_trade_goods_size_modifier = -0.5
-	fire_damage_received = 0.5
-	shock_damage_received = 0.5
-	global_unrest = 5
-	possible_mercenaries = -2
-	global_manpower_modifier = -0.5
+	global_trade_goods_size_modifier = -0.25
+	fire_damage_received = 0.25
+	shock_damage_received = 0.25
+	global_unrest = 2.5
+	possible_mercenaries = -1
+	global_manpower_modifier = -0.25
 }
 
 lost_mandate_of_heaven = {
-	discipline = -0.1
-	stability_cost_modifier = 0.5
-	global_unrest = 10
-	global_trade_goods_size_modifier = -0.5
-	fire_damage_received = 0.5
-	shock_damage_received = 0.5
-	reduced_liberty_desire = -50
-	legitimacy = -1
-	possible_mercenaries = -2
-	global_manpower_modifier = -0.5
+	discipline = -0.05
+	stability_cost_modifier = 0.25
+	global_unrest = 5
+	global_trade_goods_size_modifier = -0.25
+	fire_damage_received = 0.25
+	shock_damage_received = 0.25
+	reduced_liberty_desire = -25
+	legitimacy = -0.5
+	possible_mercenaries = -1
+	global_manpower_modifier = -0.25
 }
 
 cancelled_loan = {
