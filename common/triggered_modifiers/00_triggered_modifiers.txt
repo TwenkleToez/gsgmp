@@ -3,6 +3,38 @@
 #
 # Effects are fully scriptable here.
 
+######################################
+# Defender of the Northern Frontier
+######################################
+
+def_north_front = {
+	potential = {
+		NOT = {
+			is_year = 1480
+		}
+		culture_group = east_asian
+		NOT = {
+			culture = manchu_new
+		}
+	}
+
+	trigger = {
+		any_country = {
+			has_reform = steppe_horde
+			war_with = ROOT
+			war_score_against = {
+				who = ROOT
+				value = 10
+			}
+		}
+	}
+
+	global_manpower_modifier = 0.3
+	global_tax_modifier = 0.1
+	land_morale = 0.10
+	prestige = 1
+}
+
 ###########################################
 # Meritocracy.
 ###########################################
