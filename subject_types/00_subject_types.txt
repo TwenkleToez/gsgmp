@@ -450,6 +450,7 @@ colony = {
 	start_colonial_war = yes
 	increase_tariffs = yes
 	decrease_tariffs = yes
+	replace_governor = no
 
 	# Modifiers:
 	modifier_overlord = {
