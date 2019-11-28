@@ -25,18 +25,6 @@ colonial_limiter = {
 	global_colonial_growth = -25
 }
 
-low_repubtrad = {
-	potential = {
-		is_colonial_nation = yes
-	}
-	trigger = {
-		NOT = {
-			republican_tradition = 30
-		}
-	}
-	all_power_cost = 0.15
-}
-
 cn_army = {
 	potential = {
 		is_colonial_nation = yes
