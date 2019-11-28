@@ -88,7 +88,7 @@ allianceaction = {
 						ROOT = {
 							religion_group = muslim
 						}
-						NOT = { is_year  = 1610 }
+						NOT = { is_year  = 1550 }
 					}
 					AND = {					
 						FROM = {
@@ -100,7 +100,7 @@ allianceaction = {
 								NOT = { religion = coptic }
 							}
 						}
-						NOT = ( is_year = 1610 )
+						NOT = ( is_year = 1550 )
 					}
 				}
 			}
