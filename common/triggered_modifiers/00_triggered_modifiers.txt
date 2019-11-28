@@ -54,7 +54,7 @@ cn_navy = {
 # Defender of China
 ######################################
 
-def_north_front = {
+def_china = {
 	potential = {
 		NOT = {
 			is_year = 1500
