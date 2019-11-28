@@ -4,5 +4,6 @@ tags={
 	"Balance"
 }
 name="GSG MP"
-picture = "gsgmp.png"
 path="C:/Users/Sam/Documents/Paradox Interactive/Europa Universalis IV/mod/gsgmp"
+picture="gsgmp.png"
+remote_file_id="1917183794"
