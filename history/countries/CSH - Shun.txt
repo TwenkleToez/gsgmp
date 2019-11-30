@@ -11,7 +11,7 @@ add_harmonized_religion = vajrayana
 	monarch = {
 		name = "Li"
 		dynasty = "Shun"
-		adm = 2
+		adm = 3
 		dip = 2
 		mil = 3
 	}

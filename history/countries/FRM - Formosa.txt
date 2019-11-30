@@ -13,7 +13,7 @@ add_harmonized_religion = animism
 		name = "Koxinga"
 		dynasty = "Zheng"
 		adm = 4
-		dip = 3
+		dip = 4
 		mil = 5
 	}
 }

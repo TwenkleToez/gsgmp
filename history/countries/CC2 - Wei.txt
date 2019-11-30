@@ -10,7 +10,7 @@ capital = 726
 	monarch = {
 		name = "Shen"
 		dynasty = "Wei"
-		adm = 3
+		adm = 4
 		dip = 3
 		mil = 4
 	}

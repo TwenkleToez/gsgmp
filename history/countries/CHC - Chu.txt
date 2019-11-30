@@ -13,6 +13,6 @@ add_harmonized_religion = animism
 		dynasty = "Chu"
 		adm = 4
 		dip = 3
-		mil = 4
+		mil = 5
 	}
 }

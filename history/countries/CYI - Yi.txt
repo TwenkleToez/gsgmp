@@ -10,7 +10,7 @@ capital = 675	# Umung
 		name = "Ji"
 		dynasty = "Yi"
 		adm = 3
-		dip = 2
-		mil = 3
+		dip = 3
+		mil = 4
 	}
 }

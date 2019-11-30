@@ -11,7 +11,7 @@ add_harmonized_religion = mahayana
 		name = "Yu"
 		dynasty = "Shu"
 		adm = 3
-		dip = 2
-		mil = 3
+		dip = 3
+		mil = 4
 	}
 }

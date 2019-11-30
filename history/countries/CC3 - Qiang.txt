@@ -9,8 +9,8 @@ capital = 2170
 	monarch = {
 		name = "Pang"
 		dynasty = "Qiang"
-		adm = 4
+		adm = 5
 		dip = 4
-		mil = 5
+		mil = 6
 	}
 }

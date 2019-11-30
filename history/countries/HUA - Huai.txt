@@ -10,8 +10,8 @@ add_harmonized_religion = mahayana
 	monarch = {
 		name = "Liu"
 		dynasty = "Huai"
-		adm = 3
+		adm = 4
 		dip = 3
-		mil = 4
+		mil = 5
 	}
 }

@@ -11,7 +11,7 @@ add_harmonized_religion = mahayana
 		name = "Bao"
 		dynasty = "Wu"
 		adm = 2
-		dip = 1
+		dip = 2
 		mil = 2
 	}
 }

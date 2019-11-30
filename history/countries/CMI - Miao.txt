@@ -11,8 +11,8 @@ add_harmonized_religion = animism
 	monarch = {
 		name = "Bai"
 		dynasty = "Miao"
-		adm = 4
-		dip = 3
+		adm = 5
+		dip = 4
 		mil = 5
 	}
 }
