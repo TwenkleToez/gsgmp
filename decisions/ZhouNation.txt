@@ -80,22 +80,24 @@ country_decisions = {
 			is_nomad = no
 			is_at_war = no
 			is_emperor = no
+			has_reform = celestial_empire
 			owns_core_province = 1816
 			owns_core_province = 700
 			owns_core_province = 1821
 			owns_core_province = 679
 			owns_core_province = 667
-			owns_core_province = 693
-			owns_core_province = 689
-			owns_core_province = 690
-			owns_core_province = 688
-			owns_core_province = 684
-			owns_core_province = 1829
-			owns_core_province = 2158
-			owns_core_province = 671
-			owns_core_province = 2173
-			owns_core_province = 683
-			owns_core_province = 2171
+			num_of_owned_provinces_with = {
+				value = 28
+				region = north_china_region
+			}
+			num_of_owned_provinces_with = {
+				value = 31
+				region = south_china_region
+			}
+			num_of_owned_provinces_with = {
+				value = 13
+				region = xinan_region
+			}
 		}
 		effect = {
 			change_tag = CZH
