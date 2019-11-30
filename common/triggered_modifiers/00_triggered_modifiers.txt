@@ -12,7 +12,7 @@ colonial_limiter = {
 		is_colonial_nation = yes
 	}
 	trigger = {
-		is_year = 1444
+		is_colonial_nation = yes
 	}
 	naval_forcelimit_modifier = -0.25 
 	land_forcelimit_modifier = -0.25
@@ -30,7 +30,7 @@ cn_army = {
 		is_colonial_nation = yes
 	}
 	trigger = {
-		is_year = 1444
+		is_colonial_nation = yes
 	}
 	reinforce_cost_modifier = 0.25
 	reinforce_speed = -0.5
@@ -42,7 +42,7 @@ cn_navy = {
 		is_colonial_nation = yes
 	}
 	trigger = {
-		is_year = 1444
+		is_colonial_nation = yes
 	}
 	sailor_maintenance_modifer = 0.5
 	global_ship_recruit_speed = 0.5
@@ -67,11 +67,11 @@ def_china = {
 
 	trigger = {
 		any_country = {
-			NOT = {
-				culture_group = east_asian
+			OR = {
 				NOT = {
-					culture = manchu_new
+					culture_group = east_asian
 				}
+				culture = manchu_new
 			}
 			offensive_war_with = ROOT
 			war_score_against = {
@@ -94,12 +94,10 @@ def_china = {
 
 meritocracy_buffer_1 = {
 	potential = {
-		has_reform = celestial_empire
 		has_dlc = "Mandate of Heaven"
 		NOT = {
 			is_year = 1500
 		}
-		is_year = 1444
 		culture_group = east_asian
 		NOT = {
 			culture = manchu_new
@@ -107,7 +105,10 @@ meritocracy_buffer_1 = {
 	}
 	
 	trigger = {
-		is_year = 1444
+		NOT = {
+			is_year = 1500
+		}
+		has_reform = celestial_empire
 	}
 	
 	meritocracy = 1.5
@@ -115,7 +116,6 @@ meritocracy_buffer_1 = {
 
 meritocracy_buffer_2 = {
 	potential = {
-		has_reform = celestial_empire
 		has_dlc = "Mandate of Heaven"
 		NOT = {
 			is_year = 1550
@@ -128,7 +128,10 @@ meritocracy_buffer_2 = {
 	}
 	
 	trigger = {
-		is_year = 1500
+		NOT = {
+			is_year = 1550
+		}
+		has_reform = celestial_empire
 	}
 	
 	meritocracy = 1.0
@@ -136,7 +139,6 @@ meritocracy_buffer_2 = {
 
 meritocracy_buffer_3 = {
 	potential = {
-		has_reform = celestial_empire
 		has_dlc = "Mandate of Heaven"
 		NOT = {
 			is_year = 1600
@@ -149,7 +151,10 @@ meritocracy_buffer_3 = {
 	}
 	
 	trigger = {
-		is_year = 1550
+		NOT = {
+			is_year = 1600
+		}
+		has_reform = celestial_empire
 	}
 	
 	meritocracy = 0.5
@@ -171,7 +176,9 @@ warring_states = {
 	}
 	
 	trigger = {
-		is_year = 1444
+		NOT = {
+			is_year = 1500
+		}
 	}
 	
 	years_of_nationalism = -10
