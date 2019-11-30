@@ -40,7 +40,6 @@ zhou_missions = {
 			}
 		}
 	}
-
 	expand_the_northern_frontier = {
 		icon = mission_unite_home_region
 		required_missions = { unification_of_china }
@@ -166,7 +165,6 @@ zhou_missions_2 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
 	secure_the_red_river = {
 		position = 2
 		icon = mission_unite_home_region
@@ -237,14 +235,14 @@ zhou_missions_2 = {
 				development = 30
 			}
 		}
-			effect = {
-				2145 = {
-					add_permanent_province_modifier = {
-						name = zhenjiang_drydock
-						duration = -1
-					}
+		effect = {
+			2145 = {
+				add_permanent_province_modifier = {
+					name = zhenjiang_drydock
+					duration = -1
 				}
-			}	
+			}
+		}	
 	}
 	flag_ship = {
 		position = 5
@@ -278,7 +276,6 @@ zhou_missions_3 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
 	strengthen_the_wall = {
 		icon = mission_conquer_50_development
 		required_missions { }
@@ -300,7 +297,6 @@ zhou_missions_3 = {
 				province_id = 2112
 			}
 		}
-			
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 14
@@ -498,7 +494,6 @@ zhou_mission_4 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
 	recover_the_temples = {
 		icon = mission_buddhist_monk_praying
 		required_missions { }
@@ -518,7 +513,6 @@ zhou_mission_4 = {
 			}
 		}
 	}
-
 	imperial_academy = {
 		icon = mission_early_modern_university
 		position = 2
@@ -538,7 +532,6 @@ zhou_mission_4 = {
 			}
 		}
 	}
-
 	filling_the_treasury = {
 		icon = mission_high_income
 		required_missions = { imperial_academy }
@@ -554,7 +547,6 @@ zhou_mission_4 = {
 		}
 	}
 }
-
 zhou_mission_5 = {
 	slot = 5
 	generic = no
@@ -564,7 +556,6 @@ zhou_mission_5 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
 	revive_the_palace = {
 		icon = mission_central_asian_city
 		required_missions { }
@@ -607,7 +598,6 @@ zhou_mission_5 = {
 			}
 		}
 	}
-
 	lead_silk_trade = {
 		icon = mission_central_asian_city
 		required_missions { revive_the_palace }
@@ -699,7 +689,6 @@ zhou_mission_5 = {
 			}
 		}
 	}
-
 	zhou_industry = {
 		icon = mission_industria_sedera
 		required_missions = { lead_silk_trade }
