@@ -22,7 +22,7 @@ conquer_korea = {
 }
 
 expand_the_west = {
-	caravan_power = 0.1
+	culture_conversion_cost = -0.25
 }
 
 further_into_the_west = {
