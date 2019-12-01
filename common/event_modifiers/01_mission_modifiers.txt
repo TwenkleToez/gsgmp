@@ -2,28 +2,35 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 #GSG_MP_MISSION_MODIFIERS
+
 chinese_peoples_united = {
     max_states = 5
     imperial_mandate = 0.1
 }
+
 expand_the_northern_frontier = {
 	cavalry_power = 0.05
-	cavalry_cost = -0.15
+	cavalry_cost = -0.10
 }
 
 move_toward_the_east  = {
 	global_regiment_cost = -0.1
 }
+
 conquer_korea = {
 	power = 25
 	key = indian_ocean_ambition
 }
+
 expand_the_west = {
-	trade_steering = 0.2
+	culture_conversion_cost = -0.25
 }
+
 further_into_the_west = {
-	caravan_power = 0.1
+	trade_steering = 0.1
+	merchants = 1
 }
+
 secure_the_red_river = {
     global_trade_power = 0.1
 }
@@ -35,9 +42,6 @@ filling_the_treasury = {
 
 imperial_academy = {
 	innovativeness_gain = 0.5
-}
-
-imperial_palace = {
 	army_tradition = 0.3
 }
 
@@ -45,6 +49,7 @@ protect_our_coast = {
 	global_sailors_modifier = 0.2
 	naval_forcelimit_modifier = 0.2
 }
+
 recover_the_temples = {
 	yearly_harmony = 1
 }
@@ -61,7 +66,9 @@ strengthen_the_wall = {
 zhou_industry = {
 	production_efficiency = 0.2
 }
+
 #CHINA_MODIFIERS
+
 northern_china_rdy = {
 	land_morale = 0.05
 	manpower_recovery_speed = 0.1
