@@ -4,8 +4,8 @@
 #GSG_MP_MISSION_MODIFIERS
 
 chinese_peoples_united = {
-    max_states = 5
-    imperial_mandate = 0.1
+	max_states = 5
+	imperial_mandate = 0.1
 }
 
 expand_the_northern_frontier = {
@@ -32,7 +32,7 @@ further_into_the_west = {
 }
 
 secure_the_red_river = {
-    global_trade_power = 0.1
+	global_trade_power = 0.1
 }
 
 filling_the_treasury = {
