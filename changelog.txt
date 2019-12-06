@@ -1,7 +1,14 @@
 China:
-* Ming is split between 21 different nations
-* Taiwan is united in 1444 at be the 22nd nation in the region
-* Chinese ideas have been buffed
-* Mandate has been improved and made easier to hold onto
-* Oirat nerfed, reduce ruler mil, reduced general shock, mongolia independent in 1444
-* Zhou formable with it's own ideas and missions for Chinese nations
+* Ming is split between 21 different nations, 14 of which can form Zhou
+* Taiwan is united in 1444 at be the 22nd nation in the region, Taiwan can also form Zhou
+* Chinese Group ideas have been buffed
+* Added missions unqiue to reach region of China
+* Mandate has been improved and made easier to hold onto, as well as early game Meritocracy
+* Oirat nerfed, reduce ruler mil, reduced general shock, Mongolia independent in 1444
+* Zhou formable with its own ideas and missions for Chinese nations
+* Restructured East Asian trade node pathing
+Mercenaries:
+* Base Mercenary limit has been reduced from 20+30% of land FL, to 10+15% of land FL.
+Colonial Nations:
+* Colonies receive nerfs from being a colonial subject nation.
+* These include nerfs to dev cost, FL, manpower, sailors, unit costs, ship build time, reinforce speed, global settlers, available mercs, sailor maintenance, and naval maintenance
