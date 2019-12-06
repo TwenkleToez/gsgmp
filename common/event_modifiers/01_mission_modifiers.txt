@@ -61,6 +61,7 @@ revive_the_palace = {
 
 strengthen_the_wall = {
 	local_defensiveness = 0.25
+	local_hostile_movement_speed = 0.25
 }
 
 zhou_industry = {
@@ -69,22 +70,45 @@ zhou_industry = {
 
 #CHINA_MODIFIERS
 
-northern_china_rdy = {
+north_china_expan = {
 	land_morale = 0.05
 	manpower_recovery_speed = 0.1
 }
-northern_china_missions_2 = {
-	local_development_cost = -0.1
+
+north_disc = {
 	discipline = 0.03
 }
-southern_china_rdy = {
+
+north_cap = {
+	local_development_cost = -0.1
+}
+
+south_china_expan = {
 	land_morale = 0.05
 	manpower_recovery_speed = 0.1
 }
-southern_china_missions_2 = {
-	local_development_cost = -0.1
+
+south_disc = {
 	discipline = 0.03
 }
+
+south_cap = {
+	local_development_cost = -0.1
+}
+
+xinan_expan = {
+	land_morale = 0.05
+	manpower_recovery_speed = 0.1
+}
+
+xinan_disc = {
+	discipline = 0.03
+}
+
+xinan_cap = {
+	local_development_cost = -0.1
+}
+
 #Generic Military Mission Rewards:
 
 thriving_arms_industry = {
