@@ -5,6 +5,7 @@ religion = tengri_pagan_reformed
 secondary_religion = vajrayana
 primary_culture = mongol
 capital = 702
+government_rank = 1
 
 1440.11.11 = {
 	monarch = {

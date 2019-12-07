@@ -5,6 +5,7 @@ religion = tengri_pagan_reformed
 secondary_religion = confucianism
 primary_culture = manchu
 capital = 726
+government_rank = 1
 
 1440.11.11 = {
 	monarch = {

@@ -4,6 +4,7 @@ technology_group = chinese
 religion = vajrayana
 primary_culture = tibetan
 capital = 2170
+government_rank = 1
 
 1440.11.11 = {
 	monarch = {
