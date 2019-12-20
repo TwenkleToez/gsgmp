@@ -55,7 +55,7 @@ recover_the_temples = {
 }
 
 revive_the_palace = {
-	development_cost = -0.2
+	local_development_cost = -0.2
 	province_trade_power_modifier = 0.2
 }
 
