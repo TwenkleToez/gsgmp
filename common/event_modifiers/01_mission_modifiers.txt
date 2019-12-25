@@ -23,7 +23,7 @@ conquer_korea = {
 }
 
 expand_the_west = {
-	culture_conversion_cost = -0.25
+	culture_conversion_cost = -0.2
 }
 
 further_into_the_west = {
@@ -60,8 +60,8 @@ revive_the_palace = {
 }
 
 strengthen_the_wall = {
-	local_defensiveness = 0.25
-	local_hostile_movement_speed = 0.25
+	local_defensiveness = 0.15
+	local_hostile_movement_speed = 0.15
 }
 
 zhou_industry = {
