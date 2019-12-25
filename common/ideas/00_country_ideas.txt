@@ -858,7 +858,7 @@ BUR_Ideas = {
 		merc_maintenance_modifier = -0.15
 	}
 	bur_estates_general = {
-		possible_mercenaries = 0.5
+		possible_mercenaries = 0.3
 	}
 	reform_of_feudal_army = {
 		discipline = 0.05
@@ -1357,7 +1357,7 @@ VIJ_ideas = {
 	}
 	
 	bonus = {
-		possible_mercenaries = 0.5
+		possible_mercenaries = 0.3
 	}
 	
 	trigger = {
@@ -11298,7 +11298,7 @@ TRY_ideas = {
 		advisor_pool = 1
 	}
 	try_scottish_ties = {
-		possible_mercenaries = 0.5 # maybe something else. infantry cost?
+		possible_mercenaries = 0.3 # maybe something else. infantry cost?
 	}
 }
 
