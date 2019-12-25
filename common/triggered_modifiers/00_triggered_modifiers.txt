@@ -16,7 +16,7 @@ colonial_limiter = {
 	}
 	naval_forcelimit_modifier = -0.25 
 	land_forcelimit_modifier = -0.25
-	possible_mercenaries = -0.5
+	possible_mercenaries = -0.3
 	development_cost = 0.15
 	manpower_recovery_speed = -0.25
 	sailors_recovery_speed = -0.25
@@ -33,8 +33,10 @@ cn_army = {
 		is_colonial_nation = yes
 	}
 	reinforce_cost_modifier = 0.25
-	reinforce_speed = -0.5
+	global_regiment_recruit_speed = 0.33
+	reinforce_speed = -0.33
 	global_regiment_cost = 0.25
+	land_maintenance_modifier = 0.25
 }
 
 cn_navy = {
@@ -44,8 +46,9 @@ cn_navy = {
 	trigger = {
 		is_colonial_nation = yes
 	}
-	sailor_maintenance_modifer = 0.5
-	global_ship_recruit_speed = 0.5
+	sailor_maintenance_modifer = 0.25
+	global_ship_recruit_speed = 0.33
+	global_ship_repair = -0.33
 	global_ship_cost = 0.25
 	naval_maintenance_modifier = 0.25
 }
