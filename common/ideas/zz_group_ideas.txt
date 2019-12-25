@@ -55,7 +55,7 @@ colonial_ideas = {
 	free = yes
 	
 	founding_fathers = {
-		republican_tradition = 0.5
+		republican_tradition = 0.3
 	}
 	continental_trade = {
 		global_prov_trade_power_modifier = 0.25
