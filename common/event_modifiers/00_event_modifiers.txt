@@ -8,8 +8,8 @@ zhenjiang_drydock = {
 }
 
 ming_great_wall = {
-	local_defensiveness = 0.25
-	local_hostile_movement_speed = 0.25
+	local_defensiveness = 0.15
+	local_hostile_movement_speed = 0.15
 }
 
 ming_falling = {
@@ -2274,7 +2274,7 @@ swedish_military_reforms = {
 
 swedish_mercenary_core = {
 	merc_maintenance_modifier = -0.1
-	possible_mercenaries = 0.5
+	possible_mercenaries = 0.3
 }
 
 swedish_naval_reforms = {
@@ -3786,7 +3786,7 @@ diplo_fuax_pas = {
 }
 
 mercenaries_to_the_standard = {
-	possible_mercenaries = 0.5
+	possible_mercenaries = 0.3
 }
 
 for_freedom = {
@@ -3872,7 +3872,7 @@ trust_from_mercs = {
 }
 
 glut_of_mercs = {
-	possible_mercenaries = 0.5
+	possible_mercenaries = 0.3
 }
 
 generous_terms = {
