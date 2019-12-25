@@ -525,7 +525,7 @@ zhou_mission_4 = {
 		}
 		effect = {
 			700 = {
-				add_province_modifier = {
+				add_country_modifier = {
 					name = imperial_academy
 					duration = -1
 				}
