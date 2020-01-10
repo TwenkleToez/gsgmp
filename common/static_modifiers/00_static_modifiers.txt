@@ -132,7 +132,7 @@ non_coastal = {
 }
 
 coastal_sea = {
-	local_naval_engagement_modifier = 0.10
+	local_naval_engagement_modifier = 0.3
 }
 
 tropical = {
