@@ -1155,7 +1155,7 @@ NMilitary = {
 	SELECT_BUILD_PROVINCE_WEIGHT_TIME = 50.0,
 	ADMIRAL_BLOCKADE_BONUS_PER_SIEGE_PIP = 0.1,
 	NAVAL_TARGET_SELECT_ITERATIONS = 12,   		-- ( Was positioning * 20, 12 would represent old positioning = 0.6)
-	NAVAL_BASE_ENGAGEMENT_WIDTH = 25,   		-- Number of ships that can fire per round
+	NAVAL_BASE_ENGAGEMENT_WIDTH = 10,   		-- Number of ships that can fire per round
 	HEAVY_SHIP_COMBAT_WIDTH = 3,
 	LIGHT_SHIP_COMBAT_WIDTH = 1,
 	GALLEY_COMBAT_WIDTH = 1,
