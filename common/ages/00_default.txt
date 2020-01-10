@@ -725,7 +725,7 @@ age_of_revolutions = {
 		}
 		ab_more_ships_can_fire = {
 			modifier = {
-				global_naval_engagement_modifier = 0.20
+				global_naval_engagement_modifier = 0.3
 			}
 			ai_will_do = {
 				factor = 10
