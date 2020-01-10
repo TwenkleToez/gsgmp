@@ -1226,7 +1226,7 @@ trained_marines_act = {
 		full_idea_group = maritime_ideas
 	}
 	
-	naval_morale = 0.2
+	naval_morale = 0.15
 
 	ai_will_do = {
 		factor = 1
