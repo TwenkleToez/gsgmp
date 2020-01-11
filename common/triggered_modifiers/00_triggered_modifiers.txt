@@ -4,6 +4,21 @@
 # Effects are fully scriptable here.
 
 ###########################################
+# Western Colonizer
+###########################################
+
+western_colonizer = {
+	potential = {
+		technology_group = western
+	}
+	trigger = {
+		total_development = 250
+		has_institution = new_world_i 
+	}
+	colonists = 1
+}
+
+###########################################
 # CN Limiters
 ###########################################
 
