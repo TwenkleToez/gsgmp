@@ -750,6 +750,13 @@ expansion_ideas = {
  		cb_on_overseas = yes
  		max_states = 5
 	}
+	
+	trigger = {
+		OR = {
+			technology_group = western
+			adm_tech = 7
+		}
+	}
 
 	additional_colonists = {
 		colonists = 1
