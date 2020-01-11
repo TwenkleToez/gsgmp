@@ -14,3 +14,8 @@ Colonial Nations:
 * These include nerfs to dev cost, FL, manpower, sailors, unit costs, ship build time, reinforce speed, global settlers, available mercs, sailor maintenance, and naval maintenance
 Centers of Trade
 * Level 3 centers now also give -10% province dev cost on top of the -10% state dev cost in order to be objectively better than level 2s
+Navy:
+* Base Naval Engagement is 30
+* Admiral Maneuver Pips are worth 1 naval width
+* Polices and ideas each give 3
+* 

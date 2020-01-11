@@ -77,23 +77,89 @@ def_china = {
 		NOT = {
 			is_year = 1500
 		}
-		culture_group = east_asian
-		NOT = {
-			culture = manchu_new
+		OR = {
+			tag = CHC
+			tag = CMI
+			tag = CSH
+			tag = CXI
+			tag = FRM
+			tag = HUA
+			tag = JIN
+			tag = LNG
+			tag = MIN
+			tag = NNG
+			tag = QIC
+			tag = SHU
+			tag = WUU
+			tag = YAN
+			tag = YUE
+			tag = MNG
 		}
 	}
 
 	trigger = {
 		any_country = {
-			OR = {
-				NOT = {
-					culture_group = east_asian
+			NOT = {
+				OR = {
+					tag = CHC
+					tag = CMI
+					tag = CSH
+					tag = CXI
+					tag = FRM
+					tag = HUA
+					tag = JIN
+					tag = LNG
+					tag = MIN
+					tag = NNG
+					tag = QIC
+					tag = SHU
+					tag = WUU
+					tag = YAN
+					tag = YUE
+					tag = MNG
 				}
-				culture = manchu_new
 			}
-			offensive_war_with = ROOT
+			offensive_war_with = {
+				OR = {
+					tag = CHC
+					tag = CMI
+					tag = CSH
+					tag = CXI
+					tag = FRM
+					tag = HUA
+					tag = JIN
+					tag = LNG
+					tag = MIN
+					tag = NNG
+					tag = QIC
+					tag = SHU
+					tag = WUU
+					tag = YAN
+					tag = YUE
+					tag = MNG
+				}
+			}
 			war_score_against = {
-				who = ROOT
+				who = {
+					OR = {
+						tag = CHC
+						tag = CMI
+						tag = CSH
+						tag = CXI
+						tag = FRM
+						tag = HUA
+						tag = JIN
+						tag = LNG
+						tag = MIN
+						tag = NNG
+						tag = QIC
+						tag = SHU
+						tag = WUU
+						tag = YAN
+						tag = YUE
+						tag = MNG
+					}
+				}
 				value = 5
 			}
 		}
@@ -187,9 +253,23 @@ warring_states = {
 		NOT = {
 			is_year = 1500
 		}
-		culture_group = east_asian
-		NOT = {
-			culture = manchu_new
+		OR = {
+			tag = CHC
+			tag = CMI
+			tag = CSH
+			tag = CXI
+			tag = FRM
+			tag = HUA
+			tag = JIN
+			tag = LNG
+			tag = MIN
+			tag = NNG
+			tag = QIC
+			tag = SHU
+			tag = WUU
+			tag = YAN
+			tag = YUE
+			tag = MNG
 		}
 	}
 	
