@@ -104,7 +104,7 @@ zhou_missions = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = move_toward_the_east 
+				name = move_toward_the_east
 				duration = 18250
 			}
 		}
@@ -632,25 +632,46 @@ zhou_mission_5 = {
 			owns_core_province = 700
 			if = {
 				limit = {
-					has_estate = estate_burghers
+					OR = {
+						has_estate = estate_burghers
+						has_parliament = yes
+					}
 				}
 				679 = {
-					has_estate = estate_burghers
+					OR = {
+						has_estate = estate_burghers
+						has_seat_in_parliament = yes
+					}
 				}
 				1840 = {
-					has_estate = estate_burghers
+					OR = {
+						has_estate = estate_burghers
+						has_seat_in_parliament = yes
+					}
 				}
 				684 = {
-					has_estate = estate_burghers
+					OR = {
+						has_estate = estate_burghers
+						has_seat_in_parliament = yes
+					}
 				}
 				1822 = {
-					has_estate = estate_burghers
+					OR = {
+						has_estate = estate_burghers
+						has_seat_in_parliament = yes
+					}
 				}
 				1821 = {
-					has_estate = estate_burghers
+					OR = {
+						has_estate = estate_burghers
+						has_seat_in_parliament = yes
+					}
 				}
 				2143 = {
-					has_estate = estate_burghers
+					OR = {
+						has_estate = estate_burghers
+						has_seat_in_parliament = yes
+					}
 				}
 				estate_loyalty = {
 					estate = estate_burghers
