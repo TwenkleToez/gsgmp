@@ -1,0 +1,23 @@
+gb_inf_ca = {
+
+	category = 1
+
+	allow = {
+		tag = GBR
+	}
+	
+	effect = {
+	}
+	
+	modifier = {
+		infantry_power = 0.1
+	}
+
+	chance = {
+		factor = 1
+	}
+	
+	ai_will_do = {
+		factor = 1	
+	}	
+}
