@@ -10,10 +10,11 @@
 western_colonizer = {
 	potential = {
 		technology_group = western
+		is_colonial_nation = no
 	}
 	trigger = {
+		has_institution = new_world_i
 		total_development = 250
-		has_institution = new_world_i 
 	}
 	colonists = 1
 }
@@ -29,7 +30,7 @@ colonial_limiter = {
 	trigger = {
 		is_colonial_nation = yes
 	}
-	naval_forcelimit_modifier = -0.25 
+	naval_forcelimit_modifier = -0.25
 	land_forcelimit_modifier = -0.25
 	possible_mercenaries = -0.3
 	development_cost = 0.15
@@ -99,48 +100,8 @@ def_china = {
 
 	trigger = {
 		any_country = {
-			NOT = {
-				OR = {
-					tag = CHC
-					tag = CMI
-					tag = CSH
-					tag = CXI
-					tag = FRM
-					tag = HUA
-					tag = JIN
-					tag = LNG
-					tag = MIN
-					tag = NNG
-					tag = QIC
-					tag = SHU
-					tag = WUU
-					tag = YAN
-					tag = YUE
-					tag = MNG
-				}
-			}
-			offensive_war_with = {
-				OR = {
-					tag = CHC
-					tag = CMI
-					tag = CSH
-					tag = CXI
-					tag = FRM
-					tag = HUA
-					tag = JIN
-					tag = LNG
-					tag = MIN
-					tag = NNG
-					tag = QIC
-					tag = SHU
-					tag = WUU
-					tag = YAN
-					tag = YUE
-					tag = MNG
-				}
-			}
-			war_score_against = {
-				who = {
+			AND = {
+				NOT = {
 					OR = {
 						tag = CHC
 						tag = CMI
@@ -160,7 +121,11 @@ def_china = {
 						tag = MNG
 					}
 				}
-				value = 5
+				offensive_war_with = ROOT
+				war_score_against = {
+					who = ROOT
+					value = 5
+				}
 			}
 		}
 		land_maintenance = 1.0
@@ -182,9 +147,9 @@ meritocracy_buffer_1 = {
 		NOT = {
 			is_year = 1500
 		}
-		culture_group = east_asian
-		NOT = {
-			culture = manchu_new
+		OR = {
+			religion_group = eastern
+			religion_group = pagan
 		}
 	}
 	
@@ -205,9 +170,9 @@ meritocracy_buffer_2 = {
 			is_year = 1550
 		}
 		is_year = 1500
-		culture_group = east_asian
-		NOT = {
-			culture = manchu_new
+		OR = {
+			religion_group = eastern
+			religion_group = pagan
 		}
 	}
 	
@@ -228,9 +193,9 @@ meritocracy_buffer_3 = {
 			is_year = 1600
 		}
 		is_year = 1550
-		culture_group = east_asian
-		NOT = {
-			culture = manchu_new
+		OR = {
+			religion_group = eastern
+			religion_group = pagan
 		}
 	}
 	
