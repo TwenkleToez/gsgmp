@@ -7,13 +7,19 @@ China:
 * Oirat nerfed, reduce ruler mil, reduced general shock, Mongolia independent in 1444
 * Zhou formable with its own ideas and missions for Chinese nations
 * Restructured East Asian trade node pathing
+
 Mercenaries:
-* Base Mercenary limit has been reduced from 20+30% of land FL, to 10+15% of land FL.
-Colonial Nations:
+* Base Mercenary limit has been reduced from 20+30% of land FL, to 5+25% of land FL.
+* All sources of +50% available mercs have been reduced to +30%
+
+Colonial:
 * Colonies receive nerfs from being a colonial subject nation.
 * These include nerfs to dev cost, FL, manpower, sailors, unit costs, ship build time, reinforce speed, global settlers, available mercs, sailor maintenance, and naval maintenance
+* All Western nations that are not colonies get a colonist when they are over 250 dev
+
 Centers of Trade
 * Level 3 centers now also give -10% province dev cost on top of the -10% state dev cost in order to be objectively better than level 2s
+
 Navy:
 * Base Naval Engagement is 30
 * Admiral Maneuver Pips are worth 1 naval width
