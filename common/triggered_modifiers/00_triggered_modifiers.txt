@@ -15,6 +15,8 @@ western_colonizer = {
 	trigger = {
 		has_institution = new_world_i
 		total_development = 250
+		expansion_ideas = 6
+		is_subject = no
 	}
 	colonists = 1
 }
