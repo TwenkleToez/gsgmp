@@ -4,6 +4,717 @@
 # Effects are fully scriptable here.
 
 ###########################################
+# Leader Pool
+###########################################
+
+land_leader_pool_1 = {
+	potential = {
+		land_forcelimit = 200
+		NOT = {
+			land_forcelimit = 400
+		}
+	}
+	trigger = {
+		land_forcelimit = 200
+		NOT = {
+			land_forcelimit = 400
+		}
+	}
+	free_leader_pool = 1
+}
+
+land_leader_pool_2 = {
+	potential = {
+		land_forcelimit = 400
+		NOT = {
+			land_forcelimit = 600
+		}
+	}
+	trigger = {
+		land_forcelimit = 400
+		NOT = {
+			land_forcelimit = 600
+		}
+	}
+	free_leader_pool = 2
+}
+
+land_leader_pool_3 = {
+	potential = {
+		land_forcelimit = 600
+		NOT = {
+			land_forcelimit = 800
+		}
+	}
+	trigger = {
+		land_forcelimit = 600
+		NOT = {
+			land_forcelimit = 800
+		}
+	}
+	free_leader_pool = 3
+}
+
+land_leader_pool_4 = {
+	potential = {
+		land_forcelimit = 800
+		NOT = {
+			land_forcelimit = 1000
+		}
+	}
+	trigger = {
+		land_forcelimit = 800
+		NOT = {
+			land_forcelimit = 1000
+		}
+	}
+	free_leader_pool = 4
+}
+
+land_leader_pool_5 = {
+	potential = {
+		land_forcelimit = 1000
+		NOT = {
+			land_forcelimit = 1200
+		}
+	}
+	trigger = {
+		land_forcelimit = 1000
+		NOT = {
+			land_forcelimit = 1200
+		}
+	}
+	free_leader_pool = 5
+}
+
+land_leader_pool_6 = {
+	potential = {
+		land_forcelimit = 1200
+		NOT = {
+			land_forcelimit = 1400
+		}
+	}
+	trigger = {
+		land_forcelimit = 1200
+		NOT = {
+			land_forcelimit = 1400
+		}
+	}
+	free_leader_pool = 6
+}
+
+land_leader_pool_7 = {
+	potential = {
+		land_forcelimit = 1400
+		NOT = {
+			land_forcelimit = 1600
+		}
+	}
+	trigger = {
+		land_forcelimit = 1400
+		NOT = {
+			land_forcelimit = 1600
+		}
+	}
+	free_leader_pool = 7
+}
+
+land_leader_pool_8 = {
+	potential = {
+		land_forcelimit = 1600
+		NOT = {
+			land_forcelimit = 1800
+		}
+	}
+	trigger = {
+		land_forcelimit = 1600
+		NOT = {
+			land_forcelimit = 1800
+		}
+	}
+	free_leader_pool = 8
+}
+
+land_leader_pool_9 = {
+	potential = {
+		land_forcelimit = 1800
+		NOT = {
+			land_forcelimit = 2000
+		}
+	}
+	trigger = {
+		land_forcelimit = 1800
+		NOT = {
+			land_forcelimit = 2000
+		}
+	}
+	free_leader_pool = 9
+}
+
+land_leader_pool_10 = {
+	potential = {
+		land_forcelimit = 2000
+		NOT = {
+			land_forcelimit = 2200
+		}
+	}
+	trigger = {
+		land_forcelimit = 2000
+		NOT = {
+			land_forcelimit = 2200
+		}
+	}
+	free_leader_pool = 10
+}
+
+land_leader_pool_11 = {
+	potential = {
+		land_forcelimit = 2200
+		NOT = {
+			land_forcelimit = 2400
+		}
+	}
+	trigger = {
+		land_forcelimit = 2200
+		NOT = {
+			land_forcelimit = 2400
+		}
+	}
+	free_leader_pool = 11
+}
+
+land_leader_pool_12 = {
+	potential = {
+		land_forcelimit = 2400
+		NOT = {
+			land_forcelimit = 2600
+		}
+	}
+	trigger = {
+		land_forcelimit = 2400
+		NOT = {
+			land_forcelimit = 2600
+		}
+	}
+	free_leader_pool = 12
+}
+
+land_leader_pool_13 = {
+	potential = {
+		land_forcelimit = 2600
+		NOT = {
+			land_forcelimit = 2800
+		}
+	}
+	trigger = {
+		land_forcelimit = 2600
+		NOT = {
+			land_forcelimit = 2800
+		}
+	}
+	free_leader_pool = 13
+}
+
+land_leader_pool_14 = {
+	potential = {
+		land_forcelimit = 2800
+		NOT = {
+			land_forcelimit = 3000
+		}
+	}
+	trigger = {
+		land_forcelimit = 2800
+		NOT = {
+			land_forcelimit = 3000
+		}
+	}
+	free_leader_pool = 14
+}
+
+land_leader_pool_15 = {
+	potential = {
+		land_forcelimit = 3000
+		NOT = {
+			land_forcelimit = 3200
+		}
+	}
+	trigger = {
+		land_forcelimit = 3000
+		NOT = {
+			land_forcelimit = 3200
+		}
+	}
+	free_leader_pool = 15
+}
+
+land_leader_pool_16 = {
+	potential = {
+		land_forcelimit = 3200
+		NOT = {
+			land_forcelimit = 3400
+		}
+	}
+	trigger = {
+		land_forcelimit = 3200
+		NOT = {
+			land_forcelimit = 3400
+		}
+	}
+	free_leader_pool = 16
+}
+
+land_leader_pool_17 = {
+	potential = {
+		land_forcelimit = 3400
+		NOT = {
+			land_forcelimit = 3600
+		}
+	}
+	trigger = {
+		land_forcelimit = 3400
+		NOT = {
+			land_forcelimit = 3600
+		}
+	}
+	free_leader_pool = 17
+}
+
+land_leader_pool_18 = {
+	potential = {
+		land_forcelimit = 3600
+		NOT = {
+			land_forcelimit = 3800
+		}
+	}
+	trigger = {
+		land_forcelimit = 3600
+		NOT = {
+			land_forcelimit = 3800
+		}
+	}
+	free_leader_pool = 18
+}
+
+land_leader_pool_19 = {
+	potential = {
+		land_forcelimit = 3800
+		NOT = {
+			land_forcelimit = 4000
+		}
+	}
+	trigger = {
+		land_forcelimit = 3800
+		NOT = {
+			land_forcelimit = 4000
+		}
+	}
+	free_leader_pool = 19
+}
+
+land_leader_pool_20 = {
+	potential = {
+		land_forcelimit = 4000
+		NOT = {
+			land_forcelimit = 4200
+		}
+	}
+	trigger = {
+		land_forcelimit = 4000
+		NOT = {
+			land_forcelimit = 4200
+		}
+	}
+	free_leader_pool = 20
+}
+
+land_leader_pool_21 = {
+	potential = {
+		land_forcelimit = 4200
+		NOT = {
+			land_forcelimit = 4400
+		}
+	}
+	trigger = {
+		land_forcelimit = 4200
+		NOT = {
+			land_forcelimit = 4400
+		}
+	}
+	free_leader_pool = 21
+}
+
+land_leader_pool_22 = {
+	potential = {
+		land_forcelimit = 4400
+		NOT = {
+			land_forcelimit = 4600
+		}
+	}
+	trigger = {
+		land_forcelimit = 4400
+		NOT = {
+			land_forcelimit = 4600
+		}
+	}
+	free_leader_pool = 22
+}
+
+land_leader_pool_23 = {
+	potential = {
+		land_forcelimit = 4600
+		NOT = {
+			land_forcelimit = 4800
+		}
+	}
+	trigger = {
+		land_forcelimit = 4600
+		NOT = {
+			land_forcelimit = 4800
+		}
+	}
+	free_leader_pool = 23
+}
+
+land_leader_pool_24 = {
+	potential = {
+		land_forcelimit = 4800
+		NOT = {
+			land_forcelimit = 5000
+		}
+	}
+	trigger = {
+		land_forcelimit = 4800
+		NOT = {
+			land_forcelimit = 5000
+		}
+	}
+	free_leader_pool = 24
+}
+
+land_leader_pool_25 = {
+	potential = {
+		land_forcelimit = 5000
+	}
+	trigger = {
+		land_forcelimit = 5000
+	}
+	free_leader_pool = 25
+}
+
+naval_leader_pool_1 = {
+	potential = {
+		naval_forcelimit = 200
+		NOT = {
+			naval_forcelimit = 400
+		}
+	}
+	trigger = {
+		naval_forcelimit = 200
+		NOT = {
+			naval_forcelimit = 400
+		}
+	}
+	free_leader_pool = 1
+}
+
+naval_leader_pool_2 = {
+	potential = {
+		naval_forcelimit = 400
+		NOT = {
+			naval_forcelimit = 600
+		}
+	}
+	trigger = {
+		naval_forcelimit = 400
+		NOT = {
+			naval_forcelimit = 600
+		}
+	}
+	free_leader_pool = 2
+}
+
+naval_leader_pool_3 = {
+	potential = {
+		naval_forcelimit = 600
+		NOT = {
+			naval_forcelimit = 800
+		}
+	}
+	trigger = {
+		naval_forcelimit = 600
+		NOT = {
+			naval_forcelimit = 800
+		}
+	}
+	free_leader_pool = 3
+}
+
+naval_leader_pool_4 = {
+	potential = {
+		naval_forcelimit = 800
+		NOT = {
+			naval_forcelimit = 1000
+		}
+	}
+	trigger = {
+		naval_forcelimit = 800
+		NOT = {
+			naval_forcelimit = 1000
+		}
+	}
+	free_leader_pool = 4
+}
+
+naval_leader_pool_5 = {
+	potential = {
+		naval_forcelimit = 1000
+		NOT = {
+			naval_forcelimit = 1200
+		}
+	}
+	trigger = {
+		naval_forcelimit = 1000
+		NOT = {
+			naval_forcelimit = 1200
+		}
+	}
+	free_leader_pool = 5
+}
+
+naval_leader_pool_6 = {
+	potential = {
+		naval_forcelimit = 1200
+		NOT = {
+			naval_forcelimit = 1400
+		}
+	}
+	trigger = {
+		naval_forcelimit = 1200
+		NOT = {
+			naval_forcelimit = 1400
+		}
+	}
+	free_leader_pool = 6
+}
+
+naval_leader_pool_7 = {
+	potential = {
+		naval_forcelimit = 1400
+		NOT = {
+			naval_forcelimit = 1600
+		}
+	}
+	trigger = {
+		naval_forcelimit = 1400
+		NOT = {
+			naval_forcelimit = 1600
+		}
+	}
+	free_leader_pool = 7
+}
+
+naval_leader_pool_8 = {
+	potential = {
+		naval_forcelimit = 1600
+		NOT = {
+			naval_forcelimit = 1800
+		}
+	}
+	trigger = {
+		naval_forcelimit = 1600
+		NOT = {
+			naval_forcelimit = 1800
+		}
+	}
+	free_leader_pool = 8
+}
+
+naval_leader_pool_9 = {
+	potential = {
+		naval_forcelimit = 1800
+		NOT = {
+			naval_forcelimit = 2000
+		}
+	}
+	trigger = {
+		naval_forcelimit = 1800
+		NOT = {
+			naval_forcelimit = 2000
+		}
+	}
+	free_leader_pool = 9
+}
+
+naval_leader_pool_10 = {
+	potential = {
+		naval_forcelimit = 2000
+	}
+	trigger = {
+		naval_forcelimit = 2000
+	}
+	free_leader_pool = 10
+}
+
+###########################################
+# Culture Pool
+###########################################
+
+culture_pool_1 = {
+	potential = {
+		total_development = 1000
+		NOT = {
+			total_development = 2000
+		}
+	}
+	trigger = {
+		total_development = 1000
+		NOT = {
+			total_development = 2000
+		}
+	}
+	num_accepted_cultures = 1
+}
+
+culture_pool_2 = {
+	potential = {
+		total_development = 2000
+		NOT = {
+			total_development = 3000
+		}
+	}
+	trigger = {
+		total_development = 2000
+		NOT = {
+			total_development = 3000
+		}
+	}
+	num_accepted_cultures = 2
+}
+
+culture_pool_3 = {
+	potential = {
+		total_development = 3000
+		NOT = {
+			total_development = 4000
+		}
+	}
+	trigger = {
+		total_development = 3000
+		NOT = {
+			total_development = 4000
+		}
+	}
+	num_accepted_cultures = 3
+}
+
+culture_pool_4 = {
+	potential = {
+		total_development = 4000
+		NOT = {
+			total_development = 5000
+		}
+	}
+	trigger = {
+		total_development = 4000
+		NOT = {
+			total_development = 5000
+		}
+	}
+	num_accepted_cultures = 4
+}
+
+culture_pool_5 = {
+	potential = {
+		total_development = 5000
+		NOT = {
+			total_development = 6000
+		}
+	}
+	trigger = {
+		total_development = 5000
+		NOT = {
+			total_development = 6000
+		}
+	}
+	num_accepted_cultures = 5
+}
+
+culture_pool_6 = {
+	potential = {
+		total_development = 6000
+		NOT = {
+			total_development = 7000
+		}
+	}
+	trigger = {
+		total_development = 6000
+		NOT = {
+			total_development = 7000
+		}
+	}
+	num_accepted_cultures = 6
+}
+
+culture_pool_7 = {
+	potential = {
+		total_development = 7000
+		NOT = {
+			total_development = 8000
+		}
+	}
+	trigger = {
+		total_development = 7000
+		NOT = {
+			total_development = 8000
+		}
+	}
+	num_accepted_cultures = 7
+}
+
+culture_pool_8 = {
+	potential = {
+		total_development = 8000
+		NOT = {
+			total_development = 9000
+		}
+	}
+	trigger = {
+		total_development = 8000
+		NOT = {
+			total_development = 9000
+		}
+	}
+	num_accepted_cultures = 8
+}
+
+culture_pool_9 = {
+	potential = {
+		total_development = 9000
+		NOT = {
+			total_development = 10000
+		}
+	}
+	trigger = {
+		total_development = 9000
+		NOT = {
+			total_development = 10000
+		}
+	}
+	num_accepted_cultures = 9
+}
+
+culture_pool_10 = {
+	potential = {
+		total_development = 10000
+	}
+	}
+	trigger = {
+		total_development = 10000
+	}
+	num_accepted_cultures = 10
+}
+
+###########################################
 # Western Colonizer
 ###########################################
 
