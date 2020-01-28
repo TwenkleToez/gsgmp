@@ -25,3 +25,6 @@ Navy:
 * Admiral Maneuver Pips are worth 1 naval width
 * Polices and ideas each give 3
 * 
+
+Formables:
+*Thailand
