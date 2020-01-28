@@ -2,6 +2,21 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
+ahe_dual_monarchy = {
+    num_accepted_cultures = 2
+    build_cost = -0.05
+    development_cost = -0.05
+    diplomatic_reputation = 1
+    diplomats = 1
+    global_unrest = -1
+    core_creation = -0.05
+    technology_cost = -0.025
+    legitimacy = 0.75
+    global_tax_income = 10
+    prestige = 0.25
+    stability_cost_modifier = -0.05
+}
+
 zhenjiang_drydock = {
 	local_sailors_modifier = 2.5
 	naval_forcelimit = 10
