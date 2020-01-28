@@ -7,6 +7,8 @@ NAT = "countries/Natives.txt"
 CC1 = "countries/Liao.txt"
 CC2 = "countries/Wei.txt"
 CC3 = "countries/Qiang.txt"
+SIA = "countries/Thailand.txt"
+AHE = "countries/Austria-Hungary.txt"
 
 #Scandinavia
 SWE	= "countries/Sweden.txt"
