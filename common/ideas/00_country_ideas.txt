@@ -4,6 +4,47 @@
 
 ### Nation specific idea groups
 
+SIA_ideas = {
+	start = {
+		global_prov_trade_power_modifier = 0.15
+		global_manpower_modifier = 0.15
+	}
+	
+	bonus = {
+		land_forcelimit_modifier = 0.2
+	}
+	
+	trigger = {
+		tag = SIA
+	}
+	free = yes
+	
+	suk_war_elephants = {
+		cavalry_power = 0.15
+		cavalry_flanking = 0.5
+	}
+	akson_thai = {
+		technology_cost = -0.05
+	}
+	lna_dynastic_spread = {
+        diplomatic_upkeep = 1
+    }
+	lna_elephant_charge = {
+		shock_damage = 0.1
+		cav_to_inf_ratio = 0.15
+    }
+	lna_million_ice_paddies = {
+		global_trade_goods_size_modifier = 0.1
+    }
+	corvee_system = {
+		discipline = 0.03
+		land_morale = 0.05
+	}
+	birthplace_of_a_culture = {
+		prestige = 1
+	}
+}
+
 CZH_ideas = {
 	start = {
 		idea_cost = -0.05
