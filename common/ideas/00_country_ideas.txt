@@ -17,30 +17,30 @@ SIA_ideas = {
 	trigger = {
 		tag = SIA
 	}
-	free = yes
+	free = yes		#will be added at load.
 	
-	suk_war_elephants = {
+	sia_war_elephants = {
 		cavalry_power = 0.15
 		cavalry_flanking = 0.5
 	}
-	akson_thai = {
+	sia_akson_thai = {
 		technology_cost = -0.05
 	}
-	lna_dynastic_spread = {
+	sia_dynastic_spread = {
         diplomatic_upkeep = 1
     }
-	lna_elephant_charge = {
+	sia_elephant_charge = {
 		shock_damage = 0.1
 		cav_to_inf_ratio = 0.15
     }
-	lna_million_ice_paddies = {
+	sia_million_ice_paddies = {
 		global_trade_goods_size_modifier = 0.1
     }
-	corvee_system = {
+	sia_corvee_system = {
 		discipline = 0.03
 		land_morale = 0.05
 	}
-	birthplace_of_a_culture = {
+	sia_birthplace_of_a_culture = {
 		prestige = 1
 	}
 }
@@ -623,43 +623,44 @@ PRU_ideas = {
  
  
 POR_ideas = {
-	start = {
-		trade_range_modifier = 0.30
-		trade_efficiency = 0.05
-	}
-	
-	bonus = {
-		global_tariffs = 0.20
-	}
-	
-	trigger = {
-		tag = POR
-	}
-	free = yes		#will be added at load.
-	
-	legacy_of_the_navigator = {
-		range = 0.25
-		global_sailors_modifier = 0.25
-	}
-	afonsine_ordinances = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	case_de_india = {
-		global_trade_power = 0.1
-	}
-	the_bandeirantes = {
-		merchants = 1
-	}
-	royal_absolutism = {
-		build_cost = -0.15
-		yearly_absolutism = 0.1
-	}
-	land_before_faith = {
-		global_colonial_growth = 15
-	}
-	open_up_the_guilds = {
-		trade_efficiency = 0.1
-	}
+    start = {
+        range = 0.25
+        trade_efficiency = 0.15
+    }
+ 
+    bonus = {
+        global_tariffs = 0.20
+    }
+ 
+    trigger = {
+        tag = POR
+    }
+    free = yes        #will be added at load.
+ 
+    legacy_of_the_navigator = {
+        sunk_ship_morale_hit_recieved = -0.33
+        ship_durability = 0.05
+    }
+    afonsine_ordinances = {
+        global_trade_goods_size_modifier = 0.1
+    }
+    case_de_india = {
+        global_trade_power = 0.1
+    }
+    land_before_faith = {
+        global_colonial_growth = 15
+    }
+    the_bandeirantes = {
+        merchants = 1
+    }
+    royal_absolutism = {
+        build_cost = -0.15
+        yearly_absolutism = 0.5
+    }
+    por_royal_military_academy = {
+        defensiveness = 0.1
+        artillery_power = 0.1
+    }
 }
 
 
