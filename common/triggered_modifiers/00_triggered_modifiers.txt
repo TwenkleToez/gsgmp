@@ -707,7 +707,6 @@ culture_pool_10 = {
 	potential = {
 		total_development = 10000
 	}
-	}
 	trigger = {
 		total_development = 10000
 	}
