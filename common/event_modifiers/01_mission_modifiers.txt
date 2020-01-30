@@ -3,12 +3,16 @@
 ##################################################################################################
 #GSG_MP_MISSION_MODIFIERS
 
-elephant_divisions = {
+extinguish_ming_core_cost = {
+	core_creation = -0.2 
+}
+
+sia_elephant_divisions = {
 	cavalry_power = 0.10
 	land_morale = 0.05
 }
 
-secure_malaccan_trade = {
+sia_secure_malaccan_trade = {
 	trade_efficiency = 0.05
 }
 
