@@ -7,7 +7,7 @@ mueangthai_missions = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	raise_the_elephant_divisions = {
+	sia_raise_the_elephant_divisions = {
 		position = 1
 		icon = mission_assemble_an_army
 		required_missions = { }
@@ -17,17 +17,24 @@ mueangthai_missions = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "elephant_divisions"
-				duration = 3650
+				name = "sia_elephant_divisions"
+				duration = 7300
 			}
 			malacca_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
 				}
+				add_permanent_claim = ROOT
+			}
 			malaya_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_burma_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -36,9 +43,10 @@ mueangthai_missions = {
 			}
 		}
 	}
-	secure_malaccan_trade = {
+	sia_secure_malaccan_trade = {
+		position = 4
 		icon = mission_unite_home_region
-		required_missions = { raise_the_elephant_divisions }
+		required_missions = { sia_raise_the_elephant_divisions }
 		provinces_to_highlight = {
 			OR = {
 				area = malaya_area
@@ -60,14 +68,15 @@ mueangthai_missions = {
 			add_mercantilism = 3
 			add_years_of_income = 2.0
 			add_country_modifier = {
-				name = "secure_malaccan_trade"
+				name = "sia_sia_secure_malaccan_trade"
 				duration = -1
 			}
 		}
 	}
-	dominate_the_spice_trade = {
+	sia_dominate_the_spice_trade = {
+		position = 5
 		icon = mission_junk_boat
-		required_missions = { secure_malaccan_trade }
+		required_missions = { sia_secure_malaccan_trade }
 		provinces_to_highlight = {
 			province_id = 1361
 			has_discovered = ROOT
@@ -80,7 +89,7 @@ mueangthai_missions = {
 		effect = {
 			add_years_of_income = 4
 			add_country_modifier = {
-				name = "the_spice_trade"
+				name = "sia_the_spice_trade"
 				duration = 18250
 			}
 		}
@@ -95,13 +104,13 @@ mueangthai_missions_2 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	unify_monastic_communities = {
+	sia_unify_monastic_communities = {
 		position = 2
 		icon = mission_buddhist_monk_praying
-		required_missions = { raise_the_elephant_divisions }
+		required_missions = { sia_raise_the_elephant_divisions }
 		trigger = {
 			num_of_owned_provinces_with = {
-				value = 3
+				value = 10
 				OR = {
 					has_building = temple
 					has_building = cathedral
@@ -110,7 +119,7 @@ mueangthai_missions_2 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "unified_monastic_communities"
+				name = "sia_unified_monastic_communities"
 				duration = -1
 			}
 			red_river_delta_area = {
@@ -129,10 +138,10 @@ mueangthai_missions_2 = {
 			}
 		}
 	}
-	assimilate_vietnam = {
+	sia_assimilate_vietnam = {
 		position = 3
 		icon = mission_have_two_subjects
-		required_missions = { unify_monastic_communities }
+		required_missions = { sia_unify_monastic_communities }
 		provinces_to_highlight = {
 			OR = {
 				area = vietnam_area
@@ -153,24 +162,16 @@ mueangthai_missions_2 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "buddhist_zeal"
+				name = "sia_buddhist_zeal"
 				duration = 9125
 			}
-			lower_burma_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-			}
-			add_permanent_claim = ROOT
 		}
 	}
-}
-	control_the_city_of_pegu = {
+	sia_control_the_city_of_pegu = {
 		position = 4
 		icon = mission_build_up_to_force_limit
 		required_missions = {
-			assimilate_vietnam
-			dominate_the_spice_trade
+			sia_raise_the_elephant_divisions
 		}
 		provinces_to_highlight = {
 			province_id = 586
@@ -210,10 +211,10 @@ mueangthai_missions_2 = {
 			}
 		}
 	}
-	integrate_burma = {
+	sia_integrate_burma = {
 		position = 5
 		icon = mission_have_two_subjects
-		required_missions = { control_the_city_of_pegu }
+		required_missions = { sia_control_the_city_of_pegu }
 		provinces_to_highlight = {
 			OR = {
 				area = central_burma_area
@@ -238,7 +239,7 @@ mueangthai_missions_2 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "burmese_defense"
+				name = "sia_burmese_defense"
 				duration = -1
 			}
 			add_prestige = 25
