@@ -46,6 +46,7 @@ country_decisions = {
 					owns_core_province = 153
 					owns_core_province = 1826
 					owns_core_province = 4236
+					NOT = { exists = HUN }
 				}
 			}
 		}
