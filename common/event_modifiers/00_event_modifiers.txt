@@ -2,23 +2,23 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
-buddhist_zeal = {
+sia_buddhist_zeal = {
 	culture_conversion_cost = -0.25
 	global_missionary_strength = 0.01
 }
 
-burmese_defense = {
+sia_burmese_defense = {
 	defensiveness = 0.25
 	hostile_attrition = 1
 }
 
-unified_monastic_communities = {
+sia_unified_monastic_communities = {
 	missionary_maintenance_cost = -0.15
 	tolerance_own = 1
 	global_missionary_strength = 0.01
 }
 
-the_spice_trade = {
+sia_the_spice_trade = {
 	trade_efficiency = 0.10
 	merchants = 1
 }
