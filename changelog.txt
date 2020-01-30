@@ -3,10 +3,10 @@ China:
 * Taiwan is united in 1444 at be the 22nd nation in the region, Taiwan can also form Zhou
 * Chinese Group ideas have been buffed
 * Added missions unqiue to reach region of China
-* Mandate has been improved and made easier to hold onto, as well as early game Meritocracy
-* Oirat nerfed, reduce ruler mil, reduced general shock, Mongolia independent in 1444
+* Mandate has been improved/reworked and made easier to hold onto
+* Early game Meritocracy has been made easier to keep up
+* Oirat nerfed, reduced ruler mil, reduced general shock, Mongolia independent in 1444
 * Zhou formable with its own ideas and missions for Chinese nations
-* Restructured East Asian trade node pathing
 
 Mercenaries:
 * Base Mercenary limit has been reduced from 20+30% of land FL, to 5+25% of land FL.
@@ -14,17 +14,44 @@ Mercenaries:
 
 Colonial:
 * Colonies receive nerfs from being a colonial subject nation.
-* These include nerfs to dev cost, FL, manpower, sailors, unit costs, ship build time, reinforce speed, global settlers, available mercs, sailor maintenance, and naval maintenance
-* All Western nations that are not colonies get a colonist when they are over 250 dev
+* These include nerfs to dev cost, FL, manpower, sailors, unit costs, ship build time, reinforce speed, global settlers, available mercs, sailor maintenance, naval maintenance, etc
 
-Centers of Trade
+Centers of Trade:
 * Level 3 centers now also give -10% province dev cost on top of the -10% state dev cost in order to be objectively better than level 2s
 
 Navy:
 * Base Naval Engagement is 30
 * Admiral Maneuver Pips are worth 1 naval width
-* Polices and ideas each give 3
-* 
+* Every 10% Naval Engagement from a policy or idea gives +1 naval width
+
+Trade:
+* Restructured East Asian trade node pathing
+* Siam node now also feeds into Burma and Canton
 
 Formables:
-*Thailand
+* Thailand (w/ missions) Tags that can form it: AYU, SUK, LNA
+* Austria-Hungary (w/ a fake gov modifier similar to their unique reform from the next patch) Tags that can form it: HAB
+* Tag locked the Prussia formable. Tags that can form it: BRA, TEU, KUR, DNZ, LIV, RIG, POM, MKL, MAG, ANH, SAX, EST, LVA, THU
+
+Great Powers:
+* GP count increased from 8 to 10
+
+Ideas:
+* Thailand and Austria-Hungary have new unique ideas
+* Portugal has been given a tweaked version of their ideas from the next patch (+5% durability instead of another modifier that doesn't currently exist.)
+* Naval Ideas have been nerfed
+* Blocked AI colonial nations from taking Religious, Administrative, Humanist, Espionage, Diplomatic, Exploration, Maritime, Influence, Aristocratic, or Naval Ideas
+* Non-Western nations have Exploration and Expansion Ideas locked until they reach admin tech 7
+
+National Modifiers:
+* Once colonialism spawns, Western nations that are not colonies get a colonist when they are over 250 dev unless that have the 6th idea in expansion
+* All nations will recieve +1 leaders without upkeep for every 200 land FL up to 5k land FL, and every 200 naval FL up to 2k naval FL
+* All nations will recieve +1 accepted cultures from every 1000 dev up to 10k dev
+
+Events:
+* Many events that conflict with the mod have been removed or changed, mostly in China
+* Hindu Child of Surya event base monarch bonus changed from 444 to 222 
+
+Governments:
+* Most Colonial Nation reforms are locked to remove the need for setup save edits
+* Pirate republics have been nerfed
