@@ -157,7 +157,7 @@ pirate_republic_reform = {
 	modifiers = {
 		republican_tradition = -1
 		max_absolutism = -50
-		naval_forcelimit_modifier = 0.5
+		naval_forcelimit_modifier = 0.33
 		capture_ship_chance = 0.33
 		may_perform_slave_raid_on_same_religion = yes
 	}
@@ -794,7 +794,7 @@ council_of_captains_reform = {
 	}
 	modifiers = {
 		pr_captains_influence = 0.1
-		privateer_efficiency = 0.33
+		privateer_efficiency = 0.25
 	}
 }
 
@@ -819,7 +819,7 @@ smugglers_haven_reform = {
 	}
 	modifiers = {
 		pr_smugglers_influence = 0.1
-		global_foreign_trade_power = 0.3
+		global_foreign_trade_power = 0.20
 	}
 }
 
