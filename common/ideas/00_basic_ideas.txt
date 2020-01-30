@@ -55,7 +55,12 @@ aristocracy_ideas = {
 		modifier = {
 			factor = 0.5
 			is_subject = yes
-		}	
+		}
+		
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
+		}
 	}
 }
 
@@ -187,6 +192,10 @@ religious_ideas = {
 			factor = 0
 			has_idea_group = humanist_ideas
 		}
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
+		}
 	}
 }
 
@@ -230,6 +239,11 @@ spy_ideas = {
 
 	ai_will_do = {
 		factor = 0.75
+		
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
+		}
 	}
 }
 
@@ -272,6 +286,10 @@ diplomatic_ideas = {
 		modifier = {
 			factor = 1.5
 			vassal = 2
+		}
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
 		}
 	}
 }
@@ -669,6 +687,10 @@ maritime_ideas = {
 				has_reform = black_market_consortium_government
 			}
 		}
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
+		}
 	}
 }
 
@@ -865,6 +887,10 @@ administrative_ideas = {
 			factor = 2
 			has_reform = steppe_horde
 		}
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
+		}
 	}
 }
 
@@ -903,6 +929,10 @@ humanist_ideas = {
 		modifier = {
 			factor = 0
 			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
 		}
 	}
 }
@@ -951,6 +981,10 @@ influence_ideas = {
 		modifier = {
 			factor = 1.7
 			vassal = 2
+		}
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
 		}
 	}
 }
@@ -1022,6 +1056,10 @@ naval_ideas = {
 				has_reform = war_against_the_world_government
 				has_reform = black_market_consortium_government
 			}
+		}
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
 		}
 	}
 }
