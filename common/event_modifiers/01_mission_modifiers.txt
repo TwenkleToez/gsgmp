@@ -3,6 +3,15 @@
 ##################################################################################################
 #GSG_MP_MISSION_MODIFIERS
 
+elephant_divisions = {
+	cavalry_power = 0.10
+	land_morale = 0.05
+}
+
+secure_malaccan_trade = {
+	trade_efficiency = 0.05
+}
+
 chinese_peoples_united = {
 	max_states = 5
 	imperial_mandate = 0.1

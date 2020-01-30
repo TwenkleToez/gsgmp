@@ -1,0 +1,250 @@
+mueangthai_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = SIA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	raise_the_elephant_divisions = {
+		position = 1
+		icon = mission_assemble_an_army
+		required_missions = { }
+		trigger = {
+			army_size_percentage = 1
+			manpower_percentage = 0.7
+		}
+		effect = {
+			add_country_modifier = {
+				name = "elephant_divisions"
+				duration = 3650
+			}
+			malacca_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			malaya_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	secure_malaccan_trade = {
+		icon = mission_unite_home_region
+		required_missions = { raise_the_elephant_divisions }
+		provinces_to_highlight = {
+			OR = {
+				area = malaya_area
+				area = malacca_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			malacca_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			malaya_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mercantilism = 3
+			add_years_of_income = 2.0
+			add_country_modifier = {
+				name = "secure_malaccan_trade"
+				duration = -1
+			}
+		}
+	}
+	dominate_the_spice_trade = {
+		icon = mission_junk_boat
+		required_missions = { secure_malaccan_trade }
+		provinces_to_highlight = {
+			province_id = 1361
+			has_discovered = ROOT
+		}
+		trigger = {
+			1361 = {		# Straits of Johor
+				is_strongest_trade_power = SIA
+			}
+		}
+		effect = {
+			add_years_of_income = 4
+			add_country_modifier = {
+				name = "the_spice_trade"
+				duration = 18250
+			}
+		}
+	}
+}
+mueangthai_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = SIA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	unify_monastic_communities = {
+		position = 2
+		icon = mission_buddhist_monk_praying
+		required_missions = { raise_the_elephant_divisions }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "unified_monastic_communities"
+				duration = -1
+			}
+			red_river_delta_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			vietnam_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	assimilate_vietnam = {
+		position = 3
+		icon = mission_have_two_subjects
+		required_missions = { unify_monastic_communities }
+		provinces_to_highlight = {
+			OR = {
+				area = vietnam_area
+				area = red_river_delta_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			vietnam_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			red_river_delta_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			religious_unity = 0.9
+		}
+		effect = {
+			add_country_modifier = {
+				name = "buddhist_zeal"
+				duration = 9125
+			}
+			lower_burma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+	control_the_city_of_pegu = {
+		position = 4
+		icon = mission_build_up_to_force_limit
+		required_missions = {
+			assimilate_vietnam
+			dominate_the_spice_trade
+		}
+		provinces_to_highlight = {
+			province_id = 586
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			586 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			586 = {
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+			central_burma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_burma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			chindwin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	integrate_burma = {
+		position = 5
+		icon = mission_have_two_subjects
+		required_missions = { control_the_city_of_pegu }
+		provinces_to_highlight = {
+			OR = {
+				area = central_burma_area
+				area = upper_burma_area
+				area = chindwin_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			central_burma_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_burma_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			chindwin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "burmese_defense"
+				duration = -1
+			}
+			add_prestige = 25
+			add_dip_power = 50
+			add_mil_power = 50
+			add_adm_power = 50
+		}
+	}
+}
