@@ -749,6 +749,7 @@ republican_authoritarianism_reform = {
 		NOT = {
 			has_reform = pirate_republic_reform
 		}
+		is_colonial_nation = no
 	}
 	modifiers = {
 		global_unrest = -1
@@ -762,6 +763,7 @@ nepotism_reform = {
 		NOT = {
 			has_reform = pirate_republic_reform
 		}
+		is_colonial_nation = no
 	}
 	modifiers = {
 		candidate_random_bonus = 1
@@ -846,6 +848,9 @@ frequent_elections_reform = {
 consolidation_of_power_reform = {
 	icon = "constitution"
 	allow_normal_conversion = yes
+	potential = {
+		is_colonial_nation = no
+	}
 	modifiers = {
 		max_absolutism = 10
 		election_cycle = 1
@@ -892,6 +897,9 @@ provincial_governments_reform = {
 administrative_divisions_reform = {
 	icon = "map"
 	allow_normal_conversion = yes
+	potential = {
+		is_colonial_nation = no
+	}
 	modifiers = {
 		max_states = 5
 	}
@@ -907,6 +915,9 @@ administrative_divisions_reform = {
 union_of_states_reform = {
 	icon = "merchant_ship"
 	allow_normal_conversion = yes
+	potential = {
+		is_colonial_nation = no
+	}
 	modifiers = {
 		global_trade_power = 0.1
 	}
@@ -922,6 +933,9 @@ union_of_states_reform = {
 presidential_reform = {
 	icon = "man_on_podium"
 	allow_normal_conversion = yes
+	potential = {
+		is_colonial_nation = no
+	}
 	modifiers = {
 		embracement_cost = -0.1
 	}
@@ -940,6 +954,9 @@ broaden_executive_powers_reform = {
 devolution_of_powers_reform = {
 	icon = "generic_people"
 	allow_normal_conversion = yes
+	potential = {
+		is_colonial_nation = no
+	}
 	modifiers = {
 		diplomats = 1
 	}
@@ -1050,6 +1067,9 @@ appointment_by_committee_reform = {
 bureaucratic_aparatus_reform = {
 	icon = "map_2"
 	allow_normal_conversion = yes
+	potential = {
+		is_colonial_nation = no
+	}
 	modifiers = {
 		min_autonomy_in_territories = -0.10
 	}
@@ -1059,6 +1079,9 @@ bureaucratic_aparatus_reform = {
 universal_suffrage_reform = {
 	icon = "paper_with_seal"
 	allow_normal_conversion = yes
+	potential = {
+		is_colonial_nation = no
+	}
 	modifiers = {
 		num_accepted_cultures = 1
 	}
@@ -1132,6 +1155,9 @@ proclaim_divine_guidance_reform = {
 strengthen_executive_powers_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
+	potential = {
+		is_colonial_nation = no
+	}
 	modifiers = {
 		max_absolutism = 25
 	}
