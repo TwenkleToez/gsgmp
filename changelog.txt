@@ -7,6 +7,7 @@ China:
 * Early game Meritocracy has been made easier to keep up
 * Oirat nerfed, reduced ruler mil, reduced general shock, Mongolia independent in 1444
 * Zhou formable with its own ideas and missions for Chinese nations
+* Qing Extinguish Ming mission nerfed
 
 Mercenaries:
 * Base Mercenary limit has been reduced from 20+30% of land FL, to 5+25% of land FL.
