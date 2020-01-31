@@ -16,7 +16,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1550
 		NOT = { is_year = 1650 }
 		
@@ -130,7 +133,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1600
 		NOT = { is_year = 1650 }
 		exists = BOH
@@ -139,7 +145,10 @@ country_event = {
 		is_religion_enabled = protestant
 		BOH = {
 			religion = protestant
-			junior_union_with = HAB
+			OR = {
+				junior_union_with = HAB
+				junior_union_with = AHE
+			}
 		}
 	}
 
@@ -185,7 +194,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1600
 		NOT = { is_year = 1650 }
 		NOT = { has_country_flag = royal_letter_of_bohemia }
@@ -203,7 +215,10 @@ country_event = {
 			BOH = {
 				exists = yes
 				religion = protestant
-				junior_union_with = HAB
+				OR = {
+					junior_union_with = HAB
+					junior_union_with = AHE
+				}
 			}
 		}
 	}
@@ -244,9 +259,21 @@ country_event = {
 		}
 		if = {
 			limit = {
-				senior_union_with = BOH
+				AND = {
+					senior_union_with = BOH
+					exists = HAB
+				}
 			}
 			BOH = { break_union = HAB }
+		}
+		if = {
+			limit = {
+				AND = {
+					senior_union_with = BOH
+					exists = AHE
+				}
+			}
+			BOH = { break_union = AHE }
 		}
 	}
 }
@@ -261,7 +288,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1600
 		NOT = { is_year = 1650 }
 		NOT = { stability = 3 }
@@ -293,7 +323,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		any_owned_province = {
 			OR = {
 				area = transdanubia_area
@@ -390,7 +423,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1700
 		NOT = { exists = SLZ }
 		religion = catholic
@@ -429,7 +465,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1741
 		NOT = { is_year = 1794 }
 		government = monarchy
@@ -466,7 +505,10 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1803
 		government = monarchy
 	}
@@ -503,7 +545,10 @@ country_event = {
 	picture = ANGRY_MOB_eventPicture
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		NOT = { exists = HUN }
 		NOT = { religion = protestant }
 		any_owned_province = {
@@ -598,7 +643,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1750
 		NOT = { is_year = 1800 }
 	}
@@ -633,7 +681,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1480
 		NOT = { has_country_modifier = reichshofrat }
 	}
@@ -673,7 +724,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		NOT = { exists = HUN }
 		any_owned_province = {
 			OR = {
@@ -767,7 +821,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1650
 		NOT = { is_year = 1700 }
 		
@@ -881,7 +938,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1750
 		
 	}
@@ -922,7 +982,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1790
 		
 		any_owned_province = {
@@ -1046,7 +1109,10 @@ country_event = {
 #	
 #	fire_only_once = yes
 #	trigger = {
-#		tag = HAB
+#		OR = {
+			tag = HAB
+			tag = AHE
+		}
 #		NOT = { is_year = 1500 }
 #		is_emperor = yes
 #		dynasty = "von Habsburg"
@@ -1097,7 +1163,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_emperor = yes
 		owns = 73		# Tirol
 		is_year = 1480
@@ -1130,7 +1199,10 @@ country_event = {
 	
 	fire_only_once = yes
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1500
 		NOT = { is_year = 1550 }
 		is_emperor = yes
@@ -1167,7 +1239,10 @@ country_event = {
 	
 	fire_only_once = yes
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1450
 		NOT = { is_year = 1550 }
 		owns = 1863		# Graz
@@ -1200,7 +1275,10 @@ country_event = {
 	
 	fire_only_once = yes
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1450
 		NOT = { is_year = 1550 }
 		
@@ -1231,7 +1309,10 @@ country_event = {
 	
 	
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		has_heir = no
 		has_government_attribute = heir
 		is_free_or_tributary_trigger = yes
@@ -1405,7 +1486,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1790
 		NOT = { is_year = 1821 }
 	}
@@ -1432,7 +1516,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1774
 		NOT = { is_year = 1791 }
 	}
@@ -1466,7 +1553,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		exists = FRA
 		is_year = 1490
 		NOT = { is_year = 1590 }
@@ -1596,7 +1686,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		NOT = { exists = HUN }
 		is_year = 1700
 		NOT = {
@@ -1684,7 +1777,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1480
 		NOT = { is_year = 1530 }
 	}
@@ -1718,7 +1814,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		capital = 134
 		is_year = 1575
 		NOT = { is_year = 1620 }
@@ -1752,7 +1851,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		has_country_flag = hab_had_plague_of_vienna
 		owns = 134
 		134 = { NOT = { has_province_modifier = hab_plague_of_vienna } }
@@ -1784,7 +1886,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1670
 		NOT = { is_year = 1700 }
 	}
@@ -1814,7 +1919,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1670
 		NOT = { is_year = 1700 }
 	}
@@ -1853,7 +1961,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1650
 		NOT = { is_year = 1700 }
 		owns = 133
@@ -1889,7 +2000,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		is_year = 1700
 		NOT = { is_year = 1730 }
 		owns = 90
@@ -1907,32 +2021,76 @@ country_event = {
 			name = hab_ostende_company
 			duration = -1 
 		}
-		every_country = {
+		if = {
 			limit = {
-				OR = {
-					has_country_modifier = india_trade_co
-					has_country_modifier = dutch_india_trade_co
+				exists = HAB
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_country_modifier = india_trade_co
+						has_country_modifier = dutch_india_trade_co
+					}
+				}
+				add_opinion = {
+					who = HAB
+					modifier = hab_ostende_company_competition
 				}
 			}
-			add_opinion = {
-				who = HAB
-				modifier = hab_ostende_company_competition
+		}
+		if = {
+			limit = {
+				exists = AHE
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_country_modifier = india_trade_co
+						has_country_modifier = dutch_india_trade_co
+					}
+				}
+				add_opinion = {
+					who = AHE
+					modifier = hab_ostende_company_competition
+				}
 			}
 		}
 	}
 	
 	option = {# We cannot risk angering our neighbors.
 		name = flavor_hab.18.b
-		every_country = {
+		if = {
 			limit = {
-				OR = {
-					has_country_modifier = india_trade_co
-					has_country_modifier = dutch_india_trade_co
+				exists = HAB
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_country_modifier = india_trade_co
+						has_country_modifier = dutch_india_trade_co
+					}
+				}
+				add_opinion = {
+					who = HAB
+					modifier = opinion_pleased
 				}
 			}
-			add_opinion = {
-				who = HAB
-				modifier = opinion_pleased
+		}
+		if = {
+			limit = {
+				exists = AHE
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_country_modifier = india_trade_co
+						has_country_modifier = dutch_india_trade_co
+					}
+				}
+				add_opinion = {
+					who = AHE
+					modifier = opinion_pleased
+				}
 			}
 		}
 	}
@@ -1948,7 +2106,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHE
+		}
 		has_country_modifier = hab_ostende_company
 	}
 
@@ -1960,36 +2121,84 @@ country_event = {
 	option = {# Close down the Company.
 		name = flavor_hab.19.a
 		remove_country_modifier = hab_ostende_company
-		every_country = {
+		if = {
 			limit = {
-				OR = {
-					has_country_modifier = india_trade_co
-					has_country_modifier = dutch_india_trade_co
+				exists = HAB
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_country_modifier = india_trade_co
+						has_country_modifier = dutch_india_trade_co
+					}
+				}
+				remove_opinion = {
+					who = HAB
+					modifier = hab_ostende_company_competition
+				}
+				add_opinion = {
+					who = HAB
+					modifier = hab_ostende_closed
 				}
 			}
-			remove_opinion = {
-				who = HAB
-				modifier = hab_ostende_company_competition
+		}
+		if = {
+			limit = {
+				exists = AHE
 			}
-			add_opinion = {
-				who = HAB
-				modifier = hab_ostende_closed
+			every_country = {
+				limit = {
+					OR = {
+						has_country_modifier = india_trade_co
+						has_country_modifier = dutch_india_trade_co
+					}
+				}
+				remove_opinion = {
+					who = AHE
+					modifier = hab_ostende_company_competition
+				}
+				add_opinion = {
+					who = AHE
+					modifier = hab_ostende_closed
+				}
 			}
 		}
 	}
 	
 	option = {# Let us not bow to such threats.
 		name = flavor_hab.19.b
-		every_country = {
+		if = {
 			limit = {
-				OR = {
-					has_country_modifier = india_trade_co
-					has_country_modifier = dutch_india_trade_co
+				exists = HAB
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_country_modifier = india_trade_co
+						has_country_modifier = dutch_india_trade_co
+					}
+				}
+				add_opinion = {
+					who = HAB
+					modifier = hab_ostende_company_competition
 				}
 			}
-			add_opinion = {
-				who = HAB
-				modifier = hab_ostende_company_competition
+		}
+		if = {
+			limit = {
+				exists = AHE
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_country_modifier = india_trade_co
+						has_country_modifier = dutch_india_trade_co
+					}
+				}
+				add_opinion = {
+					who = AHE
+					modifier = hab_ostende_company_competition
+				}
 			}
 		}
 	}
