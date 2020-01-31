@@ -242,6 +242,7 @@ mueangthai_missions_2 = {
 				name = "sia_burmese_defense"
 				duration = -1
 			}
+			set_government_rank = 3
 			add_prestige = 25
 			add_dip_power = 50
 			add_mil_power = 50

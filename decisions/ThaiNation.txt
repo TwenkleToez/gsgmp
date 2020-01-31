@@ -49,7 +49,6 @@ country_decisions = {
 		effect = {
 			change_tag = SIA
 			swap_non_generic_missions = yes
-			set_government_rank = 3
 			central_thai_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
