@@ -320,6 +320,7 @@ zhou_missions_3 = {
 			}
 		}
 		effect = {
+			set_country_flag = no_mo_no_fro
 			707 = {
 				add_province_modifier = {
 					name = strengthen_the_wall
