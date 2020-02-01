@@ -40,6 +40,7 @@ country_decisions = {
 			is_nomad = no
 			is_at_war = no
 			is_emperor = no
+			religion = buddhism
 			owns_core_province = 600
 			owns_core_province = 2384
 			owns_core_province = 601
