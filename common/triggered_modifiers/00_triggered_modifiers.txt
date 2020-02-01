@@ -787,9 +787,7 @@ cn_navy = {
 
 def_china = {
 	potential = {
-		NOT = {
-			is_year = 1500
-		}
+		current_age = age_of_discovery
 		OR = {
 			tag = CHC
 			tag = CMI
@@ -809,44 +807,13 @@ def_china = {
 			tag = MNG
 		}
 	}
-
+	
 	trigger = {
-		any_country = {
-			AND = {
-				NOT = {
-					OR = {
-						tag = CHC
-						tag = CMI
-						tag = CSH
-						tag = CXI
-						tag = FRM
-						tag = HUA
-						tag = JIN
-						tag = LNG
-						tag = MIN
-						tag = NNG
-						tag = QIC
-						tag = SHU
-						tag = WUU
-						tag = YAN
-						tag = YUE
-						tag = MNG
-					}
-				}
-				offensive_war_with = ROOT
-				war_score_against = {
-					who = ROOT
-					value = 5
-				}
-			}
-		}
+		current_age = age_of_discovery
 		land_maintenance = 1.0
 	}
 
-	global_manpower_modifier = 0.3
-	global_tax_modifier = 0.1
-	land_morale = 0.10
-	prestige = 1
+	manpower_recovery_speed = 0.20
 }
 
 ###########################################
@@ -927,9 +894,7 @@ meritocracy_buffer_3 = {
 
 warring_states = {
 	potential = {
-		NOT = {
-			is_year = 1500
-		}
+		current_age = age_of_discovery
 		OR = {
 			tag = CHC
 			tag = CMI
@@ -951,15 +916,13 @@ warring_states = {
 	}
 	
 	trigger = {
-		NOT = {
-			is_year = 1500
-		}
+		current_age = age_of_discovery
 	}
 	
-	years_of_nationalism = -10
-	global_unrest = -2
+	years_of_nationalism = -5
+	global_unrest = -1
 	ae_impact = -0.2
-	core_creation = -0.1
+	core_creation = -0.2
 }
 
 
