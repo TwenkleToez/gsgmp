@@ -283,8 +283,6 @@ country_decisions = {
 				tag = MAG
 				tag = ANH
 				tag = SAX
-				tag = EST
-				tag = LVA
 				tag = THU
 			}
 			NOT = { tag = PRU }
