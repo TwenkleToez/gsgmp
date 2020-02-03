@@ -38,6 +38,83 @@ zhou_missions = {
 				name = chinese_peoples_united
 				duration = -1
 			}
+			ordos_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_mongolia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			inner_mongolia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			chahar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			red_river_delta_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_laos_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			vietnam_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_laos_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			amdo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tsang_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kham_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	expand_the_northern_frontier = {
@@ -75,6 +152,27 @@ zhou_missions = {
 				name = expand_the_northern_frontier
 				duration = -1
 			}
+			jilin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ningguta_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			eastern_mongolia = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	move_toward_the_east = {
@@ -106,6 +204,41 @@ zhou_missions = {
 			add_country_modifier = {
 				name = move_toward_the_east
 				duration = 18250
+			}
+			pyongan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hamgyeong_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_korea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			eastern_korea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_korea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -412,40 +545,51 @@ zhou_missions_3 = {
 		required_missions = { unification_of_china }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 2135
-				province_id = 2134
-				province_id = 4204
-				province_id = 706
-				province_id = 705
-				province_id = 2133
-				province_id = 678
-				province_id = 2132
-				province_id = 2130
-				province_id = 4205
-				province_id = 4519
-				province_id = 677
-				province_id = 4517
+				area = amdo_area
+				area = kham_area
+				area = tsang_area
 			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			owns_core_province = 2135
-			owns_core_province = 2134
-			owns_core_province = 4204
-			owns_core_province = 706
-			owns_core_province = 705
-			owns_core_province = 2133
-			owns_core_province = 678
-			owns_core_province = 2132
-			owns_core_province = 2130
-			owns_core_province = 4205
-			owns_core_province = 4519
-			owns_core_province = 677
-			owns_core_province = 4517
+			amdo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kham_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tsang_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = { 
 			add_country_modifier = { 
 				name = expand_the_west
 				duration = -1
+			}
+			turpan_kumul_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			shanshan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tarim_basin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -454,29 +598,25 @@ zhou_missions_3 = {
 		required_missions = { expand_the_west }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 711
-				province_id = 4693
-				province_id = 710
-				province_id = 2123
-				province_id = 2192
-				province_id = 2121
-				province_id = 712
-				province_id = 2122
-				province_id = 4207
-				province_id = 4206
+				area = turpan_kumul_area
+				area = shanshan_area
+				area = tarim_basin_area
 			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			owns_core_province = 711
-			owns_core_province = 4693
-			owns_core_province = 710
-			owns_core_province = 2123
-			owns_core_province = 2192
-			owns_core_province = 2121
-			owns_core_province = 712
-			owns_core_province = 2122
-			owns_core_province = 4207
-			owns_core_province = 4206
+			turpan_kumul_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			shanshan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tarim_basin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = { 
 			add_country_modifier = { 
@@ -525,11 +665,9 @@ zhou_mission_4 = {
 			}
 		}
 		effect = {
-			700 = {
-				add_country_modifier = {
-					name = imperial_academy
-					duration = -1
-				}
+			add_country_modifier = {
+				name = imperial_academy
+				duration = -1
 			}
 		}
 	}
