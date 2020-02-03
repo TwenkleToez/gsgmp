@@ -8,6 +8,7 @@ China:
 * Oirat nerfed, reduced ruler mil, reduced general shock, Mongolia independent in 1444
 * Zhou formable with its own ideas and missions for Chinese nations
 * Qing Extinguish Ming mission nerfed
+* If Zhou finishes their Great Wall mission they cannot get the nomadic frontier disaster
 
 Mercenaries:
 * Base Mercenary limit has been reduced from 20+30% of land FL, to 5+25% of land FL.
@@ -33,6 +34,7 @@ Formables:
 * Thailand (w/ missions) Tags that can form it: AYU, SUK, LNA
 * Austria-Hungary (w/ a fake gov modifier similar to their unique reform from the next patch) Tags that can form it: HAB
 * Tag locked the Prussia formable. Tags that can form it: BRA, TEU, KUR, DNZ, LIV, RIG, POM, MKL, MAG, ANH, SAX, EST, LVA, THU
+* Austria-Hungary cannot form Italy or Poland
 
 Great Powers:
 * GP count increased from 8 to 10
@@ -52,6 +54,8 @@ National Modifiers:
 Events:
 * Many events that conflict with the mod have been removed or changed, mostly in China
 * Hindu Child of Surya event base monarch bonus changed from 444 to 222 
+* All HAB events apply to AHE
+* All AYU events apply to AYU
 
 Governments:
 * Most Colonial Nation reforms are locked to remove the need for setup save edits
