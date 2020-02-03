@@ -725,7 +725,9 @@ western_colonizer = {
 	trigger = {
 		has_institution = new_world_i
 		total_development = 250
-		expansion_ideas = 6
+		NOT = {
+			expansion_ideas = 6
+		}
 		is_subject = no
 	}
 	colonists = 1
@@ -781,41 +783,6 @@ cn_navy = {
 	naval_maintenance_modifier = 0.25
 }
 
-######################################
-# Defender of China
-######################################
-
-def_china = {
-	potential = {
-		current_age = age_of_discovery
-		OR = {
-			tag = CHC
-			tag = CMI
-			tag = CSH
-			tag = CXI
-			tag = FRM
-			tag = HUA
-			tag = JIN
-			tag = LNG
-			tag = MIN
-			tag = NNG
-			tag = QIC
-			tag = SHU
-			tag = WUU
-			tag = YAN
-			tag = YUE
-			tag = MNG
-		}
-	}
-	
-	trigger = {
-		current_age = age_of_discovery
-		land_maintenance = 1.0
-	}
-
-	manpower_recovery_speed = 0.20
-}
-
 ###########################################
 # Meritocracy.
 ###########################################
@@ -823,9 +790,7 @@ def_china = {
 meritocracy_buffer_1 = {
 	potential = {
 		has_dlc = "Mandate of Heaven"
-		NOT = {
-			is_year = 1500
-		}
+		current_age = age_of_discovery
 		OR = {
 			religion_group = eastern
 			religion_group = pagan
@@ -833,22 +798,17 @@ meritocracy_buffer_1 = {
 	}
 	
 	trigger = {
-		NOT = {
-			is_year = 1500
-		}
+		current_age = age_of_reformation
 		has_reform = celestial_empire
 	}
 	
-	meritocracy = 1.5
+	meritocracy = 2
 }
 
 meritocracy_buffer_2 = {
 	potential = {
 		has_dlc = "Mandate of Heaven"
-		NOT = {
-			is_year = 1550
-		}
-		is_year = 1500
+		current_age = age_of_discovery
 		OR = {
 			religion_group = eastern
 			religion_group = pagan
@@ -856,36 +816,11 @@ meritocracy_buffer_2 = {
 	}
 	
 	trigger = {
-		NOT = {
-			is_year = 1550
-		}
+		current_age = age_of_reformation
 		has_reform = celestial_empire
 	}
 	
-	meritocracy = 1.0
-}
-
-meritocracy_buffer_3 = {
-	potential = {
-		has_dlc = "Mandate of Heaven"
-		NOT = {
-			is_year = 1600
-		}
-		is_year = 1550
-		OR = {
-			religion_group = eastern
-			religion_group = pagan
-		}
-	}
-	
-	trigger = {
-		NOT = {
-			is_year = 1600
-		}
-		has_reform = celestial_empire
-	}
-	
-	meritocracy = 0.5
+	meritocracy = 1
 }
 
 ###########################################
@@ -911,7 +846,6 @@ warring_states = {
 			tag = WUU
 			tag = YAN
 			tag = YUE
-			tag = MNG
 		}
 	}
 	
@@ -919,10 +853,8 @@ warring_states = {
 		current_age = age_of_discovery
 	}
 	
-	years_of_nationalism = -5
-	global_unrest = -1
-	ae_impact = -0.2
-	core_creation = -0.2
+	administrative_efficiency = 0.15
+	global_manpower_modifier = 0.15
 }
 
 
