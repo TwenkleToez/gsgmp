@@ -217,7 +217,7 @@ manchu_missions_1_b = {
 					type = all
 					controlled_by = ROOT
 				}
-				amount = 25
+				amount = 28
 			}
 		}
 		effect = {
@@ -312,13 +312,22 @@ manchu_missions_1_b = {
 			owned_by = MNG
 		}
 		trigger ={
-			NOT = { exists = MNG }
+			calc_true_if = {
+				south_china_region = {
+					type = all
+					controlled_by = ROOT
+				}
+				amount = 26
+			}
+			calc_true_if = {
+				xinan_region = {
+					type = all
+					controlled_by = ROOT
+				}
+				amount = 12
+			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = "extinguish_ming_core_cost"
-				duration = 7300
-			}
 			if = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
@@ -334,9 +343,9 @@ manchu_missions_1_b = {
 				china_superregion = {
 					limit = {
 						NOT = { owned_by = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
 					}
-					is_permanent_claim = ROOT
+					add_core = ROOT
 				}
 			}
 		}
