@@ -798,7 +798,7 @@ meritocracy_buffer_1 = {
 	}
 	
 	trigger = {
-		current_age = age_of_reformation
+		current_age = age_of_discovery
 		has_reform = celestial_empire
 	}
 	
@@ -808,7 +808,7 @@ meritocracy_buffer_1 = {
 meritocracy_buffer_2 = {
 	potential = {
 		has_dlc = "Mandate of Heaven"
-		current_age = age_of_discovery
+		current_age = age_of_reformation
 		OR = {
 			religion_group = eastern
 			religion_group = pagan

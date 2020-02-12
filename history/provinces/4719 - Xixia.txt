@@ -1,0 +1,17 @@
+#4719 - Xixia
+
+owner = LNG
+controller = LNG
+culture = zhongyuan
+religion = confucianism
+capital = "Xixia"
+trade_goods = cocoa
+hre = no
+base_tax = 5
+base_production = 5
+base_manpower = 3
+is_city = yes
+add_core = TNG
+add_core = LNG
+discovered_by = chinese
+discovered_by = nomad_group

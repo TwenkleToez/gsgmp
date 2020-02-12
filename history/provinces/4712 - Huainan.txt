@@ -1,0 +1,19 @@
+#4707 - Huainan
+
+owner = MNG
+controller = MNG
+add_core = MNG
+culture = zhongyuan
+religion = confucianism
+capital = "Huainan"
+trade_goods = cocoa
+hre = no
+base_tax = 3
+base_production = 2
+base_manpower = 2
+is_city = yes
+
+
+
+discovered_by = chinese
+discovered_by = nomad_group

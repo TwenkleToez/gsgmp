@@ -1,0 +1,20 @@
+#4700 - Huaihua
+
+owner = CHC
+controller = CHC
+add_core = CMI
+culture = xiang
+religion = animism
+capital = "Huaihua"
+trade_goods = cocoa
+hre = no
+base_tax = 4
+base_production = 4
+base_manpower = 3
+is_city = yes
+add_core = CHC
+
+
+
+discovered_by = chinese
+discovered_by = nomad_group

@@ -36,16 +36,18 @@ conquer_korea = {
 }
 
 expand_the_west = {
-	culture_conversion_cost = -0.2
+	yearly_harmony = 0.5
+	num_accepted_cultures = 1
 }
 
 further_into_the_west = {
-	trade_steering = 0.1
+	global_trade_power = 0.1
 	merchants = 1
 }
 
 secure_the_red_river = {
 	global_trade_power = 0.1
+	merchants = 1
 }
 
 filling_the_treasury = {
