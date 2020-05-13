@@ -4,6 +4,42 @@
 
 ### Nation specific idea groups
 
+MJE_ideas = {
+	start = {
+		trade_steering = 0.15
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	bonus = {
+		land_forcelimit_modifier = 0.2
+	}
+	trigger = {
+		tag = MJE
+	}
+	free = yes
+	MJE_ship_cost = {
+		global_ship_cost = -0.2
+	}
+	MJE_fort_maitenance = {
+		fort_maintenance_modifier = -0.2
+	}
+	MJE_somali_clans = {
+        global_manpower_modifier = 0.2
+    }
+	MJE_ofensive_warfare = {
+		infantry_power = 0.1
+		infantry_cost = -0.1
+    }
+	MJE_Indian_trade = {
+		trade_efficiency = 0.1
+    }
+	MJE_heavy_ships = {
+		heavy_ship_power = 0.1
+	}
+	MJE_advisors = {
+		advisor_cost = -0.1
+	}
+}
+
 AHE_ideas = {
 	start = {
 		land_morale = 0.10
@@ -130,7 +166,7 @@ SIA_ideas = {
 	}
 }
 
-CZH_ideas = {
+QIN_ideas = {
 	start = {
 		idea_cost = -0.05
 		global_institution_spread = 0.1
@@ -141,7 +177,7 @@ CZH_ideas = {
 	}
 	
 	trigger = {
-		tag = CZH
+		tag = QIN
 	}
 	free = yes		#will be added at load.
 	
@@ -150,7 +186,7 @@ CZH_ideas = {
 		supply_limit_modifier = 0.2
 	}
 	chinese_population = {
-		global_manpower_modifier = 0.4
+		global_manpower_modifier = 0.35
 		manpower_recovery_speed = 0.1
 	}
 	chinese_growth = {
@@ -167,7 +203,7 @@ CZH_ideas = {
 		army_tradition = 0.5
 	}
 	chinese_army = {
-		land_forcelimit_modifier = 0.4
+		land_forcelimit_modifier = 0.35
 	}
 }
 
@@ -1733,6 +1769,7 @@ MJZ_ideas = {
 			tag = NHX
 			tag = MYR
 			tag = EJZ
+			tag = CC2
 		}
 	}
 	free = yes
@@ -7471,7 +7508,10 @@ CYI_ideas = {
 	}
 	
 	trigger = {
-		tag = CYI
+		OR = {
+			tag = CYI
+			tag = M05
+		}
 	}
 	free = yes
 	
@@ -7741,7 +7781,11 @@ CDL_ideas = {
 	}
 	
 	trigger = {
-		tag = CDL
+		
+		OR = {
+			tag = CDL
+			tag = M19
+		}
 	}
 	free = yes
 	
