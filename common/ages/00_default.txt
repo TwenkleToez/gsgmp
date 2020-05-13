@@ -586,12 +586,12 @@ age_of_absolutism = {
 				factor = 100
 			}
 		}
-		ab_dutch_anti_corruption = {
+		ab_dutch_ica = {
 			allow = {
 				tag = NED
 			}
 			modifier = {
-				yearly_corruption = -0.2
+				infantry_power = 0.1
 			}
 			ai_will_do = {
 				factor = 100
@@ -717,7 +717,6 @@ age_of_revolutions = {
 		
 		ab_force_march = {
 			rule = {
-				force_march_free = yes
 			}
 			ai_will_do = {
 				factor = 10
