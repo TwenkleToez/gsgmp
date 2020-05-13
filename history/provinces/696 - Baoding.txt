@@ -1,7 +1,7 @@
 #696 - Baoding
 
-owner = YAN
-controller = YAN
+owner = M01
+controller = M01
 culture = chihan
 religion = confucianism
 capital = "Baoding"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = YAN
+add_core = M01
 
 
 

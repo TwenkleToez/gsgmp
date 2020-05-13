@@ -1,7 +1,7 @@
 #690 - Shandong Bandao
 
-owner = QIC
-controller = QIC
+owner = M12
+controller = M12
 culture = shandong_culture
 religion = confucianism
 capital = "Qingzhou"
@@ -11,8 +11,8 @@ base_tax = 5
 base_production = 4
 base_manpower = 3
 is_city = yes
-add_core = QIC
-fort_15th = yes
+add_core = M12
+
 
 
 

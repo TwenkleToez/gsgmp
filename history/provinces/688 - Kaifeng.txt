@@ -1,7 +1,7 @@
 #688 - Kaifeng (can't change file name)
 
-owner = LNG
-controller = LNG
+owner = CPC
+controller = CPC
 culture = zhongyuan
 religion = confucianism
 capital = "Kaifeng"
@@ -11,7 +11,7 @@ base_tax = 8
 base_production = 8
 base_manpower = 4
 is_city = yes
-add_core = LNG
+add_core = CPC
 fort_15th = yes
 center_of_trade = 1
 

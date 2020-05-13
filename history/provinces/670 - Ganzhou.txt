@@ -1,7 +1,7 @@
 #670 - Ganzhou
 
-owner = HUA
-controller = HUA
+owner = M04
+controller = M04
 culture = hakka
 religion = confucianism
 capital = "Ganzhou"
@@ -11,8 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = NNG
-add_core = HUA
+add_core = M04
 
 
 

@@ -1,7 +1,7 @@
 #687 - Zhoujiakou
 
-owner = LNG
-controller = LNG
+owner = CPC
+controller = CPC
 culture = zhongyuan
 religion = confucianism
 capital = "Nanyang"
@@ -11,8 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = TNG
-add_core = LNG
+add_core = CPC
 discovered_by = chinese
 discovered_by = nomad_group
 

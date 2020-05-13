@@ -1,7 +1,7 @@
 #662 - Yunnan
 
-owner = CDL
-controller = CDL
+owner = M19
+controller = M19
 culture = bai
 religion = buddhism
 capital = "Kunming"
@@ -11,7 +11,7 @@ base_tax = 6
 base_production = 5
 base_manpower = 3
 is_city = yes
-add_core = CDL
+add_core = M19
 
 
 

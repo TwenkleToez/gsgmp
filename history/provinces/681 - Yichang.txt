@@ -1,7 +1,7 @@
 #681 - Yichuan
 
-owner = SHU
-controller = SHU
+owner = M18
+controller = M18
 culture = sichuanese
 religion = confucianism
 capital = "Yichang"
@@ -11,8 +11,8 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = CXI
-add_core = SHU
+add_core = M18
+
 
 
 

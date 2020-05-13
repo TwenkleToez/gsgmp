@@ -1,7 +1,7 @@
 #665 - Jiangmen
 
-owner = YUE
-controller = YUE
+owner = M13
+controller = M13
 culture = cantonese
 religion = confucianism
 capital = "Shiuhing"
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-add_core = YUE
+add_core = M13
 
 
 
