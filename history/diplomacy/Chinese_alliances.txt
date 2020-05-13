@@ -183,3 +183,200 @@ dependency = {
 	start_date = 1444.1.1
 	end_date = 1644.4.22
 }
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = CPC
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = CPS
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M01
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M02
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M03
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M04
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M05
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M06
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M07
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M08
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M09
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M10
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M11
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M12
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M13
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M14
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M15
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M16
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M17
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M18
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M19
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M20
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M21
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M22
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MNG
+	second = M23
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
