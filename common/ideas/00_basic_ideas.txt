@@ -478,7 +478,7 @@ exploration_ideas = {
 	trigger = {
 		OR = {
 			technology_group = western
-			adm_tech = 7
+			adm_tech = 10
 		}
 	}
 
