@@ -1,0 +1,100 @@
+country_decisions = {
+
+	qin_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_qin_flag }
+			NOT = { exists = QIN }
+			OR = {
+				tag = CSW
+				tag = CCW
+				tag = CHS
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1816
+				province_id = 700
+				province_id = 1821
+				province_id = 679
+				province_id = 667
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			is_emperor = no
+			has_reform = celestial_empire
+			owns_core_province = 1816
+			owns_core_province = 700
+			owns_core_province = 1821
+			owns_core_province = 679
+			owns_core_province = 667
+			calc_true_if = {
+				north_china_region = {
+					type = all
+					controlled_by = ROOT
+				}
+				amount = 40
+			}
+			calc_true_if = {
+				south_china_region = {
+					type = all
+					controlled_by = ROOT
+				}
+				amount = 35
+			}
+			calc_true_if = {
+				xinan_region = {
+					type = all
+					controlled_by = ROOT
+				}
+				amount = 22
+			}
+		}
+		effect = {
+			change_tag = QIN
+			swap_non_generic_missions = yes
+			set_government_rank = 3
+			china_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			QIN = {
+				set_capital = 700
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}			
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_qin_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
