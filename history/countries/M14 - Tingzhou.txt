@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = war_state
+technology_group = chinese
+religion = confucianism
+primary_culture = hakka
+capital = 2153
+add_harmonized_religion = mahayana
+
+
+1440.11.11 = {
+	monarch = {
+		name = "Chenggong"
+		dynasty = "Ting"
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}

@@ -5,14 +5,14 @@ religion = tengri_pagan_reformed
 secondary_religion = confucianism
 primary_culture = manchu
 capital = 726
-government_rank = 1
+government_rank = 2
 
 1440.11.11 = {
 	monarch = {
 		name = "Shen"
 		dynasty = "Wei"
-		adm = 4
-		dip = 3
-		mil = 4
+		adm = 2
+		dip = 2
+		mil = 3
 	}
 }

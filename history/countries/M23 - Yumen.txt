@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = steppe_horde
+technology_group = nomad_group
+religion = tengri_pagan_reformed
+secondary_religion = vajrayana
+primary_culture = oirats
+capital = 707
+
+
+1440.11.11 = {
+	monarch = {
+		name = "Qi"
+		dynasty = "Yu"
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}

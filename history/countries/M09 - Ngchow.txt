@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = war_state
+technology_group = chinese
+religion = confucianism
+primary_culture = cantonese
+capital = 2162
+add_harmonized_religion = mahayana
+
+
+1440.11.11 = {
+	monarch = {
+		name = "Changluo"
+		dynasty = "Chow"
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}

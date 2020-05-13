@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = war_state
+technology_group = chinese
+religion = confucianism
+primary_culture = xibei
+capital = 2184
+add_harmonized_religion = mahayana
+add_harmonized_religion = vajrayana
+
+1440.11.11 = {
+	monarch = {
+		name = "Shuang"
+		dynasty = "Zhang"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}

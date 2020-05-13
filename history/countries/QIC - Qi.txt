@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = war_state
 technology_group = chinese
 religion = confucianism
 primary_culture = shandong_culture
@@ -11,7 +11,7 @@ add_harmonized_religion = mahayana
 		name = "Zhu"
 		dynasty = "Qi"
 		adm = 3
-		dip = 3
-		mil = 4
+		dip = 2
+		mil = 3
 	}
 }

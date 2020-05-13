@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = animism
+primary_culture = yi
+capital = 674
+
+
+1440.11.11 = {
+	monarch = {
+		name = "Houzhao"
+		dynasty = "Gui"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}

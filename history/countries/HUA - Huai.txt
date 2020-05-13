@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = war_state
 technology_group = chinese
 religion = confucianism
 primary_culture = hakka
@@ -10,8 +10,8 @@ add_harmonized_religion = mahayana
 	monarch = {
 		name = "Liu"
 		dynasty = "Huai"
-		adm = 4
+		adm = 3
 		dip = 3
-		mil = 5
+		mil = 4
 	}
 }

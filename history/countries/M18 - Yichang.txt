@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = war_state
+technology_group = chinese
+religion = confucianism
+primary_culture = sichuanese
+capital = 681
+add_harmonized_religion = mahayana
+
+
+1440.11.11 = {
+	monarch = {
+		name = "Gang"
+		dynasty = "Chang"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}

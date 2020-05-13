@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = war_state
 primary_culture = miao
 religion = confucianism
 technology_group = chinese
@@ -11,8 +11,8 @@ add_harmonized_religion = animism
 	monarch = {
 		name = "Bai"
 		dynasty = "Miao"
-		adm = 5
-		dip = 4
-		mil = 5
+		adm = 3
+		dip = 3
+		mil = 4
 	}
 }

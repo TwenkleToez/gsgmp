@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = mandala_reform
+religion = buddhism
+technology_group = chinese
+primary_culture = bai
+capital = 662
+
+
+1440.11.11 = {
+	monarch = {
+		name = "Su"
+		dynasty = "Yun"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}

@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = war_state
 technology_group = chinese
 religion = confucianism
 primary_culture = zhuang
@@ -10,7 +10,7 @@ government_rank = 1
 	monarch = {
 		name = "Zou"
 		dynasty = "Changsheng"
-		adm = 3
+		adm = 4
 		dip = 3
 		mil = 4
 	}

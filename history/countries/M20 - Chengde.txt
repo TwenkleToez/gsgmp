@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = steppe_horde
+technology_group = nomad_group
+religion = tengri_pagan_reformed
+secondary_religion = vajrayana
+primary_culture = chahar
+capital = 703
+
+
+
+1440.11.11 = {
+	monarch = {
+		name = "Zhen"
+		dynasty = "Cheng"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}

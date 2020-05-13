@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = steppe_horde
+technology_group = nomad_group
+religion = tengri_pagan_reformed
+secondary_religion = confucianism
+primary_culture = mongol
+capital = 698
+add_harmonized_religion = mahayana
+
+
+1440.11.11 = {
+	monarch = {
+		name = "Fu"
+		dynasty = "Xia"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}

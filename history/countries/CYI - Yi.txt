@@ -4,13 +4,13 @@ primary_culture = yi
 religion = animism
 technology_group = chinese
 capital = 675	# Umung
-government_rank = 1
+government_rank = 2
 
 1440.11.11 = {
 	monarch = {
 		name = "Ji"
 		dynasty = "Yi"
-		adm = 3
+		adm = 4
 		dip = 3
 		mil = 4
 	}

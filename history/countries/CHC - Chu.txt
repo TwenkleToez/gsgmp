@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = war_state
 technology_group = chinese
 religion = confucianism
 primary_culture = xiang
@@ -11,8 +11,8 @@ add_harmonized_religion = animism
 	monarch = {
 		name = "Xing"
 		dynasty = "Chu"
-		adm = 4
-		dip = 3
-		mil = 5
+		adm = 3
+		dip = 2
+		mil = 3
 	}
 }

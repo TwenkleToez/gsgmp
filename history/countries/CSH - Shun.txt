@@ -1,18 +1,17 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = war_state
 technology_group = chinese
 religion = confucianism
 primary_culture = xibei
 capital = 689 # Fengyuan
 add_harmonized_religion = mahayana
-add_harmonized_religion = vajrayana
 
 1440.11.11 = {
 	monarch = {
 		name = "Li"
 		dynasty = "Shun"
 		adm = 3
-		dip = 2
-		mil = 3
+		dip = 3
+		mil = 4
 	}
 }

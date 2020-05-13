@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = war_state
+government_rank = 2
+technology_group = chinese
+religion = confucianism
+primary_culture = zhongyuan
+capital = 688
+add_harmonized_religion = mahayana
+
+1440.11.11 = {
+	monarch = {
+		name = "Cao"
+		dynasty = "Cao"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}

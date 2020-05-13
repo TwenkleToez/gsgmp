@@ -4,7 +4,7 @@ primary_culture = bai
 religion = buddhism
 technology_group = chinese
 capital = 661	# Dali
-government_rank = 1
+government_rank = 2
 
 1440.11.11 = {
 	monarch = {

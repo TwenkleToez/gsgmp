@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = war_state
+technology_group = chinese
+religion = confucianism
+primary_culture = cantonese
+capital = 665
+add_harmonized_religion = mahayana
+
+
+1440.11.11 = {
+	monarch = {
+		name = "Youlang"
+		dynasty = "Shiu"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
