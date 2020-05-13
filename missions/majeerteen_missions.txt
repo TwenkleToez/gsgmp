@@ -1,0 +1,734 @@
+majeerteen_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = MJE
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	mje_legitimate_heir = {
+		position = 1
+		icon = mission_assemble_an_army
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = {
+			if = {
+				limit = {
+					government = monarchy
+				}
+				has_heir = yes
+				heir_claim = 80
+			}
+			legitimacy_equivalent = 100
+			NOT = {
+				average_unrest = 2
+			}
+		}
+		effect = { 	
+			if = {
+				limit = {
+					government = monarchy
+					has_heir = yes
+				}
+				change_heir_adm = 1
+				change_heir_dip = 1
+				change_heir_mil = 1
+			}
+		}
+	}	
+
+	somali_unification = {
+		position = 2
+		icon = mission_conquer_50_development
+		required_missions = { mje_legitimate_heir }
+		provinces_to_highlight = {
+			OR = {
+				area = ogaden_area
+				area = ifat_area
+				area = somaliland_area
+				area = mogadishu_area
+				area = ajuuran_area
+				area = jubba_area
+			}
+		}
+		trigger = { 
+			ogaden_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ifat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			somaliland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mogadishu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ajuuran_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			jubba_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = mje_somali_unification
+				duration = 9125
+			}
+			aussa_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			shewa_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			hadiya_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+		}
+	}
+	coptic_expansion = {
+		position = 3
+		icon = mission_assemble_an_army
+		required_missions = { somali_unification }
+		provinces_to_highlight = {
+			OR = {
+				area = aussa_area
+				area = shewa_area
+				area = hadiya_area
+
+			}
+		}
+		trigger = {
+			aussa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			shewa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hadiya_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = mje_coptic_expansion
+				duration = -1
+			}
+			damot_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			central_ethiopia_area_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			southern_ethiopia_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			tigray_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			
+		}
+		
+	}
+	coptic_elimination = {
+		position = 4
+		icon = mission_have_two_subjects
+		required_missions = { coptic_expansion }
+		provinces_to_highlight = {
+			OR = {
+				area = damot_area
+				area = central_ethiopia_area
+				area = southern_ethiopia_area
+				area = tigray_area
+			}
+		}
+		trigger = {
+			damot_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tigray_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_ethiopia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			southern_ethiopia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = mje_coptic_elimination
+				duration = 7300
+			}
+			add_permanent_claim = 4033
+			add_permanent_claim = 2799
+			upper_nubia_area = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			lower_nubia_area = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			red_sea_coast_area = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			dongola_area = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+				}
+					add_permanent_claim = ROOT
+			}
+		}
+	}
+	forward_to_nubia = {
+		position = 5
+		icon = mission_protect_albania
+		required_missions = { coptic_elimination }
+		provinces_to_highlight = {
+			OR = {
+				area = upper_nubia_area 
+				area = red_sea_coast_area 
+				area = dongola_area 
+				area = lower_nubia_area
+			}
+		}
+		trigger = {
+			upper_nubia_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			red_sea_coast_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dongola_area   = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_nubia_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = mje_forward_to_nubia
+				duration = -1
+			}
+		}
+	}
+}
+majeerteen_domestic = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = MJE
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	mogadishuan_capital = {
+			position = 1
+			icon = mission_imperial_cities
+			required_missions = { }
+			provinces_to_highlight = { 
+				province_id = 1205
+			}
+		trigger = {
+			owns_core_province = 1205
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+				}
+				1205 = {
+					province_has_center_of_trade_of_level = 2
+					development = 20
+				}
+			}
+			else = {
+				1205 = {
+					development = 20
+				}
+			}
+		}
+		effect = { 
+			if = {
+				limit = {
+					1207 = {
+						is_empty = yes
+					}
+				}
+					1207 = {
+						add_core = ROOT
+						cede_province = ROOT
+					}	
+			}
+			if = {
+				limit = {
+					2779 = {
+						is_empty = yes
+					}
+				}
+				2779 = {
+					add_core = ROOT
+					cede_province = ROOT
+				}
+			}
+			if = {
+				limit = {
+					4052 = {
+						is_empty = yes
+					}
+				}
+				4052 = {
+					add_core = ROOT
+					cede_province = ROOT
+				}
+			}
+			if = {
+				limit = {
+				4051 = {
+						is_empty = yes
+					}
+				}
+				4051 = {
+					add_core = ROOT
+					cede_province = ROOT
+				}
+			}
+		}
+	}
+	mje_privateers = {
+		icon = mission_raid_christian_trade
+		required_missions = { mogadishuan_capital }
+		position = 2
+		provinces_to_highlight = {
+			province_id = 1448
+		}
+		trigger = {
+			1448 = {
+				privateer_power = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = mje_privateers
+				duration = 7300
+			}
+			add_dip_power = 100
+		}
+	}
+	mje_aden = {
+		position = 3
+		icon = mission_combat_barbary_piracy
+		required_missions = { mje_privateers }
+		provinces_to_highlight = { 
+			province_id = 1099
+		}
+		trigger = {
+			1099 = {
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+			4346 = {
+					is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			1248 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = mje_aden 
+				duration = 5475
+			}
+		}
+	}
+	mje_indian_treasure = {
+		position = 4
+		icon = mission_launch_a_flagship
+		required_missions = { mje_aden }
+		provinces_to_highlight = { 
+			province_id = 1099
+		}
+		trigger = {
+			1340 = {
+				privateer_power = {
+					country = ROOT
+					share = 15
+				}
+			}
+			owns_core_province = 1248
+		}
+		effect = {
+			1248 = {
+				center_of_trade = 1
+			}
+		}
+	}
+	mje_indian_trade_dominance = {
+		position = 5
+		icon = mission_corsairs_of_the_north_sea
+		required_missions = { mje_indian_treasure }
+		provinces_to_highlight = { 
+			province_id = 1340
+		}
+		trigger = {
+
+			1340 = {
+					is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = mje_indian_trade_dominance
+				duration = -1
+			}
+			if = {
+				limit = {
+					574 = {
+						is_empty = yes
+					}
+				}
+					574 = {
+						add_core = ROOT
+						cede_province = ROOT
+					}	
+			}
+		}
+	}
+			
+}
+mje_southern = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = MJE
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	invade_swahili = {
+			position = 1
+			icon = mission_city_of_the_world's_desire
+			required_missions = { }
+		provinces_to_highlight = { 
+			OR = {
+				area = mombasa_area
+				area = northern_swahili_coast_area 
+			}
+		}
+		trigger = {
+			mombasa_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+			northern_swahili_coast_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { 
+			add_country_modifier = {
+				name = mje_invade_swahili
+				duration = 4200
+			}
+			1195 = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			788 = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			4049 = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			central_swahili_coast_area = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			add_adm_power = 75
+		}
+	}
+	kilwanese_subjugation = {
+		position = 2
+			icon = mission_establish_the_black_guard
+			required_missions = { invade_swahili }
+			provinces_to_highlight = {
+				OR = {
+					area = mozambique_area
+					area = central_swahili_coast_area
+				}
+			}
+		trigger = {
+			4049 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1195 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			788 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_swahili_coast_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { 
+			add_country_modifier = {
+				name = mje_kilwanese_subjugation
+				duration = 7300
+			}
+			add_permanent_claim = 4034
+			add_permanent_claim = 4037
+			add_permanent_claim = 4048
+			add_permanent_claim = 1192
+			add_permanent_claim = 1186
+			add_permanent_claim = 4045
+			add_permanent_claim = 4044
+			add_permanent_claim = 4047
+			shire_area = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			lower_zambezi_area  = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			butua_area = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			zimbabwe_area = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+		}
+	}
+	shona_conquest = {
+			position = 3
+			icon = mission_reconquer_ceuta
+			required_missions = { kilwanese_subjugation }
+			provinces_to_highlight = {
+				OR = {
+					area = shire_area
+					area = lower_zambezi_area
+					area = butua_area
+					area = zimbabwe_area
+					province_id = 4034
+					province_id = 4037
+					province_id = 4048
+					province_id = 1192
+					province_id = 1186
+					province_id = 4045
+					province_id = 4044
+					province_id = 4047
+				}
+			}
+		trigger = {
+			4034 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4037 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4048 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1192 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1186 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4045 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4044 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4047 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			shire_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_zambezi_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+			butua_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+			zimbabwe_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { 
+			add_country_modifier = {
+				name = mje_shona_conquest
+				duration = -1
+			}
+			
+			sakalava_area = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			betsimasaraka_area = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			madagascar_highlands_area = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			southern_madagascar = {
+				limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+			}
+			add_mil_power = 100
+		}
+	}
+	whispers_of_madagascar = {
+		position = 4
+			icon = mission_raid_on_iceland
+			required_missions = { shona_conquest }
+			provinces_to_highlight = {
+				OR = {
+					area = sakalava_area
+					area = betsimasaraka_area
+					area = madagascar_highlands_area
+					area = southern_madagascar
+				}
+			}
+		trigger = {
+			sakalava_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+			betsimasaraka_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+			madagascar_highlands_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+			southern_madagascar = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { 
+			add_country_modifier = {
+				name = mje_whispers_of_madagascar
+				duration = 9125
+			}
+		}
+	}	
+}
