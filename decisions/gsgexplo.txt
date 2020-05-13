@@ -1,0 +1,112 @@
+country_decisions = {
+	
+	gsg_free_explo = {
+	
+		potential = {
+			OR = {
+				AND = {
+					tag = RUS
+					has_country_flag = rus_nwcol_mod
+					has_institution = new_world_i
+					NOT = {
+						exploration_ideas = 1
+					}
+				}
+				AND = {
+					technology_group = western
+					is_colonial_nation = no
+					has_institution = new_world_i
+					total_development = 250
+					NOT = {
+						exploration_ideas = 1
+					}
+					is_subject = no
+				}	
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					tag = RUS
+					has_country_flag = rus_nwcol_mod
+					has_institution = new_world_i
+					NOT = {
+						exploration_ideas = 1
+					}
+				}
+				AND = {
+					technology_group = western
+					is_colonial_nation = no
+					has_institution = new_world_i
+					total_development = 250
+					NOT = {
+						exploration_ideas = 1
+					}
+					is_subject = no
+				}	
+			}
+			NOT = {
+				num_of_explorers = 1
+			}
+		}
+		effect = {
+			add_dip_power = -250
+			create_explorer = 25
+		}
+	}
+	
+	gsg_free_conqui = {
+	
+		potential = {
+			OR = {
+				AND = {
+					tag = RUS
+					has_country_flag = rus_nwcol_mod
+					has_institution = new_world_i
+					NOT = {
+						exploration_ideas = 1
+					}
+				}
+				AND = {
+					technology_group = western
+					is_colonial_nation = no
+					has_institution = new_world_i
+					total_development = 250
+					NOT = {
+						exploration_ideas = 1
+					}
+					is_subject = no
+				}	
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					tag = RUS
+					has_country_flag = rus_nwcol_mod
+					has_institution = new_world_i
+					NOT = {
+						exploration_ideas = 1
+					}
+				}
+				AND = {
+					technology_group = western
+					is_colonial_nation = no
+					has_institution = new_world_i
+					total_development = 250
+					NOT = {
+						exploration_ideas = 1
+					}
+					is_subject = no
+				}	
+			}
+			NOT = {
+				num_of_conquistadors = 1
+			}
+		}
+		effect = {
+			add_mil_power = -250
+			create_conquistador = 25
+		}
+	}
+}
