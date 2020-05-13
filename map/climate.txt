@@ -169,6 +169,8 @@ arctic = {
 
 #Example: Most of Europe north of med.
 mild_winter = {
+	#mod
+	4702 4698 4699 4703 4714 4705 4706 4707 4716 4717
 	# Scandinavia
   	6 12 13 14 15 26 1981 1982 1983 1984 4141 4142 4149 4165
 	# German North Sea Coast
@@ -370,6 +372,8 @@ impassable = {
 }
 
 mild_monsoon = {
+	#mod
+	4700 4711 4710 4704
 	2026 4415 4416 # Tanjore
 	4408 4407 2100 4409  # Lanka
 	538 2085 4414 # Kongu
@@ -447,6 +451,8 @@ mild_monsoon = {
 }
 
 normal_monsoon = {
+	#mod
+	4701 4695
 	534 535 537 4410 4413 # Malabar
 	543 549 2084 2080 4425 # Andhra
 	1946 2034 4431 # Desh

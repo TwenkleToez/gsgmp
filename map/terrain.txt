@@ -59,6 +59,9 @@ categories =  {
 		nation_designer_cost_multiplier = 1.05
 		
 		terrain_override = {
+			#mod
+			4696 4720 4719 4721 4716 4718 4712 4713 4708 4715 4716 4717 4707 4709 4704 4714
+			
 			104 109 108 1744 1865
 			
 			45 44 1874 113 172 
@@ -159,6 +162,9 @@ categories =  {
 		supply_limit = 5
 		
 		terrain_override = {
+			#mod
+			4700 4701 4711 4710 4705 4695
+			
 			508 509 511 515 525 527 530 545 550 554 557 1947 2036 
 			2037 2040 2043 2056 2058 2069 2070 2071 2080 2090 2092 2097
 			
@@ -280,6 +286,9 @@ categories =  {
 		supply_limit = 4
 		
 		terrain_override = {
+			#mod
+			4699 4697 4703
+			703
 			210	226 # Spain
 			139 1831 143 138 4175  #Balkans
 			158 1952 #Hungary
@@ -391,7 +400,7 @@ categories =  {
 			2296 318
 			1170 2949 798 2948
 			
-			703 704 726 730 2110 2113
+			704 726 730 2110 2113
 			42 457 458
 			4150 #Iberia
 			1017 1012 1019 1023 1024 1818 1825 1837 1839 1847 4359 4360 #Japan
@@ -613,6 +622,9 @@ categories =  {
 		nation_designer_cost_multiplier = 0.9	
 
 		terrain_override = {
+			#mod
+			4694 4698
+			
 			520 536 542 544 578 2035 2077 2079 2085 2087 2093
 			850 852 853 2018 2621 2622 2623 2626 2628 2629 2644 2646 2645 
 			588 2401 2301 324 1224 
@@ -652,6 +664,7 @@ categories =  {
 	savannah = {
 		color = { 248 199 23  }
 
+		type = plains
 		sound_type = plains
 
 		supply_limit = 6
