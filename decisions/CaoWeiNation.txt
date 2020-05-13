@@ -1,0 +1,75 @@
+country_decisions = {
+
+	cao_wei_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_cao_wei_flag }
+			NOT = { exists = CCW }
+			OR = {
+				tag = CPC
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1816
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			is_emperor = no
+			owns_core_province = 1816
+			calc_true_if = {
+				north_china_region = {
+					type = all
+					controlled_by = ROOT
+				}
+				amount = 27
+			}
+		}
+		effect = {
+			change_tag = CCW
+			swap_non_generic_missions = yes
+			set_government_rank = 3
+			china_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			CCW = {
+				set_capital = 688
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}			
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_cao_wei_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
