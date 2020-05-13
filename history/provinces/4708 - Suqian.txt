@@ -1,12 +1,12 @@
 #4707 - Suqian
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = LNG
+controller = LNG
+add_core = LNG
 culture = zhongyuan
 religion = confucianism
 capital = "Suqian"
-trade_goods = cocoa
+trade_goods = silk
 hre = no
 base_tax = 4
 base_production = 4

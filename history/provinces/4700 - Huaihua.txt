@@ -2,11 +2,10 @@
 
 owner = CHC
 controller = CHC
-add_core = CMI
 culture = xiang
 religion = animism
 capital = "Huaihua"
-trade_goods = cocoa
+trade_goods = paper
 hre = no
 base_tax = 4
 base_production = 4

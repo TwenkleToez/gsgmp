@@ -1,18 +1,18 @@
 #4707 - Linyi
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = M12
+controller = M12
+add_core = M12
 culture = shandong_culture
 religion = confucianism
 capital = "Linyi"
-trade_goods = cocoa
+trade_goods = grain
 hre = no
 base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-add_core = QIC
+
 
 
 

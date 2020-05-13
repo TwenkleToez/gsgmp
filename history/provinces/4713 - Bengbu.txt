@@ -1,12 +1,12 @@
 #4707 - Bengbu
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = M02
+controller = M02
+add_core = M02
 culture = zhongyuan
 religion = confucianism
 capital = "Bengbu"
-trade_goods = cocoa
+trade_goods = grain
 hre = no
 base_tax = 4
 base_production = 4

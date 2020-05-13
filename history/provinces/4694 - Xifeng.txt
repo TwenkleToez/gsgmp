@@ -6,13 +6,12 @@ add_core = CYI
 culture = yi
 religion = animism
 capital = "Xifeng"
-trade_goods = iron
+trade_goods = tea
 hre = no
 base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = CDL
 
 
 

@@ -5,13 +5,12 @@ controller = SHU
 culture = sichuanese
 religion = confucianism
 capital = "Mianyang"
-trade_goods = cocoa
+trade_goods = copper
 hre = no
 base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = CXI
 add_core = SHU
 
 

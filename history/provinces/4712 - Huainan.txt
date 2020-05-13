@@ -1,12 +1,12 @@
 #4707 - Huainan
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = M02
+controller = M02
+add_core = M02
 culture = zhongyuan
 religion = confucianism
 capital = "Huainan"
-trade_goods = cocoa
+trade_goods = paper
 hre = no
 base_tax = 3
 base_production = 2
