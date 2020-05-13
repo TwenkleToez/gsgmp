@@ -1651,6 +1651,39 @@ iqta_legacy = {
 	}
 }
 
+war_state_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	allow_normal_conversion = no
+	
+	valid_for_new_country = no
+	allow_convert = no
+	
+	maintain_dynasty = yes
+	
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		culture_group = east_asian
+		technology_group = chinese
+		capital_scope = {
+			superregion = china_superregion
+		}
+	}
+	
+	fixed_rank = 2
+	monarchy = yes
+	modifiers = {
+		army_tradition = 0.5
+		siege_ability = 0.15
+	}
+	
+	ai = {
+		factor = 5
+	}
+}
+
 daimyo_legacy = {
 	# government mechanics flags go here
 	icon = "crown"
