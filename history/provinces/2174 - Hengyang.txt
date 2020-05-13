@@ -2,7 +2,6 @@
 
 owner = CHC
 controller = CHC
-add_core = CMI
 culture = xiang
 religion = animism
 capital = "Hengyang"

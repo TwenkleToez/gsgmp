@@ -1,7 +1,7 @@
 #4195 - Zhending
 
-owner = YAN
-controller = YAN
+owner = M01
+controller = M01
 culture = chihan
 religion = confucianism
 capital = "Zhending"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = YAN
+add_core = M01
 
 discovered_by = chinese
 discovered_by = nomad_group

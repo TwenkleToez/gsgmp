@@ -1,7 +1,7 @@
 # 2182 - Liangzhou
 
-owner = CSH
-controller = CSH
+owner = M17
+controller = M17
 culture = xibei
 religion = confucianism
 capital = "Liangzhou"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = CSH
+add_core = M17
 discovered_by = chinese
 discovered_by = nomad_group
 

@@ -1,8 +1,8 @@
 # 2143 - Fengyang
 
-owner = LNG
-controller = LNG
-add_core = LNG
+owner = M02
+controller = M02
+add_core = M02
 culture = zhongyuan
 religion = confucianism
 capital = "Fengyang"

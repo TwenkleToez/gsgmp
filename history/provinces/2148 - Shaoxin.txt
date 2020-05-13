@@ -1,7 +1,7 @@
 # 2148 - Shaoxin
 
-owner = WUU
-controller = WUU
+owner = CPS
+controller = CPS
 culture = wu
 religion = confucianism
 capital = "Shaoxin"
@@ -11,7 +11,7 @@ base_tax = 6
 base_production = 6
 base_manpower = 2
 is_city = yes
-add_core = WUU
+add_core = CPS
 
 
 

@@ -1,8 +1,8 @@
 # 2162 - Ngchow
 
-owner = YUE
-controller = YUE
-add_core = YUE
+owner = M09
+controller = M09
+add_core = M09
 culture = cantonese
 religion = confucianism
 capital = "Ngchow"

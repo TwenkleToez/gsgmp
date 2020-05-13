@@ -1,7 +1,7 @@
 # 2175 - Runing
 
-owner = LNG
-controller = LNG
+owner = CPC
+controller = CPC
 culture = zhongyuan
 religion = confucianism
 capital = "Runing"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = LNG
+add_core = CPC
 
 
 

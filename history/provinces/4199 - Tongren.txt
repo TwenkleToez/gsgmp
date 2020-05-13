@@ -1,7 +1,7 @@
 #4199 - Tongren
 
-owner = CMI
-controller = CMI
+owner = M16
+controller = M16
 culture = miao
 religion = animism
 capital = "Tongren"
@@ -11,7 +11,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = CMI
+add_core = M16
 
 
 discovered_by = chinese

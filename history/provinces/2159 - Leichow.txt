@@ -1,8 +1,8 @@
 # 2159 - Leichow
 
-owner = MIN
-controller = MIN
-add_core = MIN
+owner = M07
+controller = M07
+add_core = M07
 culture = chimin
 religion = confucianism
 capital = "Leichow"
@@ -12,7 +12,6 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = YUE
 
 
 

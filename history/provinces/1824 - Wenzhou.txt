@@ -1,7 +1,7 @@
 #1824 - Wenzhou
 
-owner = WUU
-controller = WUU
+owner = CPS
+controller = CPS
 culture = wu
 religion = confucianism
 capital = "Wenzhou"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = WUU
+add_core = CPS
 
 
 discovered_by = chinese
