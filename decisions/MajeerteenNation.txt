@@ -1,0 +1,139 @@
+country_decisions = {
+	
+	majeerteen_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = MJE }
+			OR = {
+				tag = MRE
+				tag = WAR
+				tag = AJU
+				tag = MDI
+				tag = ADA
+			}
+			OR = {  
+				primary_culture = somali
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1205
+				province_id = 1206
+				province_id = 1209
+				province_id = 2783
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+	allow = {
+		adm_tech = 7
+		is_subject = no
+		is_at_war = no
+		
+		owns = 1205
+		owns = 1206			
+		owns = 1209
+		owns = 2783
+	}
+		effect = {
+			change_tag = MJE
+			swap_non_generic_missions = yes
+			set_government_rank = 2
+			if = {
+				limit = {
+					NOT = { technology_group = muslim }
+				}
+				change_technology_group = muslim
+				change_unit_type = muslim
+			}
+			if = {
+                limit = {
+                    government = theocracy
+                }
+                change_government = monarchy
+			}
+			if = {
+				limit = {
+					NOT = { }
+				}
+				1205 = {
+					add_base_tax = 2
+					add_base_production = 3
+					add_base_manpower = 3
+				}
+				set_global_flag = constantinople_restored
+			}
+			
+			ogaden_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			ifat_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			somaliland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			ajuuran_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			mogadishu_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			jubba_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			MJE = {
+				set_capital = 1205
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}			
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
