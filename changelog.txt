@@ -1,17 +1,18 @@
 China:
-* Ming is split between 21 different nations, 14 of which can form Zhou
+* Ming is split between 40+ different nations, 3 of which can form 
 * Taiwan is united in 1444 at be the 22nd nation in the region, Taiwan can also form Zhou
 * Chinese Group ideas have been buffed
 * Added missions unqiue to reach region of China
 * Mandate has been improved/reworked and made easier to hold onto
 * Early game Meritocracy has been made easier to keep up
 * Oirat nerfed, reduced ruler mil, reduced general shock, Mongolia independent in 1444
-* Zhou formable with its own ideas and missions for Chinese nations
+* Qin formable with its own ideas and missions for Chinese nations
 * Qing Extinguish Ming mission nerfed
-* If Zhou finishes their Great Wall mission they cannot get the nomadic frontier disaster
+* If Qin finishes their Great Wall mission they cannot get the nomadic frontier disaster
+* Intermediate formables in China with unique missions.
 
 Mercenaries:
-* Base Mercenary limit has been reduced from 20+30% of land FL, to 5+25% of land FL.
+* Base Mercenary limit has been reduced from 20+30% of land FL, to 5+30% of land FL.
 * All sources of +50% available mercs have been reduced to +30%
 
 Colonial:
@@ -44,12 +45,19 @@ Ideas:
 * Portugal has been given a tweaked version of their ideas from the next patch (+5% durability instead of another modifier that doesn't currently exist.)
 * Naval Ideas have been nerfed
 * Blocked AI colonial nations from taking Religious, Administrative, Humanist, Espionage, Diplomatic, Exploration, Maritime, Influence, Aristocratic, or Naval Ideas
-* Non-Western nations have Exploration and Expansion Ideas locked until they reach admin tech 7
+* Non-Western nations have Expansion Ideas locked until they reach admin tech 7
+* Non-Western nations have Exploration Ideas locked until they reach admin tech 10
 
 National Modifiers:
-* Once colonialism spawns, Western nations that are not colonies get a colonist when they are over 250 dev unless that have the 6th idea in expansion
-* All nations will recieve +1 leaders without upkeep for every 200 land FL up to 5k land FL, and every 200 naval FL up to 2k naval FL
-* All nations will recieve +1 accepted cultures from every 1000 dev up to 10k dev
+* Once colonialism spawns, Western nations that are not colonies get a colonist and some other modifiers when they are over 250
+* All nations will recieve +1 leaders without upkeep for every 150 land FL up to 3k land FL, and every 150 naval FL up to 1.5k naval FL
+* All nations will recieve +1 accepted cultures from every 800 dev up to 8k dev
+* All nations will recieve +1 states from every 800 dev up to 8k dev
+* When Russia finishes colonizing Siberia, they get the same bonuses for colonizing that westerners get
+
+Forced March:
+* 15 adm tech gives +25% movement speed instead of unlocked force march (which has been removed)
+* The age bonus for free force march gives +25% movement speed
 
 Events:
 * Many events that conflict with the mod have been removed or changed, mostly in China
@@ -60,3 +68,11 @@ Events:
 Governments:
 * Most Colonial Nation reforms are locked to remove the need for setup save edits
 * Pirate republics have been nerfed
+* Prussian Government gives forcelimit and drill bonuses instead of discipline and it easier to maintain high militarization
+* Straight crossing in Maja, Kent -> Calais, and Korea -> Japan
+
+Buildings:
+* They've been tweaked a bit, look in game to see the details. Pretty simple, just look at all of the buildings.
+
+Technology:
+* Every Mil Tech that gives mil tactics lowers land FL by 2.5% and raises the cost of troops by 1%
