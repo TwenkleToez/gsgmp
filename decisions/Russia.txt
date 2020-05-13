@@ -1,0 +1,182 @@
+country_decisions = {
+
+	russian_nwcol_mod = {
+		potential = {
+			tag = RUS
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { has_country_flag = rus_nwcol_mod }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = kara_area
+				area = central_siberia_area
+				area = tunguska_area
+				area = irkutsk_area
+				area = yakutia_area
+				area = sakha_area
+				area = okhotsk_area
+				area = kolyma_area
+				area = kamchatka_area
+				province_id = 1780
+				province_id = 1080
+				province_id = 1078
+				province_id = 1055
+				province_id = 1056
+				province_id = 1057
+				province_id = 2446			
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			has_institution = new_world_i
+			owns_core_province = 1078
+			owns_core_province = 1080
+			owns_core_province = 1780
+			owns_core_province = 4691
+			owns_core_province = 1073
+			owns_core_province = 1072
+			owns_core_province = 1069
+			owns_core_province = 2445
+			owns_core_province = 1070
+			owns_core_province = 2430
+			owns_core_province = 1068
+			owns_core_province = 1067
+			owns_core_province = 1064
+			owns_core_province = 2431
+			owns_core_province = 1061
+			owns_core_province = 2432
+			owns_core_province = 2443
+			owns_core_province = 1063
+			owns_core_province = 1062
+			owns_core_province = 1060
+			owns_core_province = 2442
+			owns_core_province = 1059
+			owns_core_province = 2436
+			owns_core_province = 1057
+			owns_core_province = 1056
+			owns_core_province = 2446
+			owns_core_province = 1055
+			owns_core_province = 1054
+			owns_core_province = 2437
+			owns_core_province = 2435
+			owns_core_province = 1045
+			owns_core_province = 1052
+			owns_core_province = 1051
+			owns_core_province = 1046
+			owns_core_province = 1047
+			owns_core_province = 1043
+			owns_core_province = 2438
+			owns_core_province = 1042
+			owns_core_province = 1039
+			owns_core_province = 1044
+			owns_core_province = 1040
+			owns_core_province = 2439
+			owns_core_province = 1036
+			owns_core_province = 1037
+			owns_core_province = 1041
+			owns_core_province = 1035
+			owns_core_province = 1038
+			owns_core_province = 2440
+			owns_core_province = 1034
+		}
+		effect = {
+			add_country_modifier = {
+				name = "rus_sibnw_col"
+				duration = -1
+			}
+			set_country_flag = rus_nwcol_mod
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	make_st_petersburg_capital = {
+		potential = {
+			tag = RUS
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			owns = 33
+			NOT = { capital = 33 }
+			NOT = { has_country_flag = relocated_capital_st_petersburg }
+		}
+		allow = {
+			is_core = 33
+			is_at_war = no
+		}
+		effect = {
+			33 = {
+				change_province_name = "St. Petersburg"
+				rename_capital = "St. Petersburg"
+				add_base_tax = 6 
+				add_base_manpower = 3
+				change_culture = capital
+			}
+			set_country_flag = relocated_capital_st_petersburg
+			add_years_of_income = -1
+			add_prestige = 100
+			33 = {
+				move_capital_effect = yes
+			}
+			if = {
+				limit = {
+					33 = {	
+						NOT = { province_has_center_of_trade_of_level = 3 }
+					}
+				}
+				33 = {
+					add_center_of_trade_level = 1
+				}
+			}							
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 1.25 }
+			}
+		}
+	}
+	
+	establish_russian_patriarchate = {
+		potential = {
+			NOT = {
+				has_mission = rus_patriarchate_mission
+			}
+			tag = RUS
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { has_country_modifier = russian_patriarchate }
+			religion = orthodox
+		}
+		allow = {
+			is_at_war = no
+			NOT = { 151 = { owned_by = BYZ } }
+			prestige = 2
+			NOT = { innovativeness_ideas = 3 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "russian_patriarchate"
+				duration = -1
+			}		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
