@@ -1,0 +1,398 @@
+shu_missions = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = CHS
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	consolidate_xinan = {
+		position = 1
+		icon = mission_unite_home_region
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				region = xinan_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			calc_true_if = {
+				xinan_region = {
+					type = all
+					controlled_by = ROOT
+				}
+				amount = 22
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = tkf_consolidated_army
+				duration = 14600
+			}
+		}
+	}
+	the_xinan_fleet = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { consolidate_xinan }
+		trigger = {
+			OR = {
+				num_of_heavy_ship = 3
+				num_of_galley = 10
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = tkf_maritime_enthusiasm
+				duration = 9125
+			}
+			create_admiral = {
+				tradition = 75
+			}
+		}
+	}
+	reign_in_taiiwan = {
+		icon = mission_have_two_subjects
+		required_missions = { the_xinan_fleet }
+		provinces_to_highlight = {
+			OR = {
+				area = taiwan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			taiwan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 15
+			add_adm_power = 75
+		}
+	}
+	claim_mandate_of_heaven = {
+		position = 6
+		icon = mission_empire
+		required_missions { destroy_the_northern_dynasties crush_the_southern_dynasties }
+		trigger = {
+			is_emperor_of_china = yes
+		}
+		effect = {
+			add_prestige = 50
+		}
+	}
+}
+shu_missions_2 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = CHS
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	conquest_of_xi-an = {
+		position = 2
+		icon = mission_unite_home_region
+		required_missions = { consolidate_xinan }
+		provinces_to_highlight = {
+			province_id = 700
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+			}
+			trigger = {
+				700 = {
+					owned_by = ROOT
+				}
+			}
+			effect = {
+				add_prestige = 10
+				add_adm_power = 25
+				700 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = tkf_celebrated_conquest_of_xi-an
+					duration = 5475
+				}
+			}
+		}
+	}
+	conquest_of_beijing = {
+		icon = mission_unite_home_region
+		required_missions = { conquest_of_xi-an }
+		provinces_to_highlight = {
+			province_id = 1816
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			1816 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_adm_power = 25
+			1816 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = tkf_celebrated_conquest_of_beijing
+					duration = 5475
+				}
+			}
+		}
+	}
+	destroy_the_northern_dynasties = {
+		position = 5
+		icon = mission_steppe_warriors
+		required_missions = { conquest_of_beijing }
+		provinces_to_highlight = {
+			OR = {
+				region = north_china_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			calc_true_if = {
+				north_china_region = {
+					type = all
+					controlled_by = ROOT
+				}
+				amount = 29
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = tkf_unified_north
+				duration = 18250
+			}
+		}
+	}
+}
+shu_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = CHS
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	conquest_of_canton = {
+		position = 2
+		icon = mission_unite_home_region
+		required_missions = { consolidate_xinan }
+		provinces_to_highlight = {
+			province_id = 667
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			667 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_adm_power = 25
+			667 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = tkf_celebrated_conquest_of_canton
+					duration = 5475
+				}
+			}
+		}
+	}
+	conquest_of_hangzhou = {
+		icon = mission_unite_home_region
+		required_missions = { conquest_of_canton }
+		provinces_to_highlight = {
+			province_id = 684
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+			}
+			trigger = {
+				684 = {
+					owned_by = ROOT
+				}
+			}
+			effect = {
+				add_prestige = 10
+				add_adm_power = 25
+				684 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = tkf_celebrated_conquest_of_hangzhou
+					duration = 5475
+				}
+			}
+		}
+	}
+	conquest_of_nanjing = {
+		position = 2
+		icon = mission_unite_home_region
+		required_missions = { conquest_of_hangzhou }
+		provinces_to_highlight = {
+			province_id = 1821
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			1821 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_adm_power = 25
+			1821 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = tkf_celebrated_conquest_of_nanjing
+					duration = 5475
+				}
+			}
+		}
+	}
+	crush_the_southern_dynasties = {
+		icon = mission_steppe_warriors
+		required_missions = { conquest_of_nanjing }
+		provinces_to_highlight = {
+			OR = {
+				region = south_china_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			calc_true_if = {
+				south_china_region = {
+					type = all
+					controlled_by = ROOT
+				}
+				amount = 26
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = tkf_unified_south
+				duration = 18250
+			}
+		}
+	}
+}
+shu_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = CHS
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	strengthen_xinan_economy = {
+		icon = mission_high_income
+		trigger = { share_of_starting_income = 2.0 }
+		effect = {
+			add_country_modifier = {
+				name = tkf_economic_growth
+				duration = 9125
+			}
+		}
+	}
+	build_war_treasury = {
+		icon = mission_war_chest
+		required_missions = { strengthen_xinan_economy }
+		trigger = { treasury = 500 }
+		effect = {
+			add_country_modifier = {
+				name = tkf_war_preparations
+				duration = 9125
+			}
+		}
+	}
+}
+shu_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = CHS
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	foothold_in_tibet = {
+		icon = mission_kowtow
+		provinces_to_highlight = {
+			province_id = 2131
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			2131 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			limit = {
+					2131 = {
+						NOT = {
+							has_building = fort_15th
+						}
+						NOT = {
+							has_building = fort_15th
+						}
+					}
+				}
+				2131 = {
+					add_building = fort_15th
+				}
+			tsang_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			utsang_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	march_on_lhasa = {
+		icon = mission_conquer_50_development
+		required_missions = { foothold_in_tibet }
+		provinces_to_highlight = {
+			province_id = 677
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			677 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = tkf_secured_tibet
+				duration = 9125
+			}
+		}
+	}
+}
