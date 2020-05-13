@@ -1,0 +1,74 @@
+country_decisions = {
+
+	shu_han_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_shu_han_flag }
+			NOT = { exists = CHS }
+			OR = {
+				tag = SHU
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 679
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			is_emperor = no
+			owns_core_province = 679
+			calc_true_if = {
+				xinan_region = {
+					type = all
+					controlled_by = ROOT
+				}
+				amount = 20
+			}
+		}
+		effect = {
+			change_tag = CHS
+			swap_non_generic_missions = yes
+			set_government_rank = 3
+			china_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			CHS = {
+				set_capital = 679
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}			
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_shu_han_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
