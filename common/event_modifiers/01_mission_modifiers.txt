@@ -3,8 +3,146 @@
 ##################################################################################################
 #GSG_MP_MISSION_MODIFIERS
 
-extinguish_ming_core_cost = {
-	core_creation = -0.2 
+tkf_economic_growth = {
+	build_cost = -0.1
+	global_trade_goods_size_modifier = 0.05
+}
+
+tkf_war_preparations = {
+	land_maintenance_modifier = -0.1
+}
+
+tkf_celebrated_conquest_of_chengdu = {
+	local_unrest = -15
+	local_manpower_modifier = 0.25
+}
+
+tkf_celebrated_conquest_of_canton = {
+	local_unrest = -15
+	local_manpower_modifier = 0.25
+}
+
+tkf_celebrated_conquest_of_beijing = {
+	local_unrest = -15
+	local_manpower_modifier = 0.25
+}
+
+tkf_conquest_of_dai_viet = {
+	trade_efficiency = 0.1
+	defensiveness = 0.15
+}
+
+tkf_secured_tibet = {
+	defensiveness = 0.1
+	fort_maintenance_modifier = -0.1
+	global_manpower_modifier = 0.15
+}
+
+tkf_celebrated_conquest_of_xi-an = {
+	local_unrest = -15
+	local_manpower_modifier = 0.25
+}
+
+tkf_unified_north = {
+	global_unrest = -1
+	years_of_nationalism = -3
+	prestige = 0.5
+}
+
+tkf_tamed_the_steppes = {
+	cavalry_power = 0.05
+	cavalry_cost = -0.15
+}
+
+tkf_expanded_buffer_zone = {
+	global_unrest = -1
+	global_tax_modifier = 0.1
+	legitimacy = 0.5
+}
+
+tkf_enhanced_fortifications = {
+	defensiveness = 0.1
+	fort_maintenance_modifier = -0.1
+}
+
+tkf_unified_xinan = {
+	global_unrest = -1
+	years_of_nationalism = -3
+	prestige = 0.5
+}
+
+tkf_celebrated_conquest_of_nanjing = {
+	local_unrest = -15
+	local_manpower_modifier = 0.25
+}
+
+tkf_celebrated_conquest_of_hangzhou = {
+	local_unrest = -15
+	local_manpower_modifier = 0.25
+}
+
+tkf_maritime_enthusiasm = {
+	naval_morale = 0.1
+	ship_recruit_speed = -0.33
+	global_ship_cost = -0.15
+}
+
+tkf_unified_south = {
+	global_unrest = -1
+	years_of_nationalism = -3
+	prestige = 0.5
+}
+
+tkf_consolidated_army = {
+	land_morale = 0.1
+	infantry_cost = -0.15
+}
+
+mje_somali_unification = {
+	prestige = 1
+}
+
+mje_coptic_expansion = {
+	hostile_attrition = 1
+	max_states = 5
+}
+
+mje_coptic_elimination = {
+	global_missionary_strength = 0.02
+	inflation_reduction = 0.10
+}
+
+mje_forward_to_nubia = {
+	num_accepted_cultures = 2
+}
+
+mje_invade_swahili = {
+	siege_ability = 0.1
+}
+
+mje_kilwanese_subjugation = {
+	trade_efficiency = 0.1
+}
+
+mje_shona_conquest = {
+	inflation_reduction = 0.05
+}
+
+mje_whispers_of_madagascar = {
+	production_efficiency = 0.10
+	prestige = 1
+}
+
+mje_privateers = {
+	naval_tradition_from_trade = 0.1
+}
+
+mje_aden = {
+	trade_steering = 0.1
+}
+
+mje_indian_trade_dominance = {
+	light_ship_power = 0.1
 }
 
 sia_elephant_divisions = {
