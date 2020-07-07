@@ -45,27 +45,18 @@ country_decisions = {
 			owns_core_province = 1821
 			owns_core_province = 679
 			owns_core_province = 667
-			calc_true_if = {
-				north_china_region = {
-					type = all
-					controlled_by = ROOT
-				}
-				amount = 40
-			}
-			calc_true_if = {
-				south_china_region = {
-					type = all
-					controlled_by = ROOT
-				}
-				amount = 35
-			}
-			calc_true_if = {
-				xinan_region = {
-					type = all
-					controlled_by = ROOT
-				}
-				amount = 22
-			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 40
+                region = north_china_region
+            }
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 35
+                region = south_china_region
+            }
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 22
+                region = xinan_region
+            }
 		}
 		effect = {
 			change_tag = QIN
@@ -73,7 +64,7 @@ country_decisions = {
 			set_government_rank = 3
 			china_superregion = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_core = ROOT

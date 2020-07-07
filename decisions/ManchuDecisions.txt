@@ -11,14 +11,39 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { exists = MCH }
-			primary_culture = manchu
+			OR = {
+				primary_culture = manchu
+				primary_culture = manchu_new
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 730		#Girin
-				province_id = 2108		#Huncun
-				culture = manchu
-				culture = manchu_new
+				OR = {
+					province_id = 730		#Girin
+					province_id = 2108		#Huncun
+				}
+				OR = {
+					AND = {
+						OR = {
+							culture = manchu
+							culture = manchu_new
+						}
+						ROOT = {
+							NOT = {
+								num_of_owned_provinces_with = {
+									value = 20
+									OR = {
+										culture = manchu
+										culture = manchu_new
+									}
+									owned_by = ROOT
+								}
+							}
+							owns_core_province = 730
+							owns_core_province = 2108
+						}
+					}
+				}
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -70,6 +95,20 @@ country_decisions = {
 						primary_culture = manchu
 					}
 					change_primary_culture = manchu_new
+					set_ruler_culture = manchu_new
+					if = {
+						limit = {
+							has_heir = yes
+						}
+						set_heir_culture = manchu_new
+					}
+					if = {
+						limit = {
+							has_consort = yes
+							consort_culture = manchu
+						}
+						set_consort_culture = manchu_new
+					}
 				}
 			}
 			custom_tooltip = manchu_culture_tt
@@ -79,6 +118,7 @@ country_decisions = {
 			manchuria_region = {
 				limit = {
 					NOT = { is_core = ROOT }
+					is_city = yes
 				}
 				add_core = MCH
 			}
@@ -140,12 +180,23 @@ country_decisions = {
 			NOT = {
 				has_ruler_modifier = tribal_succession_crisis
 			}
-			calc_true_if = {
-				manchuria_region = {
-					type = all
-					controlled_by = ROOT
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+					any_country = {
+						is_emperor_of_china = yes
+					}
 				}
-				amount = 30
+				is_emperor_of_china = yes
+			}
+			else_if = {
+				limit = {
+					has_dlc = "Common Sense"
+				}
+				government_rank = 3
+			}
+			else = {
+				total_development = 1000
 			}
 		}
 		effect = {
@@ -157,23 +208,13 @@ country_decisions = {
 			change_tag = QNG
 			swap_non_generic_missions = yes
 			set_government_rank = 3
-			south_china_region = {
+			china_superregion = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = QNG
-			}
-			xinan_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = QNG
-			}
-			north_china_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = QNG
+				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -184,7 +225,7 @@ country_decisions = {
 					has_reform = steppe_horde
 				}
 				change_government = monarchy
-				set_legacy_government = despotic_monarchy
+				#set_legacy_government = despotic_monarchy
 			}
 			if = {
 				limit = {

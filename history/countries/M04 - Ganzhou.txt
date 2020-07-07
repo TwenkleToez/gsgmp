@@ -5,6 +5,7 @@ religion = confucianism
 primary_culture = hakka
 capital = 670
 add_harmonized_religion = mahayana
+government_rank = 1
 
 
 1440.11.11 = {
@@ -15,4 +16,5 @@ add_harmonized_religion = mahayana
 		dip = 2
 		mil = 3
 	}
+	add_ruler_personality = conqueror_personality
 }

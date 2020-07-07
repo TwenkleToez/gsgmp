@@ -10,47 +10,35 @@
 # NOTE! Extra great_power_x modifiers can be added here as long as x <= NUM_OF_GREAT_POWERS in NDefines::NDiplomacy
 # The one for which x = NUM_OF_GREAT_POWERS will also be applied to all Great Powers that have recently left the top.
 
-# GSGMP has 10 Great Powers, and thus the calculation of Power Projection from being a Great Power is recalculated:
-# Vanilla - 25 / 22 / 20 / 18 / 16 / 14 / 12 / 10
-# GSGMP - 25 / 23 / 22 / 20 / 18 / 17 / 15 / 13 / 12 / 10
-
 great_power_1 = {
 	power = 25
 }
 
 great_power_2 = {
-	power = 23
-}
-
-great_power_3 = {
 	power = 22
 }
 
-great_power_4 = {
+great_power_3 = {
 	power = 20
 }
 
-great_power_5 = {
+great_power_4 = {
 	power = 18
 }
 
+great_power_5 = {
+	power = 16
+}
+
 great_power_6 = {
-	power = 17
+	power = 14
 }
 
 great_power_7 = {
-	power = 15
-}
-
-great_power_8 = {
-	power = 13
-}
-
-great_power_9 = {
 	power = 12
 }
 
-great_power_10 = {
+great_power_8 = {
 	power = 10
 }
 
@@ -85,6 +73,15 @@ guarantee_neighbour_of_rival = {
 current_age_power_projection = {
 	power = 3
 	max = 21
+}
+
+is_hegemon = {
+	power = 25
+}
+
+allied_to_hegemon = {
+	power = -20
+	min = -20
 }
 
 ##################################
@@ -167,6 +164,25 @@ rival_lost_province = {
 	power = 0.5			# multiplied with basetax
 	yearly_decay = 1
 	max = 100
+}
+
+spread_revolution_to_enemy = {
+	power = 0.1			# multiplied by development
+	yearly_decay = 1
+	max = 50
+}
+
+spread_revolution_to_us = {
+	power = -0.1			# multiplied by development
+	yearly_decay = 1
+	min = -50
+}
+
+#Use this one when adding power projection when via add_power_projection, unless you have a specific reason to use another
+mission_rewards_power_projection = {
+	max = 100
+	power = 1
+	yearly_decay = 1
 }
 
 ##################################

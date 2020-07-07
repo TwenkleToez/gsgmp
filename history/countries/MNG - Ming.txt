@@ -6,15 +6,21 @@ religion = confucianism
 add_harmonized_religion = mahayana
 primary_culture = jianghuai
 capital = 1821	# Nanjing
+historical_friend = CPS
+historical_friend = CPC
+historical_friend = SHU
 
 1440.11.11 = {
 	monarch = {
 		name = "Ping"
 		dynasty = "Ming"
 		adm = 2
-		dip = 2
+		dip = 4
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = humane_personality
+	add_ruler_personality = kind_hearted_personality
 	add_ruler_modifier = {
 		name = ming_falling
 	}

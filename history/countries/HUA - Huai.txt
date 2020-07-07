@@ -5,6 +5,7 @@ religion = confucianism
 primary_culture = hakka
 capital = 2158	#Shiukwan
 add_harmonized_religion = mahayana
+government_rank = 1
 
 1440.11.11 = {
 	monarch = {
@@ -14,4 +15,5 @@ add_harmonized_religion = mahayana
 		dip = 3
 		mil = 4
 	}
+	add_ruler_personality = conqueror_personality
 }

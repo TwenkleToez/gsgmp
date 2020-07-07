@@ -1,0 +1,28 @@
+naval_hegemon = {
+	allow = {
+		is_great_power = yes
+		num_of_heavy_ship = 200
+		NOT = { any_other_great_power = { num_of_heavy_ship = root } }
+		NOT = { has_country_modifier = lost_hegemony }
+	}
+	
+	base = {
+		global_spy_defence = 0.25
+		war_exhaustion = -0.1
+		global_naval_engagement_modifier = 0.30
+	}
+	
+	# At max 100% tickup.
+	scale = {
+		reduced_liberty_desire = 20
+		global_sailors_modifier = 1.0
+		blockade_efficiency = 1.0
+	}
+	
+	max = {
+		siege_blockade_progress = 1
+		allowed_marine_fraction = 0.10
+		possible_policy = 1
+	}
+	
+}

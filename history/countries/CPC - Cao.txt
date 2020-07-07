@@ -6,6 +6,8 @@ religion = confucianism
 primary_culture = zhongyuan
 capital = 688
 add_harmonized_religion = mahayana
+government_rank = 1
+historical_friend = MNG
 
 1440.11.11 = {
 	monarch = {
@@ -14,5 +16,16 @@ add_harmonized_religion = mahayana
 		adm = 4
 		dip = 4
 		mil = 4
+		leader = {
+			name = "Cao Cao"
+			type = general
+
+			fire = 2
+			shock = 3
+			manuever = 3
+			siege = 2
+			personality = goal_oriented_personality
+		}
 	}
+	add_ruler_personality = conqueror_personality
 }

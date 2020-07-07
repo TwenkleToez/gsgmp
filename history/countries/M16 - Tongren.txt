@@ -6,6 +6,7 @@ primary_culture = miao
 capital = 4199
 add_harmonized_religion = mahayana
 add_harmonized_religion = animism
+government_rank = 1
 
 1440.11.11 = {
 	monarch = {
@@ -15,4 +16,5 @@ add_harmonized_religion = animism
 		dip = 3
 		mil = 4
 	}
+	add_ruler_personality = conqueror_personality
 }

@@ -4,6 +4,28 @@
 # Effects are fully scriptable here.
 
 ###########################################
+# Ming Bonuses
+###########################################
+
+gsg_ming_guard = {
+	potential = {
+		has_dlc = "Mandate of Heaven"
+		tag = MNG
+	}
+	
+	trigger = {
+		tag = MNG
+		has_reform = celestial_empire
+	}
+	
+	land_forcelimit = 10
+	global_manpower = 10
+	global_tax_income = 60
+	reinforce_cost_modifier = 0.25
+	reinforce_speed = -0.25
+}
+
+###########################################
 # Western Colonizer
 ###########################################
 
@@ -26,7 +48,7 @@ rus_colonizer_explo = {
 	trigger = {
 		exploration_ideas = 4
 	}
-	global_colonial_growth = -6
+	global_colonial_growth = -6.66
 }
 
 rus_colonizer_expan = {
@@ -37,7 +59,7 @@ rus_colonizer_expan = {
 	trigger = {
 		expansion_ideas = 3
 	}
-	global_colonial_growth = -12
+	global_colonial_growth = -13.33
 }
 
 rus_colonizer_range = {
@@ -48,32 +70,7 @@ rus_colonizer_range = {
 	trigger = {
 		exploration_ideas = 3
 	}
-	range = -0.3
-}
-
-###########################################
-# Force March
-###########################################
-
-force_march_re_1 = {
-	potential = {
-		is_year = 1444
-	}
-	trigger = {
-		adm_tech = 15
-	}
-	movement_speed = 0.25
-}
-
-force_march_re_2 = {
-	potential = {
-		is_year = 1444
-	}
-	trigger = {
-		has_age_ability = ab_force_march
-		
-	}
-	movement_speed = 0.25
+	range = -0.333
 }
 
 ###########################################
@@ -88,207 +85,7 @@ no_bank_build = {
 		num_of_loans = 11
 	}
 	build_cost = 1000
-}
-
-###########################################
-# Forcelimit Reducer
-###########################################
-
-tech_fl_1 = {
-	potential = {
-		NOT = {
-			mil_tech = 6
-		}
-	}
-	trigger = {
-		mil_tech = 4
-		NOT = {
-			mil_tech = 6
-		}
-	}
-	land_forcelimit_modifier = -0.025
-	global_regiment_cost = 0.01
-}
-
-tech_fl_2 = {
-	potential = {
-		mil_tech = 6
-		NOT = {
-			mil_tech = 7
-		}
-	}
-	trigger = {
-		mil_tech = 6
-		NOT = {
-			mil_tech = 7
-		}
-	}
-	land_forcelimit_modifier = -0.05
-	global_regiment_cost = 0.02
-}
-
-tech_fl_3 = {
-	potential = {
-		mil_tech = 7
-		NOT = {
-			mil_tech = 9
-		}
-	}
-	trigger = {
-		mil_tech = 7
-		NOT = {
-			mil_tech = 9
-		}
-	}
-	land_forcelimit_modifier = -0.075
-	global_regiment_cost = 0.03
-}
-
-tech_fl_4 = {
-	potential = {
-		mil_tech = 9
-		NOT = {
-			mil_tech = 12
-		}
-	}
-	trigger = {
-		mil_tech = 9
-		NOT = {
-			mil_tech = 12
-		}
-	}
-	land_forcelimit_modifier = -0.1
-	global_regiment_cost = 0.04
-}
-
-tech_fl_5 = {
-	potential = {
-		mil_tech = 12
-		NOT = {
-			mil_tech = 15
-		}
-	}
-	trigger = {
-		mil_tech = 12
-		NOT = {
-			mil_tech = 15
-		}
-	}
-	land_forcelimit_modifier = -0.125
-	global_regiment_cost = 0.05
-}
-
-tech_fl_6 = {
-	potential = {
-		mil_tech = 15
-		NOT = {
-			mil_tech = 19
-		}
-	}
-	trigger = {
-		mil_tech = 15
-		NOT = {
-			mil_tech = 19
-		}
-	}
-	land_forcelimit_modifier = -0.15
-	global_regiment_cost = 0.06
-}
-
-tech_fl_7 = {
-	potential = {
-		mil_tech = 19
-		NOT = {
-			mil_tech = 21
-		}
-	}
-	trigger = {
-		mil_tech = 19
-		NOT = {
-			mil_tech = 21
-		}
-	}
-	land_forcelimit_modifier = -0.175
-	global_regiment_cost = 0.07
-}
-
-tech_fl_8 = {
-	potential = {
-		mil_tech = 21
-		NOT = {
-			mil_tech = 23
-		}
-	}
-	trigger = {
-		mil_tech = 21
-		NOT = {
-			mil_tech = 23
-		}
-	}
-	land_forcelimit_modifier = -0.2
-	global_regiment_cost = 0.08
-}
-
-tech_fl_9 = {
-	potential = {
-		mil_tech = 23
-		NOT = {
-			mil_tech = 24
-		}
-	}
-	trigger = {
-		mil_tech = 23
-		NOT = {
-			mil_tech = 24
-		}
-	}
-	land_forcelimit_modifier = -0.225
-	global_regiment_cost = 0.09
-}
-
-tech_fl_10 = {
-	potential = {
-		mil_tech = 24
-		NOT = {
-			mil_tech = 30
-		}
-	}
-	trigger = {
-		mil_tech = 24
-		NOT = {
-			mil_tech = 30
-		}
-	}
-	land_forcelimit_modifier = -0.25
-	global_regiment_cost = 0.1
-}
-
-tech_fl_11 = {
-	potential = {
-		mil_tech = 30
-		NOT = {
-			mil_tech = 32
-		}
-	}
-	trigger = {
-		mil_tech = 30
-		NOT = {
-			mil_tech = 32
-		}
-	}
-	land_forcelimit_modifier = -0.275
-	global_regiment_cost = 0.11
-}
-
-tech_fl_12 = {
-	potential = {
-		mil_tech = 32
-	}
-	trigger = {
-		mil_tech = 32
-	}
-	land_forcelimit_modifier = -0.3
-	global_regiment_cost = 0.12
+	global_colonial_growth = -50
 }
 
 ###########################################
@@ -778,7 +575,6 @@ wide_pool_1 = {
 		}
 	}
 	num_accepted_cultures = 1
-	max_states = 1
 }
 
 wide_pool_2 = {
@@ -795,7 +591,6 @@ wide_pool_2 = {
 		}
 	}
 	num_accepted_cultures = 2
-	max_states = 2
 }
 
 wide_pool_3 = {
@@ -812,7 +607,6 @@ wide_pool_3 = {
 		}
 	}
 	num_accepted_cultures = 3
-	max_states = 3
 }
 
 wide_pool_4 = {
@@ -829,7 +623,6 @@ wide_pool_4 = {
 		}
 	}
 	num_accepted_cultures = 4
-	max_states = 4
 }
 
 wide_pool_5 = {
@@ -846,7 +639,6 @@ wide_pool_5 = {
 		}
 	}
 	num_accepted_cultures = 5
-	max_states = 5
 }
 
 wide_pool_6 = {
@@ -863,7 +655,6 @@ wide_pool_6 = {
 		}
 	}
 	num_accepted_cultures = 6
-	max_states = 6
 }
 
 wide_pool_7 = {
@@ -880,7 +671,6 @@ wide_pool_7 = {
 		}
 	}
 	num_accepted_cultures = 7
-	max_states = 7
 }
 
 wide_pool_8 = {
@@ -897,7 +687,6 @@ wide_pool_8 = {
 		}
 	}
 	num_accepted_cultures = 8
-	max_states = 8
 }
 
 wide_pool_9 = {
@@ -914,7 +703,6 @@ wide_pool_9 = {
 		}
 	}
 	num_accepted_cultures = 9
-	max_states = 9
 }
 
 wide_pool_10 = {
@@ -925,7 +713,6 @@ wide_pool_10 = {
 		total_development = 8000
 	}
 	num_accepted_cultures = 10
-	max_states = 10
 }
 
 ###########################################
@@ -961,7 +748,7 @@ western_colonizer_explo = {
 		}
 		is_subject = no
 	}
-	global_colonial_growth = 6
+	global_colonial_growth = 6.66
 }
 
 western_colonizer_expan = {
@@ -977,7 +764,7 @@ western_colonizer_expan = {
 		}
 		is_subject = no
 	}
-	global_colonial_growth = 12
+	global_colonial_growth = 13.33
 }
 
 western_colonizer_range = {
@@ -993,7 +780,7 @@ western_colonizer_range = {
 		}
 		is_subject = no
 	}
-	range = 0.3
+	range = 0.333
 }
 
 
@@ -1017,6 +804,8 @@ colonial_limiter = {
 	global_manpower_modifier = -0.25
 	global_sailors_modifier = -0.25
 	global_colonial_growth = -25
+	global_tax_modifier = -0.1
+	global_trade_goods_size_modifier = -0.1
 }
 
 cn_army = {
@@ -1027,8 +816,8 @@ cn_army = {
 		is_colonial_nation = yes
 	}
 	reinforce_cost_modifier = 0.25
-	global_regiment_recruit_speed = 0.33
-	reinforce_speed = -0.33
+	global_regiment_recruit_speed = 0.25
+	reinforce_speed = -0.25
 	global_regiment_cost = 0.25
 	land_maintenance_modifier = 0.25
 }
@@ -1041,8 +830,8 @@ cn_navy = {
 		is_colonial_nation = yes
 	}
 	sailor_maintenance_modifer = 0.25
-	global_ship_recruit_speed = 0.33
-	global_ship_repair = -0.33
+	global_ship_recruit_speed = 0.25
+	global_ship_repair = -0.25
 	global_ship_cost = 0.25
 	naval_maintenance_modifier = 0.25
 }
@@ -1086,32 +875,6 @@ meritocracy_buffer_2 = {
 	
 	meritocracy = 1
 }
-
-###########################################
-# Warring States Period.
-###########################################
-
-warring_states = {
-	potential = {
-		current_age = age_of_discovery
-		OR = {
-			tag = CPS
-			tag = CPC
-			tag = SHU
-			tag = CHS
-			tag = CCW
-			tag = CSW	
-		}
-	}
-	
-	trigger = {
-		current_age = age_of_discovery
-	}
-	
-	administrative_efficiency = 0.15
-	global_manpower_modifier = 0.15
-}
-
 
 ###########################################
 # Discovery of the East Indian trade route.
@@ -1477,7 +1240,9 @@ rapid_collapse_of_society = {
 ######################################
 submission_to_emperor = {
 	potential = {
-		has_global_flag = italy_out_of_HRE
+		has_global_flag = italians_leave_hre
+		NOT = { has_country_flag = reined_in_for_shadow_kingdom }
+		is_part_of_hre = yes
 		culture_group = latin
 	}
 
@@ -1487,16 +1252,14 @@ submission_to_emperor = {
 		capital_scope = {
 			is_part_of_hre = yes
 		}
+		NOT = { is_year = 1550 }
+		NOT = { emperor = { alliance_with = ROOT } }
 	}
 
 	global_unrest = 3
 	stability_cost_modifier = 0.1
 	prestige = -1
 }
-
-
-	
-
 
 
 
@@ -1506,13 +1269,18 @@ submission_to_emperor = {
 counter_revolution = {
 	potential = {
 		revolution_target_exists = yes
-		is_revolution_target = no
+		is_revolutionary = no
+		any_country = {
+			is_revolution_target = yes
+			capital_scope = {
+				continent = ROOT
+			}
+		}
 	}
 
 	trigger = {
-		capital_scope = { continent = europe }
 		revolution_target_exists = yes
-		is_revolution_target = no
+		is_revolutionary = no
 		is_free_or_tributary_trigger = yes
 		NOT = {
 			revolution_target = {
@@ -1538,13 +1306,18 @@ counter_revolution = {
 reaction = {
 	potential = {
 		revolution_target_exists = yes
-		capital_scope = { continent = europe }
+		is_revolutionary = no
+		any_country = {
+			is_revolution_target = yes
+			capital_scope = {
+				continent = ROOT
+			}
+		}
 	}
 
 	trigger = {
-		capital_scope = { continent = europe }
 		revolution_target_exists = yes
-		is_revolution_target = no
+		is_revolutionary = no
 		is_free_or_tributary_trigger = yes
 		government = monarchy
 		revolution_target = {
@@ -1768,7 +1541,7 @@ lost_control_of_beijing = {
 	}
 
 	trigger = {
-		AND = {
+		OR = {
 			NOT = { owns = 1816 }
 			NOT = { controls = 1816 }
 		}
@@ -1784,7 +1557,7 @@ lost_control_of_nanjing = {
 	}
 
 	trigger = {
-		AND = {
+		OR = {
 			NOT = { owns = 1821 }
 			NOT = { controls = 1821 }
 		}
@@ -1800,7 +1573,7 @@ lost_control_of_canton = {
 	}
 
 	trigger = {
-		AND = {
+		OR = {
 			NOT = { owns = 667 }
 			NOT = { controls = 667 }
 		}
@@ -1854,7 +1627,7 @@ waging_war_for_china = {
 		}
 	}
 	
-	imperial_mandate = 0.1
+	imperial_mandate = 0.05
 }
 
 ##################################################
@@ -1868,6 +1641,7 @@ hre_dominant_catholic = {
 		OR = {
 			religion = catholic
 			religion = protestant
+			religion = reformed
 		}
 	}
 
@@ -1891,12 +1665,37 @@ hre_dominant_protestant = {
 		OR = {
 			religion = catholic
 			religion = protestant
+			religion = reformed
 		}
 	}
 
 	trigger = {
 		religion = protestant
 		hre_religion = protestant
+		hre_religion_locked = yes
+	}
+	
+	legitimacy = 0.25
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+	imperial_authority = 0.25
+}
+
+hre_dominant_reformed = {
+	potential = {
+		capital_scope = {
+			continent = europe
+		}
+		OR = {
+			religion = catholic
+			religion = protestant
+			religion = reformed
+		}
+	}
+
+	trigger = {
+		religion = reformed
+		hre_religion = reformed
 		hre_religion_locked = yes
 	}
 	
@@ -1938,4 +1737,115 @@ golden_age_of_piracy = {
 		}
 	}
 	privateer_efficiency = 0.2
+}
+
+######################################
+# The Great Peasants' War
+######################################
+
+great_peasants_war_triggered_modifier = {
+	potential = {
+		has_global_flag = great_peasants_war_flag
+		capital_scope = {
+			continent = europe
+		}
+	}
+	trigger = {
+		is_part_of_hre = yes
+		NOT = { has_reform = peasants_republic }
+	}
+	global_unrest = 6
+}
+
+great_peasants_war_concessions_triggered_modifier = {
+	potential = {
+		OR = {
+			has_global_flag = gpw_peasants_win_major
+			has_global_flag = gpw_peasants_win_minor
+		}
+		capital_scope = {
+			continent = europe
+		}
+	}
+	trigger = {
+		is_part_of_hre = yes
+		NOT = { has_reform = peasants_republic }
+	}
+	global_tax_modifier = -0.05
+}
+
+######################################
+# Pope is in the empire
+######################################
+
+pope_in_hre_triggered_modifier = {
+	potential = {
+		PAP = { is_part_of_hre = yes }
+		religion = catholic
+	}
+	trigger = {
+		PAP = { is_part_of_hre = yes }
+		religion = catholic
+		NOT = { is_part_of_hre = yes }
+	}
+	prestige = -0.5
+}
+
+######################################
+# The Italian Wars
+######################################
+
+italian_wars_triggered_modifier = {
+	potential = {
+		has_global_flag = italian_wars_global_flag
+		capital_scope = {
+			continent = europe
+		}
+		religion_group = christian
+	}
+	trigger = {
+		OR = {
+			AND = {
+				capital_scope = { region = italy_region }
+				any_country = {
+					war_with = ROOT
+					religion_group = christian
+					capital_scope = { continent = europe }
+					total_development = 150
+				}
+			}
+			AND = {
+				NOT = { capital_scope = { region = italy_region } }
+				total_development = 150
+				any_country = {
+					war_with = ROOT
+					capital_scope = { region = italy_region }
+				}
+			}
+		}
+	}
+	mercenary_cost = -0.10
+	mercenary_discipline = 0.05
+}
+
+######################################
+# Defense of the Empire
+######################################
+
+defense_of_the_empire_modifier = {
+	potential = {
+		has_dlc = "Emperor"
+		OR = {
+			is_emperor = yes
+			is_elector = yes
+		}
+		hre_reform_passed = emperor_reichskrieg
+	}
+	trigger = {
+		any_country = {
+			war_with = ROOT
+			NOT = { is_part_of_hre = yes }
+		}
+	}
+	war_taxes_cost_modifier = -1.0
 }

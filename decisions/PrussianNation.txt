@@ -1,9 +1,43 @@
 country_decisions = {
 
+	institute_prussian_republic = {
+		major = yes
+		potential = {
+			always = no
+			NOT = {
+				OR = {
+					has_dlc = "Dharma" 
+					has_dlc = "Emperor"
+				}
+			}
+			normal_or_historical_nations = yes
+			tag = PRU
+			government = republic
+			NOT = { has_reform = prussian_republic }
+		}
+
+		allow = {
+			OR = {
+				religion = protestant
+				religion = reformed
+			}
+		}
+
+		effect = {
+			add_government_reform = prussian_republic
+		}
+	}
+	
 	institute_prussian_monarchy = {
 		major = yes
 		potential = {
-			NOT = { has_dlc = "Dharma" }
+			always = no
+			NOT = {
+				OR = {
+					has_dlc = "Dharma" 
+					has_dlc = "Emperor"
+				}
+			}
 			normal_or_historical_nations = yes
 			tag = PRU
 			government = monarchy
@@ -78,13 +112,25 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PRU
+			restore_country_name_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
+					OR = {
+						NOT = { has_dlc = "Emperor" }
+						NOT = { hre_size = 1 }
+					}
 					NOT = { government_rank = 2 }
 				}
 				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = PRU_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			random_owned_province = {
 				limit = {
@@ -100,8 +146,18 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
-			change_government = monarchy
-			add_government_reform = prussian_monarchy
+			if =  {
+				limit = {
+					NOT = {
+						government = republic
+					}
+				}
+				change_government_to_monarchy = yes
+				add_government_reform = prussian_monarchy
+			}
+			else = {
+				add_government_reform = prussian_republic_reform
+			}
 			if = {
 				limit = {
 					has_reform = states_general_reform
@@ -121,12 +177,6 @@ country_decisions = {
 					} 
 					change_culture = prussian
 				}
-			}
-			pomerelia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = PRU
 			}
 			west_prussia_area = {
 				limit = {
@@ -203,13 +253,8 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = PRU
+			restore_country_name_effect = yes
 			swap_non_generic_missions = yes
-			pomerelia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = PRU
-			}
 			east_prussia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -223,8 +268,18 @@ country_decisions = {
 				add_permanent_claim = PRU
 			}
 			add_prestige = 25
-			change_government = monarchy
-			add_government_reform = prussian_monarchy
+			if =  {
+				limit = {
+					NOT = {
+						government = republic
+					}
+				}
+				change_government_to_monarchy = yes
+				add_government_reform = prussian_monarchy
+			}
+			else = {
+				add_government_reform = prussian_republic_reform
+			}
 			if = {
 				limit = {
 					has_reform = states_general_reform
@@ -302,8 +357,23 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 41	# Königsberg
-				province_id = 42	# Warmia
-				province_id = 43	# Danzig
+				AND = {
+					OR = {
+						area = west_prussia_area
+						area = east_prussia_area
+					}
+					ROOT = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 5
+								OR = {
+									area = west_prussia_area
+									area = east_prussia_area
+								}
+							}
+						}
+					}
+				}
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -326,22 +396,20 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PRU
+			restore_country_name_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
+					OR = {
+						NOT = { has_dlc = "Emperor" }
+						NOT = { hre_size = 1 }
+					}
 					NOT = { government_rank = 2 }
-					government = monarchy
 				}
 				set_government_rank = 2
 			}
 			east_prussia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = PRU
-			}
-			pomerelia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -353,8 +421,18 @@ country_decisions = {
 				}
 				add_permanent_claim = PRU
 			}
-			change_government = monarchy
-			add_government_reform = prussian_monarchy
+			if =  {
+				limit = {
+					NOT = {
+						government = republic
+					}
+				}
+				change_government_to_monarchy = yes
+				add_government_reform = prussian_monarchy
+			}
+			else = {
+				add_government_reform = prussian_republic_reform
+			}
 			if = {
 				limit = {
 					has_reform = states_general_reform

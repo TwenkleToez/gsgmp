@@ -5,6 +5,7 @@ religion = confucianism
 primary_culture = wu
 capital = 684	#Hangzhou
 add_harmonized_religion = mahayana
+government_rank = 1
 
 1440.11.11 = {
 	monarch = {

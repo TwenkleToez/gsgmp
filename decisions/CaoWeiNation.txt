@@ -7,22 +7,10 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_cao_wei_flag }
 			NOT = { exists = CCW }
-			OR = {
-				tag = CPC
-			}
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
-			}
+			tag = CPC
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 1816
-			}
+			province_id = 1816
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -33,14 +21,10 @@ country_decisions = {
 			is_nomad = no
 			is_at_war = no
 			is_emperor = no
-			owns_core_province = 1816
-			calc_true_if = {
-				north_china_region = {
-					type = all
-					controlled_by = ROOT
-				}
-				amount = 27
-			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 26
+                region = north_china_region
+            }
 		}
 		effect = {
 			change_tag = CCW
@@ -48,23 +32,17 @@ country_decisions = {
 			set_government_rank = 3
 			china_superregion = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}
-			CCW = {
-				set_capital = 688
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}			
 			add_prestige = 25
-			if = {
-				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
 			set_country_flag = formed_cao_wei_flag
 		}
 		ai_will_do = {

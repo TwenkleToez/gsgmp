@@ -58,7 +58,7 @@ country_event = {
 		custom_tooltip = mandate_mechanic_explanation
 		add_country_modifier = {
 			name = gsg_warring_states
-			duration = 10950
+			duration = 18250
 		}
 	}
 }
@@ -96,7 +96,7 @@ country_event = {
 		custom_tooltip = mandate_mechanic_explanation
 		add_country_modifier = {
 			name = gsg_warring_states
-			duration = 10950
+			duration = 18250
 		}
 	}
 }
@@ -110,14 +110,14 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-			has_reform = celestial_empire
-				OR = {
-					tag = QIN
-					tag = QNG
-					tag = YUA
-				}
-			}
-		
+		has_reform = celestial_empire
+		OR = {
+			tag = QIN
+			tag = QNG
+			tag = YUA
+		}
+	}
+
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -137,5 +137,34 @@ country_event = {
 			}
 		add_stability = 1
 		}
+	}
+}
+
+country_event = {
+	id = flavor_gsg.6
+	title = "gsg_china_flavor_6_title"
+	desc = "gsg_china_flavor_6_desc"
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 2155
+		adm_tech = 6
+		2154 = {
+			is_empty = yes
+		}
+	}
+		
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "flavor_gsg_opt_6"
+		2154 = {
+			add_core = ROOT
+			cede_province = ROOT
+		}	
 	}
 }

@@ -1,10 +1,12 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = war_state
 primary_culture = yi
-religion = animism
+religion = confucianism
 technology_group = chinese
 capital = 675	# Umung
-government_rank = 2
+add_harmonized_religion = mahayana
+add_harmonized_religion = animism
+government_rank = 1
 
 1440.11.11 = {
 	monarch = {
@@ -14,4 +16,5 @@ government_rank = 2
 		dip = 3
 		mil = 4
 	}
+	add_ruler_personality = conqueror_personality
 }

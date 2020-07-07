@@ -93,37 +93,10 @@ wu_missions_2 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	conquest_of_canton = {
+	conquest_of_chengdu = {
 		position = 2
 		icon = mission_unite_home_region
 		required_missions = { consolidate_southern_china }
-		provinces_to_highlight = {
-			province_id = 667
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
-		}
-		trigger = {
-			667 = {
-				owned_by = ROOT
-			}
-		}
-		effect = {
-			add_prestige = 10
-			add_adm_power = 25
-			667 = {
-				limit = {
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = tkf_celebrated_conquest_of_canton
-					duration = 5475
-				}
-			}
-		}
-	}
-	conquest_of_chengdu = {
-		icon = mission_unite_home_region
-		required_missions = { conquest_of_canton }
 		provinces_to_highlight = {
 			province_id = 679
 			NOT = { owned_by = ROOT }
@@ -135,6 +108,8 @@ wu_missions_2 = {
 			}
 		}
 		effect = {
+			add_prestige = 10
+			add_adm_power = 25
 			679 = {
 				limit = {
 					owned_by = ROOT
@@ -146,9 +121,36 @@ wu_missions_2 = {
 			}
 		}
 	}
+	conquest_of_xi-an = {
+		icon = mission_unite_home_region
+		required_missions = { conquest_of_chengdu }
+		provinces_to_highlight = {
+			province_id = 700
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+			}
+			trigger = {
+				700 = {
+					owned_by = ROOT
+				}
+			}
+			effect = {
+				add_prestige = 10
+				add_adm_power = 25
+				700 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = tkf_celebrated_conquest_of_xi-an
+					duration = 5475
+				}
+			}
+		}
+	}
 	scourge_the_xinan_dynasties = {
 		icon = mission_steppe_warriors
-		required_missions = { conquest_of_chengdu }
+		required_missions = { conquest_of_xi-an }
 		provinces_to_highlight = {
 			OR = {
 				region = xinan_region
@@ -181,10 +183,37 @@ wu_missions_3 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	conquest_of_beijing = {
+	conquest_of_nanjing = {
 		position = 2
 		icon = mission_unite_home_region
 		required_missions = { consolidate_southern_china }
+		provinces_to_highlight = {
+			province_id = 1821
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			1821 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_adm_power = 25
+			1821 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = tkf_celebrated_conquest_of_nanjing
+					duration = 5475
+				}
+			}
+		}
+	}
+	conquest_of_beijing = {
+		icon = mission_unite_home_region
+		required_missions = { conquest_of_nanjing }
 		provinces_to_highlight = {
 			province_id = 1816
 			NOT = { owned_by = ROOT }
@@ -209,34 +238,9 @@ wu_missions_3 = {
 			}
 		}
 	}
-	conquest_of_xi-an = {
-		icon = mission_unite_home_region
-		required_missions = { conquest_of_beijing }
-		provinces_to_highlight = {
-			province_id = 700
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
-			}
-			trigger = {
-				700 = {
-					owned_by = ROOT
-				}
-			}
-			effect = {
-				700 = {
-				limit = {
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = tkf_celebrated_conquest_of_xi-an
-					duration = 5475
-				}
-			}
-		}
-	}
 	destroy_the_northern_dynasties = {
 		icon = mission_steppe_warriors
-		required_missions = { conquest_of_xi-an }
+		required_missions = { conquest_of_beijing }
 		provinces_to_highlight = {
 			OR = {
 				region = north_china_region

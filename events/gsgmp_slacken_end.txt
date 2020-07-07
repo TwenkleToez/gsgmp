@@ -1,0 +1,25 @@
+country_event = {
+	id = gsg.slacken.1
+	title = "EVTNAMEgsg.slacken.1"
+	desc = "EVTDESCgsg.slacken.1"
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		NOT = { army_professionalism = 0.0025 }
+		has_country_modifier = gsg_slacken
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			remove_country_modifier = gsg_slacken
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAgsg.slacken.1"
+	}
+}

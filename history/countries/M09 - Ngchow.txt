@@ -5,6 +5,7 @@ religion = confucianism
 primary_culture = cantonese
 capital = 2162
 add_harmonized_religion = mahayana
+government_rank = 1
 
 
 1440.11.11 = {
@@ -15,4 +16,5 @@ add_harmonized_religion = mahayana
 		dip = 4
 		mil = 5
 	}
+	add_ruler_personality = conqueror_personality
 }

@@ -246,7 +246,11 @@ country_event = {
 	
 	option = {
 		name = "china_events.4.a"
-		add_stability_or_adm_power = yes
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		reduce_stability_or_adm_power = yes
 		reduce_mandate_effect = yes
 		reduce_eunuchs_effect = yes
 	}
@@ -256,6 +260,14 @@ country_event = {
 		boost_eunuchs_effect = yes
 		add_mandate_effect = yes
 		add_years_of_income = -0.25
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 50
+				NOT = { num_of_loans = 10 }
+				is_bankrupt = no
+			}
+		}
 	}
 }
 
@@ -894,6 +906,7 @@ country_event = {
 	
 	option = {
 		name = "china_events.16.a"
+		goto = prosperity_boost_here
 		boost_bureaucrats_effect = yes
 		if = {
 			limit = { has_dlc = "Mandate of Heaven" }
@@ -1403,7 +1416,13 @@ country_event = {
 		hidden_effect = {
 			random_known_country = {
 				limit = {
+					any_owned_province = {
+						range = ROOT
+					}
 					NOT = { is_subject_of = ROOT }
+					any_active_trade_node = {
+						has_merchant = ROOT
+					}
 				}
 				save_event_target_as = country_of_interest
 			}
@@ -2305,6 +2324,65 @@ country_event = {
 		reduce_meritocracy_effect = yes
 		add_army_tradition = -10
 		add_mandate_effect = yes
+	}
+}
+
+# Choosing a Capital
+country_event = {
+	id = china_events.43
+	title = "china_events.43.t"
+	desc = "china_events.43.d"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	trigger = {
+		is_at_war = no
+		OR = {
+			AND = {
+				has_dlc = "Mandate of Heaven"
+				has_reform = celestial_empire
+				NOT = { tag = MNG }
+			}
+			AND = {
+				NOT = { has_dlc = "Mandate of Heaven" }
+				NOT = { tag = MNG }
+				culture_group = east_asian #Chinese
+			}
+		}
+		NOT = { tag = YUA }
+		NOT = { has_country_flag = eoc_capital_picked }
+		owns_core_province = 700
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = eoc_capital_picked
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "china_events.43.c" #Chang'an
+		trigger = {
+			owns_core_province = 700
+		}
+		set_capital = 700
+		add_mandate_effect = yes
+		700 = {
+			change_province_name = "Chang'an"
+			rename_capital = "Chang'an"
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+	option = {
+		name = "china_events.43.f" #Remain in our Ancestral Seat
+		add_prestige = 10
 	}
 }
 

@@ -93,10 +93,37 @@ wei_missions_2 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	conquest_of_chengdu = {
+	conquest_of_xi-an = {
 		position = 2
 		icon = mission_unite_home_region
 		required_missions = { consolidate_northern_china }
+		provinces_to_highlight = {
+			province_id = 700
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+			}
+			trigger = {
+				700 = {
+					owned_by = ROOT
+				}
+			}
+			effect = {
+				add_prestige = 10
+				add_adm_power = 25
+				700 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = tkf_celebrated_conquest_of_xi-an
+					duration = 5475
+				}
+			}
+		}
+	}
+	conquest_of_chengdu = {
+		icon = mission_unite_home_region
+		required_missions = { conquest_of_xi-an }
 		provinces_to_highlight = {
 			province_id = 679
 			NOT = { owned_by = ROOT }
@@ -121,34 +148,9 @@ wei_missions_2 = {
 			}
 		}
 	}
-	conquest_of_canton = {
-		icon = mission_unite_home_region
-		required_missions = { conquest_of_chengdu }
-		provinces_to_highlight = {
-			province_id = 667
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
-		}
-		trigger = {
-			667 = {
-				owned_by = ROOT
-			}
-		}
-		effect = {
-			667 = {
-				limit = {
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = tkf_celebrated_conquest_of_canton
-					duration = 5475
-				}
-			}
-		}
-	}
 	scourge_the_xinan_dynasties = {
 		icon = mission_steppe_warriors
-		required_missions = { conquest_of_canton }
+		required_missions = { conquest_of_chengdu }
 		provinces_to_highlight = {
 			OR = {
 				region = xinan_region
@@ -209,26 +211,28 @@ wei_missions_3 = {
 			}
 		}
 	}
-	conquest_of_hangzhou = {
+	conquest_of_canton = {
 		icon = mission_unite_home_region
 		required_missions = { conquest_of_nanjing }
 		provinces_to_highlight = {
-			province_id = 684
+			province_id = 667
 			NOT = { owned_by = ROOT }
 			has_discovered = ROOT
+		}
+		trigger = {
+			667 = {
+				owned_by = ROOT
 			}
-			trigger = {
-				684 = {
-					owned_by = ROOT
-				}
-			}
-			effect = {
-				684 = {
+		}
+		effect = {
+			add_prestige = 10
+			add_adm_power = 25
+			667 = {
 				limit = {
 					owned_by = ROOT
 				}
 				add_province_modifier = {
-					name = tkf_celebrated_conquest_of_hangzhou
+					name = tkf_celebrated_conquest_of_canton
 					duration = 5475
 				}
 			}
@@ -236,7 +240,7 @@ wei_missions_3 = {
 	}
 	crush_the_southern_dynasties = {
 		icon = mission_steppe_warriors
-		required_missions = { conquest_of_hangzhou }
+		required_missions = { conquest_of_canton }
 		provinces_to_highlight = {
 			OR = {
 				region = south_china_region

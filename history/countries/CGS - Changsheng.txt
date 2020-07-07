@@ -4,6 +4,7 @@ technology_group = chinese
 religion = confucianism
 primary_culture = zhuang
 capital = 664 # Lingyun
+add_harmonized_religion = mahayana
 government_rank = 1
 
 1440.11.11 = {
@@ -14,4 +15,5 @@ government_rank = 1
 		dip = 3
 		mil = 4
 	}
+	add_ruler_personality = conqueror_personality
 }
